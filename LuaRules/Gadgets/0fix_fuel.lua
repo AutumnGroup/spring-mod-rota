@@ -24,7 +24,7 @@ local unitNeedSetFuel 	= {}
 local activefix			= true
 
 -- bug in Spring 94.1 and lower
-if ((tonumber(Game.version) or 95) >= 95) then
+if ((tonumber(Engine.version) or 95) >= 95) then
 	activefix = false
 end
 
@@ -35,16 +35,16 @@ function gadget:UnitFinished(unitID, unitDefID, unitTeam)
 	end
 end
 
-function gadget:GameFrame(n) 
+function gadget:GameFrame(n)
 	if (n % 30 == 0 and unitNeedSetFuel ~= nil) then
 		for id,fuel in pairs(unitNeedSetFuel) do
 			spSetUnitFuel(tonumber(id),fuel)
 			unitNeedSetFuel[id] = nil
-		end	
+		end
 	end
 end
 
-function gadget:Initialize()    
+function gadget:Initialize()
 	if (not activefix) then
 		gadgetHandler:RemoveGadget()
 	end

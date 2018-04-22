@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------------------------------------
 
 --// only works with >=77b1
-if (Game.version=="0.76b1") then
+if (Engine.version=="0.76b1") then
 	return false
 end
 
@@ -50,7 +50,7 @@ Ribbon.Default = {
   size     = 24, --//max 32
   color    = {0.9,0.9,1,1},
   texture1 = ":c:bitmaps/GPL/Lups/jet.bmp",
-  
+
   worldspace = true,
   repeatEffect = true,
   dieGameFrame = math.huge,
@@ -133,9 +133,9 @@ function Ribbon:Draw()
 	elseif self.projectile then
 	  x,y,z = Spring.GetProjectilePosition(self.projectile)
 	end
-	if x and y and z then 
+	if x and y and z then
 		glUniform( oldPosUniform[quads0+1] , x,y,z )
-		
+
 		if (self.blendfactor<1) then
 			local clr = self.color
 			glColor(clr[1],clr[2],clr[3],clr[4]*self.blendfactor)
@@ -154,7 +154,7 @@ function Ribbon:Draw()
   end
 
   --// define color and add speed blending (don't show ribbon for slow/landing units!)
-  
+
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -314,7 +314,7 @@ function Ribbon:CreateParticle()
   self.quads0 = self.size-1
   self.blendfactor = 1
 
-  local x,y,z 
+  local x,y,z
   if self.unit ~= 0 then
     x,y,z = spGetUnitPiecePosDir(self.unit,self.piecenum)
   elseif self.projectile then

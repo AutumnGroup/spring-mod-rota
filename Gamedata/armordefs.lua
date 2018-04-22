@@ -20,7 +20,7 @@ local armorDefs = {
 		"armseap",
 		"armangel",
 		"armkam",
-		
+
 		"corfink",
 		"corveng",
 		"corvamp",
@@ -43,7 +43,7 @@ local armorDefs = {
 		"corbtrans",
 		"corvalkii",
 		"cordcarry",
-		
+
 		"bladewing",
 	},
 	bugair = {
@@ -206,7 +206,7 @@ local armorDefs = {
 		"armbcrus",
 		"aseadragon",
 		"armcarry",
-		
+
 		"cordest",
 		"cormblade",
 		"corewar",
@@ -263,7 +263,7 @@ local armorDefs = {
 
 -- just fix to make it work for older engines (before 95) and 95+ newer
 local oldStyle = true
-if (Game ~= nil and ((tonumber(Game.version) or 96) >= 95)) then
+if (Game ~= nil and ((tonumber(Engine.version) or 96) >= 95)) then
 	oldStyle = false
 end
 
@@ -273,13 +273,13 @@ if (oldStyle) then
 	for k,v in pairs(armorDefs) do
 		oldArmors[k] = {}
 		local subtableForConvertion = v
-		
+
 		for i=1,#subtableForConvertion do
 			local unitName = subtableForConvertion[i]
 			oldArmors[k][unitName] = 99
 		end
 	end
-	
+
 	return oldArmors
 end
 -- end of fix

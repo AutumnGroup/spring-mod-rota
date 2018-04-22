@@ -14,7 +14,7 @@ function gadget:GetInfo()
   }
 end
 
-if (Game.version=="0.76b1") then
+if (Engine.version=="0.76b1") then
 	return false
 end
 

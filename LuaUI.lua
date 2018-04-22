@@ -23,7 +23,7 @@ local STARTUP_FILENAME = LUAUI_DIRNAME .. 'notamain.lua'
 do
   -- use a versionned directory name if it exists
   local sansslash = string.sub(LUAUI_DIRNAME, 1, -2)
-  local versiondir = sansslash .. '-' .. Game.version .. '/'
+  local versiondir = sansslash .. '-' .. Engine.version .. '/'
   if (VFS.FileExists(versiondir  .. 'notamain.lua', VFS.RAW_FIRST)) then
     LUAUI_DIRNAME = versiondir
   end
@@ -53,5 +53,5 @@ do
 end
 
 
--------------------------------------------------------------------------------- 
--------------------------------------------------------------------------------- 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

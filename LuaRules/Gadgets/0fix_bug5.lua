@@ -30,8 +30,8 @@ local bugUnitDefID			= 0
 local darkswarmDefID		= 0
 local weaponNumber			= 1
 
--- Spring.Echo(Game.version)
-if (tonumber(Game.version) >= 95) then
+-- Spring.Echo(Engine.version)
+if (tonumber(Engine.version) >= 95) then
 	weaponNumber = 2
 end
 
@@ -56,21 +56,21 @@ end
 function gadget:GameFrame(n)
     if ((n % 30) == 0) then
         for unitID,seconds in pairs(bugs) do
-		
+
 			if ((seconds ~= nil) and (seconds ~= 0)) then
 				bugs[unitID] = seconds - 1
 				--Spring.Echo(bugs[unitID])
 			end
-			
+
 			if (seconds < 1 and needWeaponFix[unitID]) then
 				spSetUnitWeaponState(unitID,weaponNumber,"range",560)
 				needWeaponFix[unitID] = false
-			end			
+			end
 		end
 	end
 end
 
-function gadget:Initialize()    
+function gadget:Initialize()
 	for id,unitDef in pairs(UnitDefs) do
 		local uName = unitDef.name
 		if (uName == "bug5") then

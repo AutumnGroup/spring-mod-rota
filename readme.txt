@@ -21,6 +21,12 @@ HOW TO USE THESE MODES? CHECK: http://nota.machys.net/gameplay
 
 ------------ CHANGELOG ---------------------
 
+1.92.1
+
+FIXES
+- ready to spring 104.0
+
+
 1.92
 
 GENERAL
@@ -46,7 +52,7 @@ GENERAL
 - ready to spring 103.0
 + own general resource simulation, Lua fuel for airplanes
 - move distances for reverse use metric increased (+100 elmos, 375 -> 475, 325 -> 425)
-- subs immune to most of the weapon types not related to anti-sub fight to prevent engine bugs (exceptions: asteriod, nuke, orbital laser, mines,...) 
+- subs immune to most of the weapon types not related to anti-sub fight to prevent engine bugs (exceptions: asteriod, nuke, orbital laser, mines,...)
 - transport factories no longer set to repeat on by default
 + removing old hacky reverse gadget, now using engine reverse which was implemented on our request
 	- except scouts all wheeled or tracked units have reverse (!)
@@ -90,7 +96,7 @@ BOTS and TANKS
 	- Speed lowered from 1.1 to 0.95
 	- Damage to heavy armor decreased from 38% to 26%
 - Pyro
-	- Flamethrower redone - more intensive longer spray 
+	- Flamethrower redone - more intensive longer spray
 	- in 1.25s: damage 50 x 9 (light) or damage 50 x 6 (medium, default) or damage 50 x 2 (heavy, base) with 3.5s reload (old was 17 x 9 each 0.04 with 0.9 reload)
 	- in result more deadly (stable) to all light units, longer flame makes sure that shot is not lost because of unstable aim and higher the probability of fire
 	- better flame effect
@@ -110,7 +116,7 @@ BOTS and TANKS
 - Bulldog
 	- weapon range increased from 550 to 570
 	- rear armor penalty decreased from 1.5 to 1.3
-- Indian 
+- Indian
 	- weapon velocity increased + 20 % (400 -> 480)
 	- range decreased from 500 to 480
 	- damage increased from 374 to 411
@@ -129,7 +135,7 @@ BOTS and TANKS
 	- converted to Hero
 + Tracker
 	- converted to Hero
-- Pyro 
+- Pyro
 	- self destruct count lowered to 0.5 seconds
 	- suicide explosion damage to armor lowered
 - Zipper and Sprinterus
@@ -149,7 +155,7 @@ BOTS and TANKS
 	- legs can be shot out by heavy shots resulting in reduced movement
 - Arm Pod
 	- damage to heavy armor lowered from 38% to 28%
-	
+
 MINES and BOMBS
 - Crawling Bomb
 	- Crawling Bomb now Core only
@@ -179,7 +185,7 @@ AIR
 
 - Hellfish
 	- bombs burst time decreased from .4 to .025 to fit high precision bomber role better
-- Toadfoot 
+- Toadfoot
 	- metal cost increased + 5 % (350 -> 368)
 	- energy cost increased + 33 % (7160 -> 9523)
 	- buildtime increased +15 % (19176 -> 22052)
@@ -221,7 +227,7 @@ SHIPS
 
 FIXES
 - fixed negative arguments in gl.Scissor function (GUI)
-- fix "synced in unsynced" 
+- fix "synced in unsynced"
 	- game_end_team_com.lua
 	- lups_nano_spray.lua
 	- unit_autotraj.lua
@@ -247,7 +253,7 @@ FIXES
 
 v1.82
 
-GENERAL 
+GENERAL
 !! second iteration of sphere changes, partly affected by engine upgrade, party fixing small spheres of air
 - ready to Spring 95, 96
 - improved spawn script, now all skirmish AIs take better spots
@@ -339,7 +345,7 @@ GAME FIXES
 - fix - T1 transport was able to transport Penetrator
 - fix - increased mass of MARS to stop moving when heavy bombers are refueled
 - fix - moving dead features (hit by weapons)
-- fix - subs firing backwards, now shooting angle is 120°
+- fix - subs firing backwards, now shooting angle is 120Â°
 - fix - fuel lost when unit completed (+ engine fix managed from Spring 95.0+)
 - fix - toad VS commtower and some ships not firing
 - fix - Black Hydra laser killing friendly ships
@@ -424,7 +430,7 @@ GAME
 - Black Lily loose 6 bombs (8 -> 2), +100% bigger area effect of bombs (74 -> 150), 400% damage for each bomb to all targets (380 -> 1520)
 - Firebat napalm bombs have slower drop (=> bigger area off effect)
 - advanced bombers Phoenix/Hurricane becoming carpet bombers - gets +18 bombs (4x, 6 -> 24), but 50% damage for each bomb and energy price of bombers +50 %
-- Thunder/Shadow and Phoenix/Hurricane do less damage to medium armor and much lesser to heavy armor (230,230,230 -> 230,184,103 for basic bombers, half for advanced ones) 
+- Thunder/Shadow and Phoenix/Hurricane do less damage to medium armor and much lesser to heavy armor (230,230,230 -> 230,184,103 for basic bombers, half for advanced ones)
 - again changed the hitsphere of both dragon-teeths (20/20/20 -> 30/20/30)
 - fix - collide/avoid friendly unit for ground weapon of CORE tower = false
 - fix - spawner fix for game launch without lobby
@@ -447,7 +453,7 @@ UI and WIDGETS
 - killed anti-spam for game taunts
 - fixed LOS and RadarView from start for Specs (OFF for them by default now)
 - ON default - unit_improved_metal_maker.lua
-- OFF default - gui_tactical_grid.lua 
+- OFF default - gui_tactical_grid.lua
 - ON default - cmd_fac_holdposition.lua
 - ON default - unit_smart_area_reclaim.lua
 - ON default - cmd_factory_repeat.lua
@@ -540,12 +546,12 @@ MISSIONS
 - all missions prepared for lobby Single Player (TTD and Spacbugs .ini)
 - media files, icons, descriptions for 3 missions
 - file for using gadgets from unit_noe.lua - gadgets.lua
-- file for own work with debug GUI - gui.lua 
+- file for own work with debug GUI - gui.lua
 
 NEW SP mission: Spacebugs
 - made and prepared the Single Player version of normal Spacebugs (need map Talus)
 
-NEW SP mission: xAnts pathing demo 
+NEW SP mission: xAnts pathing demo
 - one NOE tools promo showing pathing algorithm of ants (need map Canyon_Redux-v01)
 
 v1.70
@@ -583,18 +589,18 @@ NOE
     - "swarm" and "cirlce" gets lower constrainLevel (swarm 4->2, circle 16->2)
 - fix
     - killed debug message about sleeping group
-	
+
 v1.70b
 GAME
 - fix - twice bigger build range for FARK to avoid repeating "tries" to build a building (60->128, now the same like Necro)
-- fix - hellfish added in list of planes with big default spheres -> lowered 
+- fix - hellfish added in list of planes with big default spheres -> lowered
 NOE
 - general
     - new table isStaticTargetClass[className] (part of finishing of targeting tool), added in init part
 - groups
-    - new group "stumpy-raider"  
+    - new group "stumpy-raider"
 - classes
-    - every class of targets gets "static" = true/false value (for use in targets list)	
+    - every class of targets gets "static" = true/false value (for use in targets list)
 - spirits
     - targeting for "raiders" and "cloacked-raiders" is changed to new one =>
     => dependable on static value unit attacking group (attacking_by_BigMove) asks for position or not
@@ -618,7 +624,7 @@ NOE
 - formations
     - new formation "circle"
 - functions
-    - more simple, slower and stupid expansion algorithm ;) for eco bots => 
+    - more simple, slower and stupid expansion algorithm ;) for eco bots =>
     => new function ChooseClosestSpot(teamNumber,kind,posX,posZ) instead of current ChooseMexSpot(teamNumber,kind))
     - few testing code lines in GlobalVarSet (testing which unit is member of which group)
 - groupDefs
@@ -683,7 +689,7 @@ v1.681
 - fixed underwater move bug of Triton/Crock
 - speed of underwater move of all commanders, walking mines and underwater tanks adjusted, hard to say how much, but the move is now recognizable (depthmod=0.03)
 
-v1.68 
+v1.68
 
 v1.68f (stable public release => 1.68)
 GAME
@@ -767,7 +773,7 @@ NOE
 - enhanced late game behavior (bigger groups, usage of surpluses of production, better behavior of big groups)
 
 v1.68a
-GAME 
+GAME
 - Lancet and Titan (torpedo bombers) haver smaller hitspheres, now 7/18 (39%) of old ones
 - 10x bigger brake rate for construction hovers of both main sides (from 0.006 to 0.06 and from 0.008 to 0.08)
 - spacebugs Alpha montro (bug1), Delta Montro (bug2), Ultra Montro (bug3), Fatso Montro (bug4), Dust Bug (bug5) and Plasma bug (wormy) + Spore Tower and Hive are no longer affected by EMP weapons, becouse they not consist of metal and have no electronic parts, flying bugs are still affected becouse EMP jam their navigation system and montrobugs are affected becouse they consist of electronic parts (+ added own armor classes for all bugs and weapons using them)
@@ -777,7 +783,7 @@ GAME
 - fixed Plasma bug using his plasma flak against ground targets
 - fixed Greyhoud weapons shooting bad targets
 - fixed ground unit chasing for Avenger
-- fixed force attack ground for Hawk, Vamp, 
+- fixed force attack ground for Hawk, Vamp,
 NOE AI alpha version here:
 [+] FEATURES
 - independent agent system, commanding struncture (group, supergroup, brain)
@@ -813,8 +819,8 @@ v1.67a - not public
 - +20% front armor for heavy tanks (Repaer, Goliath, Bulldog), +10% front armor for all light and medium tanks
 - heightmod 1.1 handicap for Delta Montro (bug2) and Spore tower AA. Delta Montro is unable to shoot high attitude planes and def burrow have big problems with it now
 - finished speedups for spacebugs
-- fixed some AA that was able to be force to attack ground (Equalizer, Panther, Hermes, Horgue, Swatter, Slinger) 
-- fixed Jethro and Phalanx chasing ground units bug 
+- fixed some AA that was able to be force to attack ground (Equalizer, Panther, Hermes, Horgue, Swatter, Slinger)
+- fixed Jethro and Phalanx chasing ground units bug
 - fixed spacebugs Queen crushing own Hives and Spore towers and Commtowers
 - fixes spacebugs Queen was able to forceattack ground with AA missile
 
@@ -892,7 +898,7 @@ v1.662
 - fixed game_end (now you need to kill all units in team, classic team comm end will be in next version)
 - added - team_platters.lua (set: not active)
 
-v1.661 
+v1.661
 
 . only fix for new engine version
 - added - new version of unit_healthbars.lua
@@ -985,7 +991,7 @@ v1.63
 -Added "Crusader" Heavy Destroyer for Arm. Ideal for long range ship engagements, it also carries formidable anti-air
 -Core destroyer scaled up; cost increased 30%; hitpoints increased to 3700; rear gun range increased to 840
 -Arm destroyer now has two plasma guns with 820 range; flak replaced by machineguns
--Commander in commander mode now builds stationary laser tower and flak 
+-Commander in commander mode now builds stationary laser tower and flak
 -High altitude aircraft now have the option of flying at low altitude
 -Fighters can now fly at high altitude; line of sight decreased to 500
 -Pod can now teleport; weapon changed to a fast firing laser
@@ -1457,9 +1463,9 @@ v 1.40
 
 v 1.32
 
--Zeus, sniper, pyro, morty, fast attack kbots, and crawling bombs are all now built at the level 1 kbot 
+-Zeus, sniper, pyro, morty, fast attack kbots, and crawling bombs are all now built at the level 1 kbot
  lab, cost and effectiveness adjusted accordingly.
--Missile ship and Rocket truck missiles have a minimum range and are no longer guided, but are more powerful 
+-Missile ship and Rocket truck missiles have a minimum range and are no longer guided, but are more powerful
  and are not affected by jammers
 -Snipers automatically cloak when standing still.
 -Crawling bombs can now burrow into the ground.
@@ -1483,7 +1489,7 @@ v 1.31
 -Core interceptor now has a single very powerful laser weapon
 -Gala's and Oddities cost less
 -Rocket truck reload time decreased
--Amphibious tanks have slightly more range, but do less damage to heavy armor. 
+-Amphibious tanks have slightly more range, but do less damage to heavy armor.
 -Sub torpedoes are now guided
 -Subs no longer chase land units
 -Anti-sub hovercraft doesn't kill itself on land anymore
@@ -1572,15 +1578,15 @@ v 1.30
 
 ----v1.2
 
--Added seaplanes. They are faster and lighter than normal planes, ideal for hit and run attacks. They can be 
+-Added seaplanes. They are faster and lighter than normal planes, ideal for hit and run attacks. They can be
   repaired and refueled at special underwater support stations built by the construction sub.
--Heavy tank balance reworked to prevent late game spamming. They are now more vulnerable to aircraft and anti-armor 
+-Heavy tank balance reworked to prevent late game spamming. They are now more vulnerable to aircraft and anti-armor
   weapons like rockets, gauss cannons, and high energy lasers.
--Level 2 Vehicle Rocket Launchers now fire long range ballistic missiles similar to those on missile ships. These 
-  units are somewhat similar to mobile anti-ship guns in terms of size, cost, and other stats, but have greater 
-  range and near-perfect accuracy, making them perfect for picking apart enemy defenses. Like ship missiles, they 
+-Level 2 Vehicle Rocket Launchers now fire long range ballistic missiles similar to those on missile ships. These
+  units are somewhat similar to mobile anti-ship guns in terms of size, cost, and other stats, but have greater
+  range and near-perfect accuracy, making them perfect for picking apart enemy defenses. Like ship missiles, they
   can be jammed by radar jammers and electronic warfare ships.
--Units with heavy armor (includes heavy tanks, cans, sumos, crabes, etc.) are more resistant to lighter weapons, as 
+-Units with heavy armor (includes heavy tanks, cans, sumos, crabes, etc.) are more resistant to lighter weapons, as
   well as high-area-of-effect, low damage weapons such as light artillery and plasma cannons.
 -Most Kbots are substantially more cost-effective. Changes include:
 	-infantry kbot HP increased by 15%
@@ -1588,7 +1594,7 @@ v 1.30
 	-thud/hammer dps increased by 20%
 	-anti-air kbot cost decreased
 -Sonar ranges on most units including subs, destroyers, and airborne sonar have been decreased.
--Attack subs now have the ability to passively detect moving ships outside of their sonar range. 
+-Attack subs now have the ability to passively detect moving ships outside of their sonar range.
 -Stealth fighter flare efficiency, reload time improved; they now have a 60% chance of dodging any incoming missiles.
 -Arm Spider and Drone now built at the Kbot factory
 -Flash given significent firepower increase, especially against light units.
@@ -1612,9 +1618,9 @@ v 1.30
 
 ----v1.11
 
--added specialized level 2 construction towers- they give a player access to advanced resource 
+-added specialized level 2 construction towers- they give a player access to advanced resource
 buildings earlier in the game and one type of level 2 factory of player's choice.
--Arm Panther stealth tanks and Core Reaper heavy tanks now level 1, cost and effectiveness 
+-Arm Panther stealth tanks and Core Reaper heavy tanks now level 1, cost and effectiveness
 adjusted accordingly
 -New unit icons for scouts and toadfoot fighter-bombers
 -vehicle radar jammers now level 1

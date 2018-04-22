@@ -14,7 +14,7 @@ function gadget:GetInfo()
   }
 end
 
-if (Game.version=="0.76b1") then
+if (Engine.version=="0.76b1") then
   return false
 end
 
@@ -182,7 +182,7 @@ end
 
 
 local function CopyTable(outtable,intable)
-  for i,v in pairs(intable) do 
+  for i,v in pairs(intable) do
     if (type(v)=='table') then
       if (type(outtable[i])~='table') then outtable[i] = {} end
       CopyTable(outtable[i],v)
@@ -203,7 +203,7 @@ end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --
---  «« some basic functions »»
+--  ï¿½ï¿½ some basic functions ï¿½ï¿½
 --
 
 local supportedFxs = {}
@@ -263,7 +263,7 @@ end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --
---  «« NanoSpray handling »»
+--  ï¿½ï¿½ NanoSpray handling ï¿½ï¿½
 --
 
 local nanoParticles = {}
@@ -488,7 +488,7 @@ end
 -------------------------------------------------------------------------------------
 
 function gadget:Update()
-  if (Spring.GetGameFrame()<1) then 
+  if (Spring.GetGameFrame()<1) then
     return
   end
 
@@ -510,7 +510,7 @@ function gadget:Update()
   --// init user custom nano fxs
   for faction,fx in pairs(Lups.Config or {}) do
     if (fx and (type(fx)=='table') and fx.fxtype) then
-      local fxType = fx.fxtype 
+      local fxType = fx.fxtype
       local fxSettings = fx
 
       if (fxType)and

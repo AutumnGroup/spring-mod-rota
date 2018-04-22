@@ -174,7 +174,7 @@ end
 --------------------------------------------------------------------------------
 
 --// some global vars (so the effects can use them)
-vsx, vsy, vpx, vpy = Spring.GetViewGeometry() --// screen pos & view pos (view pos only unequal zero if dualscreen+minimapOnTheLeft) 
+vsx, vsy, vpx, vpy = Spring.GetViewGeometry() --// screen pos & view pos (view pos only unequal zero if dualscreen+minimapOnTheLeft)
 LocalAllyTeamID = 0
 thisGameFrame   = 0
 frameOffset     = 0
@@ -185,11 +185,11 @@ function SetUnitLuaDraw(unitID,nodraw)
   if (nodraw) then
     noDrawUnits[unitID] = (noDrawUnits[unitID] or 0) + 1
     if (noDrawUnits[unitID]==1) then
-      --if (Game.version=="0.76b1") then
+      --if (Engine.version=="0.76b1") then
 		if   Spring.UnitRendering.ActivateMaterial then
 			Spring.UnitRendering.ActivateMaterial(unitID,1)
 		end
-		
+
         --Spring.UnitRendering.SetLODLength(unitID,1,-1000)
         for pieceID in ipairs(Spring.GetUnitPieceList(unitID) or {}) do
           Spring.UnitRendering.SetPieceList(unitID,1,pieceID,nilDispList)
@@ -201,11 +201,11 @@ function SetUnitLuaDraw(unitID,nodraw)
   else
     noDrawUnits[unitID] = (noDrawUnits[unitID] or 0) - 1
     if (noDrawUnits[unitID]==0) then
-      --if (Game.version=="0.76b1") then
+      --if (Engine.version=="0.76b1") then
 		if   Spring.UnitRendering.DeactivateMaterial then
 			Spring.UnitRendering.DeactivateMaterial(unitID,1)
 		end
-		
+
       --else
       --  Spring.UnitRendering.SetUnitLuaDraw(unitID,false)
       --end
@@ -512,7 +512,7 @@ local function Draw(extension,layer)
         FxLayer[partClass]=nil
       else
         for unitID,UnitEffects in pairs(Units) do
-          if (not UnitEffects[1]) then 
+          if (not UnitEffects[1]) then
             Units[unitID]=nil
           else
 
