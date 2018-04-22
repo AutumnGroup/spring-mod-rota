@@ -1,0 +1,2164 @@
+[ARF_ROCKET]
+	{
+	ID=131;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	//guidance=1;
+	//turnrate=3000;//3500
+
+	burst=6;//4
+	burstrate=.1;//.14	
+	range=750;
+	reloadtime=7.5;
+	flighttime=1.3;
+	weaponvelocity=750;//480
+	startvelocity=660;//420
+	weaponacceleration=146;
+	tolerance=500;//3000
+	//pitchtolerance=4300;
+	areaofeffect=18;//100//60
+	metalpershot=0;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=3000;
+	//wobble=8000;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	burnblow=1;
+	
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.2;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+	
+	[DAMAGE]
+		{
+		default=70;//75
+		ships=49;//75//58
+		Light=100;
+        BugLight=100;
+		Medium=100;
+        BugMedium=100;
+		Heavy=100;
+		BugHeavy=100;
+		hovertank=100;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=35;
+		}
+}
+	
+[TOAD_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+	//toairweapon=1;
+     
+	range=440;//440
+	reloadtime=.9;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=7;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=8000;
+	//pitchtolerance=10000;
+        smoketrail=1;
+        smokedelay=.5;
+	//startsmoke=1;
+        //guidance=1;
+        tracks=1;
+	turnrate=48000;      
+	firestarter=10;
+
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=8;
+		Air=18;
+		Bladewing=18;
+		subs=0;
+ 		}
+	}
+
+[CRF_ROCKET]
+	{
+	ID=132;
+	name=ACTUALLY A BOMB;
+	rendertype=1;
+	lineofsight=1;
+	dropped=1;
+
+	model=bomb;
+
+	//guidance=1;	
+	turnrate=9000;//3500//7200//8300
+
+	burst=2;
+	burstrate=.15;
+	//burst=5;//8
+	//burstrate=.4;//.06
+	range=975;
+	reloadtime=7;
+	weaponvelocity=615;//615
+	startvelocity=350;
+	weaponacceleration=149;
+	tolerance=3000;//6000
+	areaofeffect=150;//100
+	metalpershot=0;
+
+	soundstart=bombrel;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	impulsefactor=.1;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:MEDLARGE_BOMB_Expl;
+
+	[DAMAGE]
+		{
+		default=196;//150//190
+		Light=250;
+        BugLight=250;//230
+		Medium=250;
+        BugMedium=250;
+		Heavy=250;
+		BugHeavy=250;
+		hovertank=250;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+}
+
+[CRF_ROCKET2]
+	{
+	ID=132;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=14000;//3500//8400
+
+	//burst=5;//8
+	//burstrate=.4;//.06
+	range=765;//850
+	reloadtime=7;
+	weaponvelocity=615;
+	startvelocity=350;
+	weaponacceleration=149;
+	tolerance=5000;
+	areaofeffect=24;//45
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	Wobble=10500;//9000
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=146;//70//85
+		Light=200;
+        BugLight=200;//155//185
+		Medium=200;
+        BugMedium=200;
+		Heavy=200;
+		BugHeavy=200;
+		hovertank=200;
+		ships=124;
+		Air=100;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+}
+
+[CRF_ROCKET3]
+	{
+	ID=132;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=15000;//3500//8800
+
+	//burst=5;//8
+	//burstrate=.4;//.06
+	range=675;//750
+	reloadtime=7;
+	weaponvelocity=615;
+	startvelocity=350;
+	weaponacceleration=149;
+	tolerance=5000;
+	areaofeffect=24;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	Wobble=11000;//9000
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=146;
+		Light=200;
+        BugLight=200;
+		Medium=200;
+        BugMedium=200;
+		Heavy=200;
+		BugHeavy=200;
+		hovertank=200;
+		ships=124;
+		Air=100;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+}
+
+[CRF_ROCKET4]
+	{
+	ID=132;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=16000;//3500
+
+	//burst=5;//8
+	//burstrate=.4;//.06
+	range=585;//650
+	reloadtime=7;
+	weaponvelocity=650;
+	startvelocity=350;
+	weaponacceleration=149;
+	tolerance=8000;
+	areaofeffect=24;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	Wobble=11500;//9000
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=146;
+		Light=200;
+        BugLight=200;
+		Medium=200;
+        BugMedium=200;
+		Heavy=200;
+		BugHeavy=200;
+		hovertank=200;
+		ships=124;
+		Air=100;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+}
+
+[CRF_ROCKET5]
+	{
+	ID=132;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=18000;//3500
+
+	//burst=5;//8
+	//burstrate=.4;//.06
+	range=495;//550
+	reloadtime=7;
+	weaponvelocity=615;
+	startvelocity=350;
+	weaponacceleration=149;
+	tolerance=8500;
+	areaofeffect=24;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	Wobble=12000;//9000
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=146;
+		Light=200;
+        BugLight=200;
+		Medium=200;
+        BugMedium=200;
+		Heavy=200;
+		BugHeavy=200;
+		hovertank=200;
+		ships=124;
+		Air=100;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+}
+
+[COR_ATG_ROCKET]
+	{
+	name=HeavyRocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	model=missile;
+	range=550;
+	reloadtime=12;
+	weapontimer=6;
+	weaponvelocity=450;
+	startvelocity=100;
+	weaponacceleration=150;
+	areaofeffect=72;
+	burst=6;
+	burstrate=0.3;
+	soundtrigger=1;
+	soundstart=rockhvy3;
+	soundhit=xplosml1;
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//explosiongenerator=custom:FLASH2;
+	//startsmoke=1;
+	Trajectoryheight=1;
+	Wobble=9000;
+	turnrate=4000;
+	edgeeffectiveness=0.5;
+	//smokedelay=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	[DAMAGE]
+	{
+		default=95;
+		subs=0;
+	}
+}
+
+[NAPALM_BOMB]
+	{
+	name=napalm;
+	rendertype=6;
+	dropped=1;
+	model=bomb;
+
+	range=1280;//1280
+	burst=6;
+	burstrate=.3;
+	//sprayangle=4000;
+	reloadtime=3;//.2
+	areaofeffect=220;//120
+	edgeeffectiveness=.7;
+	soundstart=bombrel;
+	soundhit=burn01;//expped
+	//soundstart=Flamhvy1;
+	//soundhit=burn02;
+	commandfire=1;
+	impulsefactor=0;
+	explosiongenerator=custom:NAPALM_Expl;
+	//NoSelfDamage=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	firestarter=100;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=250;//230
+		firethrower=20;
+		Light=300;
+        BugLight=300;
+		Medium=180;
+        BugMedium=180;
+		Heavy=120;
+		BugHeavy=120;
+		hovertank=320;
+		Air=0;
+		ships=200;
+		subs=0;
+		}
+	[customParams]
+		{
+		setunitsonfire=1;
+		burnchance=1;
+		//burntime=5;
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=130;
+		}
+	}
+
+[VTOL_MCANNON]
+	{
+	name=Heavy Cannon;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	turret=1;
+	intensity=0.8;
+	//toairweapon=1;
+     
+	range=640;//560
+	reloadtime=1.02;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=8;
+	burstrate=.12525;
+	soundstart=air_cann;
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=1000;
+	//pitchtolerance=1000;
+        smoketrail=1;
+        //smokedelay=.5;
+	//startsmoke=1;
+        //guidance=1;
+        tracks=1;
+	turnrate=48000;      
+	firestarter=10;
+
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+	NoSelfDamage=1;
+
+	[DAMAGE]
+		{
+		default=10;//20
+		Air=41;//38
+		Bladewing=41;
+		FlyingFortress=23;//23//30
+		subs=0;
+ 		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=4;
+		}
+	}
+
+[VTOL_DRONEGUN]
+	{
+	name=zappy gun;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	beamtime=.2;
+	beamlaser=1;
+	//toairweapon=1;
+
+	//color=255;
+	//color2=226;
+	rgbcolor=1 0 0.4819;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+     
+	range=200;//440
+	reloadtime=.4;
+	//weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	soundstart=zap;
+	soundhit=lasrhit2;
+	//soundtrigger=1;
+	tolerance=2000;
+	//pitchtolerance=2000;
+	firestarter=10;
+	paralyzer=1;
+	paralyzetime=20;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=200;
+		Air=400;
+		Bladewing=0;
+		FlyingFortress=400;
+		subs=0;
+ 		}
+	}
+
+[VTOL_DRONEGUN2]
+	{
+	name=zappy gun2;
+	rendertype=0;
+	lineofsight=1;
+
+	//color=255;
+	//color2=226;
+	rgbcolor=1 0.5 0;
+	rgbcolor2=1 1 1;
+	thickness=0;
+	intensity=0;
+     
+	range=200;//440
+	reloadtime=.7;
+	//weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	soundstart=zap;
+	//soundhit=lasrhit2;
+
+	tolerance=4000;
+	//pitchtolerance=6000;
+	firestarter=10;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=0;
+		subs=0;
+ 		}
+	}
+
+[VTOL_DRONEGUN_FAKE]
+	{
+	name=el zappo fakeo;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0;
+	intensity=0;
+	//toairweapon=1;
+     
+	range=200;//440
+	reloadtime=.4;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	soundstart=zap;
+	//soundhit=softblat;
+	//soundtrigger=1;
+	tolerance=2000;
+	//pitchtolerance=2000;     
+	firestarter=10;
+	canAttackGround=0;
+	[DAMAGE]
+		{
+		default=1;
+		Air=2;
+		subs=0;
+ 		}
+	}
+
+[WING_BOMB]
+	{
+	ID=132;
+	name=Wing Bomb;
+	rendertype=1;
+	lineofsight=1;
+	dropped=1;
+
+	model=CORBIGBOMB;
+
+	range=975;
+	reloadtime=.8;
+	burst=2;
+	burstrate=.2;
+	tolerance=3000;//6000
+	areaofeffect=225;//150
+	soundstart=bombrel;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.09;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LARGE_BOMB_Expl;
+
+	[DAMAGE]
+		{
+		default=260;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+}
+
+[WING_LASER]
+	{
+	ID=24;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=.4;//.4
+
+	range=725;//1200//800//650
+	reloadtime=1.6;//5//7
+	weaponvelocity=1000;
+	areaofeffect=32;
+	targetMoveError=0.5;
+
+	soundstart=phaser;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0 0.2939 1;
+	rgbcolor2=1 1 1;
+	thickness=2;
+	corethickness=0.5;
+	laserflaresize=16;
+
+	tolerance=500;
+	//pitchtolerance=2000;
+	impulsefactor=2;
+	impactOnly=1;
+	explosiongenerator=custom:FLASH1bluegreen;
+
+	[DAMAGE]
+		{
+		default=1100;//600//750
+		//ships=790;//700
+		hovertank=1450;//1200
+		firethrower=1450;
+		Light=1450;
+        BugLight=1450;
+		Medium=1450;
+        BugMedium=1450;
+		Heavy=1450;
+		BugHeavy=1450;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+[WING_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	targetMoveError=0.04; //.08    
+	range=380;//600//480
+	reloadtime=.7;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=5;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	corethickness=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=8;
+		FlyingFortress=8;
+		subs=0;
+		}
+	}
+
+[TOAD_MISSILE]
+	{
+	ID=108;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=630;//510
+	reloadtime=5;//4
+	weapontimer=5;
+	weaponvelocity=480;
+	startvelocity=250;//420//100
+	weaponacceleration=1500;//500
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+	canAttackGround=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=65;
+		Air=130;
+		Bladewing=130;
+		FlyingFortress=130;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=15;
+		}
+	}
+
+[ARM_HELL_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	targetMoveError=0.1; //.08 //.04   
+	range=380;//600//480
+	reloadtime=.9;//.7
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=5;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=6;//8
+		FlyingFortress=6;
+		subs=0;
+		}
+	}
+
+
+[ARM_HELL_BOMB]
+	{
+	ID=132;
+	name=Hell Bomb;
+	rendertype=1;
+	lineofsight=1;
+	dropped=1;
+
+	model=CORBIGBOMB;
+
+	range=1000;
+	reloadtime=1.6;
+	burst=2;
+	burstrate=0.25;//.4
+	tolerance=3000;//6000
+	//fireTolerance=32768;
+	
+	//weaponvelocity=615;//615
+	//startvelocity=350;
+	//weaponacceleration=149;	
+	//turnrate=30000;
+	//accuracy=0;
+	//targetMoveError=0;
+	allowNonBlockingAim=1;
+	
+	areaofeffect=180;//120//150
+	soundstart=bombrel;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.09;
+
+	//startsmoke=1;
+	impulsefactor=.4;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.4;//0.3
+	explosiongenerator=custom:LARGE_BOMB_Expl;
+
+	[DAMAGE]
+		{
+		default=300;//300
+		Light=400;
+        BugLight=400;//400
+		Air=0;
+		ships=270;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=70;
+		}
+}
+
+[GRYP_CANNON]
+	{
+	name=Lance;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=.5;//.35
+	//toairweapon=1;
+
+	range=800;//1200
+	reloadtime=1;//2
+	weaponvelocity=1000;
+	areaofeffect=32;
+	//targetMoveError=0.5;
+
+	soundstart=lancebeam;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0.7649 0 1;
+	rgbcolor2=1 1 1;
+
+	tolerance=500;
+	impulsefactor=2;
+	NoSelfDamage=1;
+	impactOnly=1;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=100;//200
+		Air=1170;//780//300//550
+		FlyingFortress=878;//780
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=7;
+		}
+	}
+
+[GRYP_FLAK]
+	{
+	ID=42;
+	name=Gryp Flak;
+	rendertype=4;
+	ballistic=1;
+	//toairweapon=1;
+	model=plasmashot_purple.s3o;
+
+	range=620;//700
+	reloadtime=0.6;
+	weapontimer=1;
+	weaponvelocity=750;
+	areaofeffect=8;//120
+	edgeeffectiveness=0.90;
+	soundstart=makweapon;
+	soundhit=electronhit;
+
+	accuracy=50;//2200
+	tolerance=8000;
+	//pitchtolerance=10000;
+	burnblow=1;
+
+	color=1;
+	//startsmoke=1;
+	explosiongenerator=custom:AIRBURST_PLASMA;
+	impulsefactor=0;
+	CollideFriendly=0;
+	canAttackGround=0;
+	noselfdamage=1;
+
+	[DAMAGE]
+		{
+		default=130;//100
+		Light=200;
+        BugLight=200;
+		Medium=140;
+        BugMedium=140;
+		Heavy=80;
+		BugHeavy=80;
+		Air=300;//240
+		FlyingFortress=240;
+		subs=0;
+		}
+	}
+
+[FAKE_BOMB]
+	{
+	ID=3;
+	name=Bombs;
+	rendertype=6;
+	dropped=1;
+	model=bomb;
+	//toairweapon=1;
+
+	range=1280;//1280
+	sprayangle=4000;
+	reloadtime=.2;//.18//.14
+	areaofeffect=59;
+	edgeeffectiveness=.9;
+	soundstart=bombrel;
+	soundhit=xplomed2;
+	commandfire=1;
+
+	explosiongenerator=custom:SMALLFLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=130;//158
+		subs=0;
+		}
+	}
+
+[CORE_FFLASER]
+	{
+	name=Light Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=450;//400
+	reloadtime=.3;
+	energypershot=75;
+	weaponvelocity=700;
+	areaofeffect=8;
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=5000;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=35;//35//30
+		subs=0;
+		}
+	}
+
+[VTOL_ROCKETW]
+	{
+	ID=240;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=500;
+	reloadtime=2.5;
+	weaponvelocity=900;
+	startvelocity=850;
+	weaponacceleration=50;
+	areaofeffect=8;
+
+	soundstart=rocklit3;
+	soundhit=explode;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=90;
+		subs=0;
+		}
+	}
+
+[ARM_DRAGFWEAPON]
+	{
+	name=Paralyzer;
+	rendertype=0;
+	lineofsight=1;
+	//turret=1;
+	paralyzer=1;
+	//minbarrelangle=0;
+
+	range=550;//220
+	reloadtime=1.2;
+	weaponvelocity=600;
+	areaofeffect=8;
+	duration=.04;
+	soundtrigger=1;
+
+	soundstart=lasrlit1;
+	soundhit=lashit;
+	//soundstart=lasrfir3;
+	//soundhit=lasrhit2;
+
+	beamweapon=1;
+	rgbcolor=0 0.012 1;
+	rgbcolor2=1 1 1;
+
+	//beamlaser=1;
+	thickness=1.25;
+	corethickness=0.65;
+	laserflaresize=10;
+	targetMoveError=0.25;
+	//beamtime=0.12;
+	explosiongenerator=custom:SPIDSTUNNER_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=900;		/* 15 seconds of paralysis */
+		Air=350;
+		subs=0;
+		}
+	}
+
+[VTOL_HLASER_CORE]
+	{
+	name=High Energy Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	thickness=1;
+	targetMoveError=0.05;
+	beamtime=0.2;
+	//toairweapon=1;
+	rgbcolor=0 1 0.259;
+	rgbcolor2=1 1 1;
+
+	range=640;
+	reloadtime=1;
+	weaponvelocity=1000;
+	areaofeffect=16;
+
+	firestarter=90;
+	beamweapon=1;
+	soundstart=Lasrmas2;
+	soundhit=lasrhit1;
+
+	tolerance=5000;
+	//guidance=1;
+	canAttackGround=0;
+	impactOnly=1;
+
+	[DAMAGE]
+		{
+		default=180;//180
+		subs=0;
+		}
+	}
+
+[CORE_FFBEAM]
+	{
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	thickness=1;
+	targetMoveError=0.1;
+	beamtime=0.2;
+	//toairweapon=1;
+
+	range=640;
+	reloadtime=1;
+	weaponvelocity=1000;
+	areaofeffect=16;
+
+	firestarter=90;
+	beamweapon=1;
+	soundstart=zap;
+	soundhit=lasrhit2;
+
+	tolerance=5000;
+	//guidance=1;
+	canAttackGround=0;
+	impactOnly=1;
+	[DAMAGE]
+		{
+		default=50;//50//30
+		subs=0;
+		}
+	}
+
+[SUPER_BOMB]
+	{
+	name=Bombs;
+	rendertype=6;
+	dropped=1;
+	model=BMF;
+
+	range=1280;//1280
+	//manualBombSettings=1;
+	sprayangle=10;
+	reloadtime=15;
+	burst=5;
+	burstrate=.25;
+	areaofeffect=156;//104//84
+	edgeeffectiveness=.7;
+	soundstart=bombdrop6;//bombrel
+	soundhit=xplomed4;//xplomed2
+	explosiongenerator=custom:LARGE_BOMB_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=800;
+		ships=560;
+		subs=8;
+		}
+	}
+
+
+[VTOL_MGUN_ARM]
+	{
+	name=machine gun;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+	//toairweapon=1;
+     
+	range=440;//440
+	reloadtime=.3;//.3
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=3;
+	burstrate=.15;
+	soundstart=softblam2;//gunblam2
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=8000;
+	//pitchtolerance=10000;
+        smoketrail=1;
+        //smokedelay=.5;
+	//startsmoke=1;
+        //guidance=1;
+        tracks=1;
+	turnrate=48000;      
+	firestarter=10;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=6;
+		Air=14;
+		subs=0;
+ 		}
+	}
+
+[VTOL_MGUN_CORE]
+	{
+	name=machine gun;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+	//toairweapon=1;
+     
+	range=440;//440
+	reloadtime=.7;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=7;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=8000;
+	//pitchtolerance=10000;
+        smoketrail=1;
+        //smokedelay=.5;
+	//startsmoke=1;
+        //guidance=1;
+        tracks=1;
+	turnrate=48000;      
+	firestarter=10;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=6;//3
+		Air=14;
+		subs=0;
+ 		}
+	}
+
+[ARM_AIR2AIR_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	targetMoveError=0.15; //.15//.22
+	range=480;//600//480
+	reloadtime=1.4;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=7;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;//6
+		Air=6;//8//12
+		subs=0;
+		}
+	}
+
+[CORE_AIR2AIR_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+    
+	targetMoveError=0.13;//.13//.19
+	range=480;//600//480
+	reloadtime=1.4;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=7;
+	burstrate=.10;
+	soundstart=softblam3;//mgun3
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;//4//6
+		Air=6;//8//12
+		subs=0;
+		}
+	}
+
+[VTOL_MLASER_ARM]
+	{
+	name=Repeating Laser Weapon;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	//toairweapon=1;
+     
+	range=520;//440
+	reloadtime=1;//.3//.5
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+	tolerance=8000;
+	//pitchtolerance=10000;
+        smoketrail=1;
+        //smokedelay=.5;
+	//startsmoke=1;
+        //guidance=1;
+        tracks=1;
+	turnrate=48000;      
+	firestarter=10;
+
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=20;
+		Air=25;
+		subs=0;
+ 		}
+	}
+
+[CORVTOL_LASER]
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=650;
+	reloadtime=.5;
+	weaponvelocity=900;
+	areaofeffect=8;
+	duration=.1;
+
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	thickness=1;
+	corethickness=0.3;
+	laserflaresize=8;
+	tolerance=3000;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=7;
+		Air=28;
+		Bladewing=28;
+		FlyingFortress=28;
+		subs=0;
+		}
+	}
+
+[CORVTOL_BEAMER]
+	{
+	name=AA BEAM;
+	rendertype=0;
+	lineofsight=1;
+	beamlaser=1;
+	beamtime=0.05;
+	thickness=2.00;
+	intensity=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=400;
+	reloadtime=.05;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	targetMoveError=0.1;
+
+	//soundstart=lasrfir3;
+	soundstart=fryer2;
+	//soundhit=xplolrg1;
+	soundtrigger=1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=8000;//7000
+	corethickness=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=2;
+		subs=0;
+		}
+	}
+
+[CORVTOL_MINIMISSILE]
+	{
+	ID=109;
+	name=Mini Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile_tiny;
+
+	range=380;//350
+	reloadtime=5;//6
+	weapontimer=6;
+	weaponvelocity=470;
+	startvelocity=425;
+	weaponacceleration=149;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=38;
+		Light=46;
+        BugLight=46;
+		Medium=28;
+        BugMedium=28;
+		Heavy=18;
+		BugHeavy=18;
+		ships=22;
+		Air=55;
+		Bladewing=55;
+		FlyingFortress=55;
+		subs=0;
+		}
+	}
+
+[BLADE_MISSILE]
+	{
+	ID=108;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=630;//510
+	reloadtime=7;//5
+	weapontimer=5;
+	weaponvelocity=480;
+	startvelocity=250;//420//100
+	weaponacceleration=1500;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//44
+		Light=130;
+        BugLight=130;//65
+		Medium=100;
+        BugMedium=100;//35
+		Heavy=100;//27
+		BugHeavy=100;
+		ships=100;//35
+		Air=130;
+		Bladewing=130;
+		FlyingFortress=130;
+		subs=0;
+		}
+	}
+
+[DUMMY_FUELWEAPON]
+	{
+	name=el fakeo;
+	turret=1;
+	rendertype=0;
+	lineofsight=1;
+	beamweapon=1;
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0;
+	intensity=0;
+     
+	range=2000;//440
+	reloadtime=.4;
+	weapontimer=1;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	tolerance=200;   
+	firestarter=10;
+	[DAMAGE]
+		{
+		default=0;
+		subs=0;
+ 		}
+	}
+
+[COR_SBOMB]
+	{
+	ID=4;
+	name=Stealth Bomber Bombs;
+	rendertype=6;
+	dropped=1;
+
+	model=BMF;
+
+	range=1280;
+	reloadtime=2;//.13//.15
+	burst=1;//2//6
+	//burstrate=.3;
+	areaofeffect=300;//150//74
+	soundstart=bombdrop6;
+	soundhit=xplomed4;
+	commandfire=1;
+	explosiongenerator=custom:LARGE_BOMB_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+
+	[DAMAGE]
+		{
+		default=3040;//1520//380//480
+		base=2432;//1216//304
+		ships=872;//436//190//228
+		subs=30;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=1000;//500
+		}
+	}
+
+[KRAZYBOMB]
+	{
+	ID=120;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=460;//400//500
+	reloadtime=5.0;//5.5
+	weapontimer=2;
+	weaponvelocity=250;
+	startvelocity=250;
+	weaponacceleration=120;
+	areaofeffect=32;//48
+	metalpershot=0;
+	wobble=500;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=180;//160
+		subs=0;
+		}
+	}
+
+[DRONE_PARABOMB]
+	{
+	ID=50;
+	name=Light Cannon;
+	rendertype=4;
+	ballistic=1;
+
+	tolerance=8000;
+	//pitchtolerance=16000;
+
+	//color=0, 0.4, 1;
+	rgbcolor=0.1 0.4 1;
+	Stages=10;
+	SizeDecay=-.1;
+	AlphaDecay=.5;
+
+	range=420;//240//420
+	reloadtime=3.06;//1.53
+	weaponvelocity=350;//170
+	areaofeffect=100;//32
+	soundstart=zap;
+	soundhit=lasrhit2;
+	MovingAccuracy=0;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:SPIDSTUNNER_Expl;
+
+	//startsmoke=1;
+
+	paralyzer=1;
+	paralyzetime=20;
+
+	[DAMAGE]
+		{
+		default=400;
+		subs=0;
+		}
+	}
+
+[STRATEGIC_BOMBER_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	targetMoveError=0.08; //.04//.06 
+	range=380;//600//480
+	reloadtime=1.3;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=5;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;//8
+		Air=4;//8
+		FlyingFortress=4;
+		subs=0;
+		}
+	}
+
+[ARM_BTRANSGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	targetMoveError=0.04; //.08    
+	range=380;//600//480
+	reloadtime=.7;
+	weapontimer=1;
+	weaponvelocity=1000;
+	sprayangle=128;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=5;
+	burstrate=.1;
+	soundstart=softblam3;//mgun2
+	soundhit=softblat;
+	soundtrigger=1;
+
+	firestarter=50;
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=8;
+		FlyingFortress=8;
+		subs=0;
+		}
+	}
+
+
+[BLADEWING_BPLAS]
+	{
+	ID=171;
+	name=E.M.G.;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	range=255;//255
+	reloadtime=.5;
+	weapontimer=1;
+	weaponvelocity=500;//300
+	sprayangle=512;//1024
+	areaofeffect=8;
+	burst=3;
+	burstrate=.07;
+	soundstart=armsml2;
+	soundhit=lasrhit1;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-.1;
+	AlphaDecay=.5;
+
+	//startsmoke=1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:blueEMGhit;
+
+	[DAMAGE]
+		{
+		default=18;//12//6
+		Light=24;
+        BugLight=24;//16
+		Medium=12;
+        BugMedium=12;//9
+		Heavy=6;//4
+		BugHeavy=6;
+		Hovertank=21;//14
+		subs=0;
+		}
+	}
+
+[SUPERMISSILEBOMB]
+	{
+	ID=132;
+	name=Harpoon;
+	rendertype=1;
+	lineofsight=1;
+
+	model=toma2;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=5000;//3500//8400
+
+	burst=3;
+	burstrate=.3;
+	range=1700;
+	reloadtime=25;
+	weaponvelocity=615;
+	startvelocity=0;
+	weaponacceleration=149;
+	tolerance=6000;
+	areaofeffect=80;
+	metalpershot=0;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=70;
+	//smokedelay=.09;
+	//selfprop=1;
+	smoketrail=1;
+	Wobble=6000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.1;
+
+	[DAMAGE]
+		{
+		default=1400;
+		subs=0;
+		}
+	}
+
+[SVTOL_MISSILE]
+	{
+	ID=108;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=630;
+	reloadtime=3;
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=480;
+	startvelocity=250;//100
+	weaponacceleration=1500;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=2000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//44
+		Air=130;
+		Bladewing=130;
+		FlyingFortress=130;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+[SVTOL_MISSILE2]
+	{
+	ID=108;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=510;//510
+	reloadtime=3;//3//5
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=480;
+	startvelocity=250;//100
+	weaponacceleration=1500;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//44
+		Air=130;
+		Bladewing=130;
+		FlyingFortress=130;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+[corcarry_carriertargeting]
+{
+	name               = carriertargeting;
+	areaOfEffect       = 8;
+	collideFriendly    = false;
+	explosionGenerator = custom:NONE;
+	range              = 1170;
+	reloadtime         = 1.25;
+	renderType         = 4;
+	turret             = 1;
+	weaponVelocity     = 1500;
+
+	[DAMAGE]
+	{
+		default = 0;
+		subs=0;
+	}
+}
+

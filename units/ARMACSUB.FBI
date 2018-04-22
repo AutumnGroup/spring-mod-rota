@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	UnitName=ARMACSUB;
+	Version=1.2;
+	Side=ARM;
+	Objectname=ARMACSUB;
+	Designation=ARM-CSW2;
+	Name=Construction Sub;
+	Description=Builds Underwater Structures;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=7568;
+	BuildCostMetal=695;
+	MaxDamage=560;
+	EnergyUse=0.1;
+	BuildTime=16565;
+	WorkerTime=100;//225
+	BMcode=1;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=210;//120
+	RadarDistance=0;
+	stealth=1;
+	SoundCategory=ARM_CSUB;
+	EnergyStorage=50;
+	MetalStorage=50;
+	ExplodeAs=SUB_UNITEX;
+	SelfDestructAs=SUB_UNITEX;
+	Category=UNDERWATER NOTAIR SUB;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armacsub_dead;
+	GermanName=Verb. Konstr. U-Boot;
+	GermanDescription=Tech Level 2;
+	UnitNumber=173;
+	FrenchName=Ss-marin de constr. évolué;
+	Frenchdescription=Niveau Tech 2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Submarino Av. Constr.;
+	SpanishDescription=Nivel Tecn. 2;
+	ItalianName=Unità Sub di costr. Av.;
+	ItalianDescription=Tecnologia Livello 2;
+	canguard=1;
+	MaxVelocity=2.15;
+	BrakeRate=0.1;//.2
+	Acceleration=0.032;
+	TurnRate=256;
+	SteeringMode=1;
+	Builddistance=128;
+	ShootMe=1;
+	CanReclamate=1;
+	EnergyMake=8;
+	ActivateWhenBuilt=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATD3;
+	MinWaterDepth=40;
+	SonarDistance=500;
+	WaterLine=30;
+	Downloadable=1;
+	MetalMake=0;
+	SmoothAnim=1;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.15;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=3;
+	iconType=bigconstruction;
+	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=20 10 70;
+	collisionVolumeType = box;
+	collisionVolumeScales =30 70 70;
+	collisionVolumeOffsets = 0 -25 0;
+	
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

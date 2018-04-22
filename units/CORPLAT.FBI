@@ -1,0 +1,62 @@
+[UNITINFO]
+	{
+	UnitName=CORPLAT;
+	Version=1.2;
+	Side=CORE;
+	Objectname=CORPLAT;
+	Designation=FS-BP3;
+	Name=Seaplane Platform;
+	Description=Builds Seaplanes;
+	FootprintX=7;
+	FootprintZ=7;
+	BuildCostEnergy=3220;//5367
+	BuildCostMetal=783;//1305
+	MaxDamage=2000;
+	EnergyUse=0;
+	BuildTime=10051;//20102
+	WorkerTime=200;//400
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=228;//130
+	RadarDistance=0;
+	SoundCategory=CORE_SEAPLN_PLANT;
+	EnergyStorage=200;
+	MetalStorage=900;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category= NOTAIR NOTSUB ;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=wwwwwwwwCCCCCwwCCCCCwwCCCCCwwCCCCCwwCCCCCwwwwwwww;
+	Corpse=corplat_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	MetalMake=0;
+	MinWaterDepth=30;
+	MaxSlope=14;
+	//WaterLine=33;
+	NoShadow=1;
+	Ovradjust=1;
+	downloadable=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	iconType=factory;
+	CanBeAssisted=0;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=100 40 100;
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

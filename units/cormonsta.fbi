@@ -1,0 +1,79 @@
+[UNITINFO]
+	{
+	UnitName=CORMONSTA;
+	Version=3;
+	Side=CORE;
+	Objectname=CORMONSTA;
+	Designation=ATAS;
+	Name=Montros Tanker;
+	Description=Biomechanoid Assault Spider;
+	FootprintX=5;
+	FootprintZ=5;
+	BuildCostEnergy=67415;
+	BuildCostMetal=6874;
+	MaxDamage=10102;
+	MaxWaterDepth=12;
+	MaxSlope=24;
+	EnergyUse=0.7;
+	BuildTime=227561;
+	//WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	Activatewhenbuilt=1;
+	SightDistance=350;
+	RadarDistance=1500;
+	SoundCategory=KROGOTH;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=MONSTADIE;
+	SelfDestructAs=MONSTADIE;
+	Category=NOTAIR NOTSUB BUG;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=monsta_dead;
+	GermanName=Monsto Tanker;
+	GermanDescription=Verb. Angriffs Spinne;
+	UnitNumber=852741;
+	FrenchName=Monsto Tanker;
+	Frenchdescription=Araignée d'assaut évolué;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=1.5;
+	BrakeRate=0.352587891;
+	Acceleration=0.652587891;
+	TurnRate=500;
+	SteeringMode=1;
+	Mass=6000;
+	ShootMe=1;
+	EnergyMake=0.7;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=KROGOTH;
+	Weapon1=SLOW_BUGPLASMA;
+	Weapon2=MONSTA_MISSILE;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;//LOWVTOL
+	canattack=1;
+	NoChaseCategory=VTOL;
+	onoffable=1;
+	icontype=pod;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=70 60 70;
+	
+	[customParams] 
+	{
+		gaia=1;
+	}
+	}

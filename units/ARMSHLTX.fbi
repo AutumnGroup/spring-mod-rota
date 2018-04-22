@@ -1,0 +1,65 @@
+[UNITINFO] // Generated with TAS Modit v2.2 Beta
+{
+	name=Skybus Factory;
+	unitname=armshltx;
+	buildcostenergy=2124;//3540
+	buildcostmetal=658;//1096
+	buildtime=16104;
+	category=NOTAIR NOTSUB NOTSHIP;
+	description=Builds Infantry Transport;
+	footprintx=9;
+	footprintz=9;
+	maxdamage=3100;
+	objectname=ARMSHLTX;
+	side=ARM;
+	soundcategory=CORE_GANTRY;
+	tedclass=PLANT;
+	brakerate=0;
+	acceleration=0;
+	canmove=1;
+	maxvelocity=0;
+	maxslope=18;
+	turnrate=0;
+	yardmap=oooooooooooooooooooocccccoooocccccoooocccccoooocccccoooocccccoooocccccoooocccccoo;
+	Builder=1;
+	workertime=200;//300
+	energystorage=300;
+	energyuse=0;
+	metalstorage=100;
+	canstop=1;
+	idletime=1800;
+	idleautoheal=5;
+	
+	DamageModifier=0.25;
+	
+	sightdistance=350;
+	explodeas=LARGE_BUILDINGEX;
+	selfdestructas=LARGE_BUILDING;
+	maxwaterdepth=0;
+	corpse=ARMSHLT_DEAD;
+	smoothanim=1;
+	//buildpic=ARMSHLTX.DDS;
+	icontype=factory;
+	bmcode=0;
+	noautofire=0;
+	seismicsignature=0;
+	firestandorders=1;
+	standingfireorder=2;
+	canpatrol=1;
+	mobilestandorders=1;
+	standingmoveorder=1;
+	usebuildinggrounddecal=1;
+	CanBeAssisted=0;	
+	BuildingGroundDecalType=asphalt512c.dds;
+	buildinggrounddecalsizex=10;
+	buildinggrounddecalsizey=10;
+	buildinggrounddecaldecayspeed=0.01;
+	collisionVolumeType = box;
+	collisionVolumeScales =150 40 150;
+	collisionVolumeOffsets = 0 -10 0;
+	collisionVolumeTest = 0;
+	[SFXTypes]
+	{
+		explosiongenerator0=custom:YellowLight;
+	}
+}

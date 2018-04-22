@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	UnitName=ARMSEHAK;
+	Version=1.2;
+	Side=ARM;
+	Objectname=ARMSEHAK;
+	Designation=AWV-TA;
+	Name=Seahawk;
+	Description=Sonar Plane;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=7006;//20016
+	BuildCostMetal=275;//550
+	MaxDamage=640;//470
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=12;
+	BuildTime=22473;//44945
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=812;
+	SoundCategory=ARM_SEASONAR;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=HUGE_UNITEX_AIR;
+	SelfDestructAs=HUGE_UNIT_AIR;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Seaadler;
+	GermanDescription=Sonarflugzeug;
+	UnitNumber=246;
+	FrenchName=Seahawk;
+	Frenchdescription=Sonar Aéroporté;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Seahawk;
+	SpanishDescription=Sonar Aerotransportado;
+	ItalianName=Seahawk;
+	ItalianDescription=Sonar aerotrasportato;
+	canguard=1;
+	MaxVelocity=5.8;//9.7
+	BrakeRate=4;
+	Acceleration=0.06;
+	TurnRate=365;
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=60;//220
+	Scale=1;
+	BankScale=1;
+	EnergyMake=12;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	SonarDistance=1405;//1405//1005
+	downloadable=1;
+	altfromsealevel=1;
+	maxwaterdepth=255;
+	amphibious=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	//maxfuel=300;
+	//RefuelTime=8;
+	iconType=sonar;
+	MinAirBasePower=200;
+	canSubmerge=1;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=30 20 30;
+	collisionVolumeType=box;
+	collisionVolumeScales=30 15 30;
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

@@ -1,0 +1,17 @@
+[CorSupergun_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=corsupergun_dead;
+	footprintx=8;
+	footprintz=8;
+	height=55;
+	blocking=1;
+	hitdensity=100;
+	metal=46512;
+	damage=8480;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

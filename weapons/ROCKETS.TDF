@@ -1,0 +1,677 @@
+/* Rockets.tdf -- Rocket weapons */
+
+/* Allowed IDs = 120-139 */
+
+
+[KBOT_ROCKET]
+	{
+	ID=120;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	
+	//heightMod=1.25;
+
+	model=missile;
+
+	range=460;//400//500
+	reloadtime=5.0;//5.5
+	flighttime=3;
+	weapontimer=2;
+	weaponvelocity=250;
+	startvelocity=250;
+	weaponacceleration=120;
+	areaofeffect=32;//48
+	metalpershot=0;
+	wobble=500;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	burnblow=1;
+	//startsmoke=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=185;//160
+		subs=0;
+		}
+	}
+
+[CORKBOT_ROCKET]
+	{
+	ID=121;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	
+	//heightMod=1.25;
+
+	model=missile;
+
+	range=460;//400//700//500
+	flighttime=3;
+	reloadtime=4.91;//5.4
+	weapontimer=2;
+	weaponvelocity=250;//250
+	startvelocity=150;//250
+	weaponacceleration=100;//120
+	areaofeffect=32;//48
+	metalpershot=0;
+	wobble=500;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	burnblow=1;
+	//startsmoke=1;
+	//targetMoveError=.01;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	craterMult=.1;
+	craterBoost=.1;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=185;//160
+		subs=0;
+		}
+	}
+
+[ARMTRUCK_ROCKET]
+	{
+	name=Ballistic Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=tronmisl;
+
+	range=2400;
+	reloadtime=28;//10
+	//weapontimer=4;
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=192;
+	metalpershot=0;
+	
+	Trajectoryheight=1;
+	Wobble=2000;
+	turnrate=400;
+	//guidance=1;
+	//accuracy=3000;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	ProximityPriority=-0.5;
+
+	[DAMAGE]
+		{
+		default=1950;
+		subs=0;
+		}
+	}
+
+[CORTRUCK_ROCKET]
+	{
+	name=Heavy Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=corvrocket;
+
+	range=2400;
+	reloadtime=28;
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=192;//96
+	//edgeeffectiveness=.9;
+	metalpershot=0;
+	Wobble=2000;
+	//accuracy=0;
+	
+	Trajectoryheight=1;
+	turnrate=400;//400
+	//tolerance=4000;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	ProximityPriority=-0.5;
+
+	//interceptedbyshieldtype=8;
+
+	[DAMAGE]
+		{
+		default=1950;
+		subs=0;
+		}
+	}
+
+[CORHRK_ROCKET]
+	{
+	ID=126;
+	name=Rocket;
+	rendertype=1;
+	lineofsight=1;
+	//vlaunch=1;
+	turret=1;
+	Trajectoryheight=1.1;//1
+
+	model=rocket;
+
+	range=1000;
+	reloadtime=6;
+
+	//noautorange=1;
+	weapontimer=5;
+	flighttime=10;
+
+	weaponvelocity=260;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=96;//48
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	Wobble=4500;//5000
+	turnrate=1000;//4000
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//guidance=1;
+	//twophase=1;
+	tolerance=4000;
+	craterMult=.5;
+	craterBoost=.5;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=420;//700
+		subs=0;
+		}
+	}
+
+[CRBLMSSL]
+	{
+	name=CORE ICBM;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	vlaunch=1;
+
+	model=ballmiss;
+
+	range=32000;
+	reloadtime=240;//180
+
+	//noautorange=1;
+	weapontimer=15;//13
+	flighttime=400;
+
+	weaponvelocity=350;
+	weaponacceleration=50;
+	startvelocity=5;
+	turnrate=2500;
+	areaofeffect=1500;//512//1024
+	//edgeeffectiveness=0.01;//.25
+
+	energypershot=230000;//180000
+	metalpershot=2000;
+
+	stockpile=1;
+	targetable=1;
+	commandfire=1;
+	//cruise=1;
+
+	soundstart=misicbm1;
+	soundhit=xplomed4;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//propeller=1;
+
+	//twophase=1;
+	//guidance=1;
+	tolerance=4000;
+	explosiongenerator=custom:LONDON;
+	interceptedbyshieldtype=16;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=10000;
+		base=20000;
+		subs=1000;
+		}
+	}
+
+[NUCLEAR_MISSILE]
+	{
+	ID=122;
+	name=Nuclear Missile;
+	rendertype=1;
+	lineofsight=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	vlaunch=1;
+
+	model=ballmiss;
+
+	range=32000;
+	reloadtime=240;//180
+
+	//noautorange=1;
+	weapontimer=15;//13
+	flighttime=400;
+
+	weaponvelocity=350;
+	weaponacceleration=50;
+	startvelocity=5;
+	turnrate=2500;
+	areaofeffect=1500;//512//1024
+	//edgeeffectiveness=0.01;//.25
+
+	energypershot=230000;//180000
+	metalpershot=2000;
+
+	stockpile=1;
+	targetable=1;
+	commandfire=1;
+	//cruise=1;
+
+	soundstart=misicbm1;
+	soundhit=xplomed4;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//propeller=1;
+
+	//twophase=1;
+	//guidance=1;
+	tolerance=4000;
+	explosiongenerator=custom:LONDON;
+	interceptedbyshieldtype=16;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=10000;
+		base=20000;
+		subs=1000;
+		}
+	}
+
+
+[ARMMSHIP_ROCKET]
+	{
+	ID=128;
+	name=Rocket;
+	rendertype=1;
+	lineofsight=1;
+	vlaunch=1;
+
+	model=rocket;
+
+	range=2630;//1770//2630
+	reloadtime=12;
+
+	//noautorange=1;
+	weapontimer=1;//5
+	flighttime=10;
+
+	weaponvelocity=400;
+	weaponacceleration=40;
+	//turnrate=24384;
+	turnrate=6000;
+	areaofeffect=215;//230 96
+	edgeeffectiveness=.50;
+	metalpershot=0;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//twophase=1;
+	//guidance=1;
+	tracks=1;
+	tolerance=4000;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=900;
+		subs=0;
+		}
+	}
+
+[CORMSHIP_ROCKET]
+	{
+	ID=130;
+	name=Rocket;
+	rendertype=1;
+	lineofsight=1;
+	vlaunch=1;
+
+	model=corshiprckt1;
+
+	range=1940;//1300//1830
+	reloadtime=9.5;
+
+	//noautorange=1;
+	weapontimer=2;//5
+	flighttime=10;
+
+	weaponvelocity=400;
+	weaponacceleration=40;
+	//turnrate=24384;
+	turnrate=1000;
+	areaofeffect=48;//230 96
+	edgeeffectiveness=.50;
+	metalpershot=0;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//twophase=1;
+	//guidance=1;
+	tracks=1;
+	tolerance=4000;
+
+	//startsmoke=1;
+	//avoidfriendly=0;
+	//collidefriendly=0;
+
+	// TESTING CRAP
+	interceptedbyshieldtype=8;
+
+	[DAMAGE]
+		{
+		default=1050;//900
+		subs=0;
+		}
+	}
+
+
+[VTOL_ROCKET]
+	{
+	ID=135;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=450;//450
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=350;
+	startvelocity=100;
+	weaponacceleration=181;
+	metalpershot=0;
+
+	turnrate=5680;//7680
+	areaofeffect=48;
+
+	soundstart=rocklit3;
+	soundhit=explode;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+	[DAMAGE]
+		{
+		default=115;//145//125//105
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+[VTOL_ROCKET2]
+	{
+	ID=136;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=450;//450
+	reloadtime=2;
+	weapontimer=5;
+	weaponvelocity=350;
+	startvelocity=250;
+	weaponacceleration=131;
+	metalpershot=0;
+
+	turnrate=4680;//7680
+	areaofeffect=48;
+
+	soundstart=rocklit3;
+	soundhit=explode;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+	[DAMAGE]
+		{
+		default=115;//145//125//105
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+[MINRANGE_TRUCK_ROCKET]
+	{
+	name=Minimum Range;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=tronmisl;
+
+	range=1000;
+	reloadtime=20;//10
+	weapontimer=4;
+	weaponvelocity=350;//250
+	startvelocity=50;//250
+	weaponacceleration=150;//120
+	areaofeffect=192;
+	metalpershot=0;
+	
+	Trajectoryheight=1;
+	Wobble=2000;
+	turnrate=400;
+	//guidance=1;
+	//accuracy=3000;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=1950;
+		subs=0;
+		}
+	}
+
+[MINRANGE_SHIP_ROCKET]
+	{
+	ID=121;
+	name=MINIMUM RANGE;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=toma2;
+
+	range=1000;//2800//2630
+	reloadtime=7;//10//14
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=96;
+	metalpershot=0;
+	
+	Trajectoryheight=.8;//.6
+	Wobble=2000;
+	turnrate=400;
+	accuracy=0;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//interceptedbyshieldtype=8;
+
+	[DAMAGE]
+		{
+		default=1650;
+		ships=2475;
+		subs=0;
+		}
+	}

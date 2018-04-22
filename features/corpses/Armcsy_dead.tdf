@@ -1,0 +1,35 @@
+[armcsy_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armcsy_dead;
+	footprintx=7;
+	footprintz=12;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=686;
+	damage=26000;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[corcsy_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=cor_corpses;
+	object=corcsy_dead;
+	footprintx=7;
+	footprintz=12;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=657;
+	damage=26000;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

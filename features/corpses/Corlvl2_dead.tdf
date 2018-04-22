@@ -1,0 +1,40 @@
+[Corlvl2_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=Corlvl2_dead;
+	featuredead=Corlvl2_heap;
+	footprintx=8;
+	footprintz=8;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=1284;
+	damage=2267;//8800
+	reclaimable=1;
+	featurereclamate=smudge01;
+      seqnamereclamate=tree1reclamate;
+	}
+
+[Corlvl2_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=7x7b;
+	footprintx=8;
+	footprintz=8;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=648;
+	damage=1103;//4400
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+
+

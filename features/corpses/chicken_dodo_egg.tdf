@@ -1,0 +1,18 @@
+[chicken_dodo_egg]
+{
+  description=Egg;
+  blocking=0;
+  category=corpses;
+  damage=10000;
+  energy=0;
+  featurereclamate=SMUDGE01;
+  footprintx=1;
+  footprintz=1;
+  height=30;
+  hitdensity=999999;
+  metal=90;
+  object=chickeneggcrimson.s3o;
+  reclaimable=1;
+  seqnamereclamate=TREE1RECLAMATE;
+  world=All Worlds;
+}

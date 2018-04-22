@@ -1,0 +1,73 @@
+[GAME]
+{
+	Mapname=Talus;
+	Maphash=4022181503;
+	[modoptions]
+	{
+		MaxUnits=1000;
+		limitdgun=0;
+		ghostedbuildings=1;
+		fixedallies=0;
+		disablemapdamage=0;
+		maxspeed=3;
+		minspeed=0.3;
+		mission_name=none;
+		startoptions=normal;
+		teamcom=1;
+		mo_noshare=1;
+		stupid=0;
+		hilltime=8;
+		mo_queentime=40;
+		mo_maxburrows=40;
+		noe_mapping=1;
+		noe_many_ais_mapping=1;
+		noe_thinking_split=8;
+	}
+	StartPosType=2;
+	GameType=NOTA 1.80;
+    onlylocal=1;
+	MyPlayerName=BraveBugKiller;
+	IsHost=-1;
+	NumPlayers=1;
+	[PLAYER0]
+	{
+		Name=BraveBugKiller;
+		countryCode=gb;
+		Rank=2;
+		Spectator=0;
+		team=0;
+	}
+	[AI0]
+	{
+		Name=Bot;
+		ShortName=Bug: Normal;
+		Team=1;
+		Host=0;
+	}
+	[TEAM0]
+	{
+		TeamLeader=0;
+		AllyTeam=0;
+		RgbColor=0.784313725490196 0 0 ;
+		Side=CORE;
+		Handicap=0;
+	}
+	[TEAM1]
+	{
+		TeamLeader=0;
+		AllyTeam=1;
+		RgbColor=0.0274509803921569 0.12156862745098 0.490196078431373 ;
+		Side=ARM;
+		Handicap=0;
+	}
+	NumTeams=2;
+	[ALLYTEAM0]
+	{
+		NumAllies=0;
+	}
+	[ALLYTEAM1]
+	{
+		NumAllies=0;
+	}
+	NumRestrictions=0;
+}

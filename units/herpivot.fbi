@@ -1,0 +1,109 @@
+[UNITINFO]
+	{
+	UnitName=herpivot;
+	Version=1;
+	Side=MERC;
+	Objectname=spherebot.s3o;
+	Designation=HER-BM;
+	Name=Pivot;
+	Description=Mercenary Assault Leader;
+	iconType=star;
+	
+	FootprintX=3;
+	FootprintZ=3;
+	BuildTime=43845;
+	BuildCostEnergy=10000;
+	BuildCostMetal=1000;	
+	EnergyStorage=500;
+	MetalStorage=0;
+	EnergyUse=0;
+	MetalMake=0;
+	EnergyMake=20;
+	
+	MaxDamage=2000;//5400
+	idleautoheal=100;
+	mass=2999; // so it's transportable damnit
+	
+	SightDistance=650;
+	RadarDistance=300//2600;
+	SeismicSignature=0;
+	
+	MaxVelocity=3.6;
+	BrakeRate=0.15;
+	Acceleration=0.1;
+	TurnRate=800;
+	SteeringMode=2;
+	MaxWaterDepth=35;
+	MaxSlope=20;
+	TransportByEnemy=0;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.8;
+	idletime=320;
+
+	BMcode=1;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	
+	SoundCategory=ARM_COM;
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	
+	Category=NOTAIR NOTSUB NOTSHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Commander;
+	GermanDescription=Commander;
+	FrenchName=Commandeur;
+	Frenchdescription=Commandant;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=0;
+	
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	onoffable=1;
+	
+	ShootMe=1;
+	Builddistance=60;
+	CanReclamate=1;
+	
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=COMMANDER;
+	Upright=1;
+	SonarDistance=500;//400
+	
+	canattack=1;
+	Weapon1=ARMBCOM_EMG;
+	Weapon2=WARPBOOM;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	ActivateWhenBuilt=1;
+	norestrict=1;
+	Ovradjust=1;
+	
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=33;
+	trackOffset=0;
+	trackStrength=15;
+	trackStretch=1.5;
+	trackType=KbotTrack;
+
+	UnitRestricted=1;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=38 62 30;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:emg_shells;
+		explosiongenerator1=custom:bcommuzzle;
+		explosiongenerator2=custom:fusionfx;
+		explosiongenerator3=custom:warpexplosion;
+		}
+	}

@@ -1,0 +1,37 @@
+[CORMAK_DEAD]
+{
+  description=Wreckage;
+  blocking=1;
+  catagory=corcorpses;
+  featuredead=CORMAK_HEAP;
+  featurereclamate=smudge01;
+  footprintx=1;
+  footprintz=1;
+  height=10;
+  blocking=1;
+  hitdensity=23;
+  metal=50;
+  damage=163;
+  object=cormak_dead;
+  reclaimable=1;
+  seqnamereclamate=tree1reclamate;
+  world=all;
+}
+
+[CORMAK_HEAP]
+{
+  description=Metal Shards;
+  blocking=0;
+  category=heaps;
+  damage=180;
+  featurereclamate=smudge01;
+  footprintx=1;
+  footprintz=1;
+  hitdensity=4;
+  metal=25;
+  object=2x2d;
+  reclaimable=1;
+  seqnamereclamate=tree1reclamate;
+  world=all;
+}
+

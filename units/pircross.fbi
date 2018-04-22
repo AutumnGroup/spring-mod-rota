@@ -1,0 +1,110 @@
+[UNITINFO]
+{
+	Name=Crossbreed;
+	UnitName=pircross;
+	
+	//    Required Tags
+	BuildCostEnergy=6300;//7000
+	BuildCostMetal=495;//550
+	BuildTime=15000;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	Description=Heavy planetary transport;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=25000;
+	ObjectName=pircross.s3o;
+	Side=CORE;
+	SoundCategory=CORE_VTOL;
+	TEDClass=VTOL;
+	
+	//    Movement
+	BrakeRate=5;
+	Acceleration=0.08;
+	CanMove=1;
+	MaxVelocity=30;
+	MaxSlope=10;
+	TurnRate=380;
+	
+	//    Airplane Moventment
+	Cruisealt=300;
+	
+	//    Buildings
+	
+	//    Construction
+	Builder=0;
+	WorkerTime=0;
+	
+	//    Resources
+	EnergyMake=2;
+	EnergyStorage=0;
+	EnergyUse=10;
+	MetalStorage=0;
+	
+	//    Abilities
+	CanFly=1;
+	CanStop=1;
+	TransportCapacity=40;
+	TransportSize=8;
+	transportmaxunits=20;
+	transmaxunits=20;
+	TransportMass=60000;
+	unloadSpread=5;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=460;
+	
+	//    Weapons
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Corpse=armdrone_dead;
+	
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	Upright=1;
+	
+	//    Not Used By TASpring
+	bmcode=1;
+	noautofire=0;
+	unitnumber=1986;
+	firestandorders=0;
+	mobilestandorders=0;
+	standingmoveorder=1;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=VTOL_standby;
+	maneuverleashlength=1280;
+	bankscale=1;
+	canload=1;
+	moverate1=1;
+	PitchScale=1;
+	MoveRate2=2;
+	iconType=airnofightbig;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	HoldSteady=1;
+	MinAirBasePower=100000;
+	transportUnloadMethod=2;
+	LoadingRadius=600;//200
+	collide=0;
+	collisionVolumeType=ellipsoid;
+	modelCenterOffset=0 -5 -10;
+	collisionVolumeScales=55 50 90;
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:TRANSPORTENGINE;
+		explosiongenerator1=custom:TRANSPORTENGINE;
+		}
+	[customParams] 
+	{
+		fireproof=1;
+	}
+}

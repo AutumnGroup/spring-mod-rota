@@ -1,0 +1,64 @@
+[UNITINFO]
+	{
+	UnitName=ARMASP;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMASP;
+	Designation=ARM-SP1;
+	Name=Air Support Pad;
+	Description=Repairs and Refuels Aircraft;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=1510;//3510
+	BuildCostMetal=200;//255
+	MaxDamage=680;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=3953;//6953
+	MaxWaterDepth=1;
+	WorkerTime=200;//800//200
+	repairSpeed=200;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=350;//175//350
+	RadarDistance=0;
+	SoundCategory=AIRPLANT;
+	EnergyStorage=100;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=SPECIAL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=oooo oooo oooo oooo;
+	Corpse=armasp_dead;
+	GermanName=Luftfahrt-Reparaturset;
+	GermanDescription=Repariert Lufteinheiten automatisch;
+	UnitNumber=154;
+	FrenchName=Piste de réparations;
+	Frenchdescription=Répare automatiquement les avions;
+	SpanishName=Plat. Aérea Reparaciones;
+	SpanishDescription=Repara aviones automáticamente;
+	ItalianName=Piattaforma Aerei;
+	ItalianDescription=Ripara automaticamente i velivoli;
+	Builddistance=6;
+	EnergyMake=4;
+	buildangle=1024;
+	ActivateWhenBuilt=1;
+	//onoffable=1;
+	sortbias=0;
+	IsAirBase=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	Mass=30000;
+	idleautoheal=2;
+	iconType=landpad;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=60 30 60;
+	
+	}

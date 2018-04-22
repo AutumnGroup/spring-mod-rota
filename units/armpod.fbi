@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	UnitName=ARMPOD;
+	Version=3;
+	Side=ARM;
+	Objectname=ARMPOD;
+	Designation=ATAS;
+	Name=Pod;
+	Description=Montros Killer;
+	FootprintX=5;
+	FootprintZ=5;
+	BuildCostEnergy=33753;
+	BuildCostMetal=3500;
+	MaxDamage=12372;//8248
+	MaxWaterDepth=12;
+	EnergyUse=7.7;
+	BuildTime=55740;
+	MaxSlope=17;
+	WorkerTime=0;
+	BMcode=1;
+	//Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=800;
+	RadarDistance=1500;
+	SoundCategory=CORE_NECRO;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=PODDIE;
+	SelfDestructAs=ATOMIC_BLAST2;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armpod_dead;
+	GermanName=Pod;
+	GermanDescription=Monstro Killer;
+	UnitNumber=852456;
+	FrenchName=Pod;
+	Frenchdescription=Destructeur de Monstro;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=0.7;//.7
+	BrakeRate=0.152587891;
+	Acceleration=0.152587891;
+	TurnRate=256;
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=0.7;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=POD;//POD
+	Weapon1=ARMPOD_WEAPON;
+	//wpri_badTargetCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	//BadTargetCategory=VTOL;
+	canattack=1;
+	NoChaseCategory=VTOL;
+	onoffable=1;
+	ActivateWhenBuilt=1;
+	mass=20000;
+	iconType=pod;
+	idletime=300;
+	idleautoheal=90;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	//WorkerTime=500;
+	//CanReclamate=0;
+	//canRepair=1;
+	//canRestore=0;
+	//canReclaim=0;
+	//canAssist=0;
+	//BuildDistance=340;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=80 95 80;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:warpexplosion;
+		}
+	}

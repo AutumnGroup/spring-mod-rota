@@ -1,0 +1,56 @@
+[UNITINFO]
+	{
+	UnitName=scramerunit;
+	Version=1.2;
+	Side=CORE;
+	Objectname=scramerunit;
+	Designation=scramerunit;
+	Name=Scramer Unit;
+	Description=Area jammed by EMP detonation;
+	objectname=nothing.3do;
+	FootprintX=1;
+	FootprintZ=1;
+
+	YardMap=o;
+	BuildCostEnergy=1765;
+	BuildCostMetal=20;
+	MaxDamage=100000;
+	MaxWaterDepth=0;
+	MaxSlope=15;
+	EnergyUse=0;
+	EnergyMake=1;
+	BuildTime=4881;//6508
+	WorkerTime=10;
+	CanBeAssisted=0;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=32;
+	RadarDistance=0;
+	RadarDistanceJam=1400;
+	SoundCategory=MINE2;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=NOWEAPON;
+	SelfDestructAs=NOWEAPON;
+	Category=CORE NOTAIR NOTSUB NOTSHIP;
+	TEDClass=PLANT;
+
+	firestandorders=0;
+	StandingFireOrder=2;
+	CloakCost=0;
+	init_cloaked=1;
+	mincloakdistance=0;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	DefaultMissionType=Standby_Mine;
+	canattack=0;
+	selfdestructcountdown=1;
+	SmoothAnim=1;
+	activatewhenbuilt=1;
+	stealth=1;
+	}

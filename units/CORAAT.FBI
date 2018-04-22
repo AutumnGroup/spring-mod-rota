@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	UnitName=CORAAT;
+	Version=3.1;
+	Side=CORE;
+	Objectname=CORAAT;
+	Designation=LST120;
+	Name=Talwar;// really a sea slug//no its not
+	Description=Assault Transport;
+	FootprintX=8;
+	FootprintZ=8;
+	BuildCostEnergy=6965;//12050//8194
+	BuildCostMetal=1334;//1968//1668
+	MaxDamage=3400;
+	EnergyUse=12;
+	Buildtime=19040;//28000//22400
+	WorkerTime=799;
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1000;
+	losEmitHeight=50;
+	//radarEmitHeight=50;
+	//RadarDistance=2690;
+	SoundCategory=CORE_SHIP;
+	MetalStorage=100;
+	ExplodeAs=SMALL_SHIP;
+	SelfDestructAs=SMALL_SHIP;
+        Category=SHIP NOTAIR NOTSUB ;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	//Copyleft=M3G Unit Maker;
+	Corpse=CORAAT_dead;
+
+	//firestandorders=1;
+	//StandingFireOrder=2;
+	//mobilestandorders=1;
+	//StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=1.9;//1.80//2.5
+	BrakeRate=0.01;//.02
+	Acceleration=0.06;//.015
+	TurnRate=196;
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=10;
+	EnergyMake=12;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATS6;
+	MinWaterDepth=30;
+
+	// WEAPONS
+	Weapon1=RBU-M;
+	Weapon2=CORE_SHIPSAM;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=260;
+	WeaponMainDir2=0 -1 0;
+	MaxAngleDif2=260;
+
+	canload=1;
+	transportsize=21;
+	transportcapacity=21;
+	TransportMass=14500;
+
+	IsAirBase=1;
+	canattack=1;
+	ActivateWhenBuilt=1;
+	Floater=1;
+	WaterLine=4;
+	Ovradjust=1;
+	idletime=900;
+	idleautoheal=20;
+	iconType=aat;
+	SeismicSignature=6;
+	transportUnloadMethod=1;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=1.9;
+	collisionVolumeType = box;
+	collisionVolumeScales =35 60 200;
+	collisionVolumeOffsets = 0 -20 0;
+	collisionVolumeTest = 0;
+	}

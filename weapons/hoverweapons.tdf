@@ -1,0 +1,458 @@
+[CORSNAP_WEAPON]
+	{
+	ID=51;
+	name=Hovercraft Light Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	
+	//heightMod=1.1;
+
+	range=420;//240//420
+	reloadtime=3.2;//1.53
+	weaponvelocity=345;//170
+	areaofeffect=25;//32
+	soundstart=canlite3;
+	soundhit=xplosml3;
+	//MovingAccuracy=1200;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:TANKSHOT_Expl;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=145;//50//75
+		//ships=105;
+		Heavy=77;
+		BugHeavy=77;
+		subs=0;
+		}
+	}
+
+[CORSH_WEAPON]
+	{
+	ID=198;
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=310;//230
+	reloadtime=.8;
+	weaponvelocity=700;//400
+	areaofeffect=8;
+	burstrate=.2;
+	duration=.1;
+	soundtrigger=1;
+
+	soundstart=lasrfast;
+	soundhit=lashit;
+
+	firestarter=50;
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=1.25;
+	corethickness=0.35;
+	laserflaresize=10;
+	//targetMoveError=0.1;
+	//beamtime=0.12;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:FLASH1red;
+
+	[DAMAGE]
+		{
+		default=50;//55
+		Light=63;
+        BugLight=63;
+        BugLight=63;
+        BugLight=63;
+		Medium=38;
+        BugMedium=38;
+		Heavy=12;//23
+		BugHeavy=12;
+		ships=33;
+		subs=0;
+		}
+	}
+
+
+[CORMH_WEAPON]
+	{
+	name=Ballistic Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=cormhmsl;
+
+	range=960;
+	reloadtime=6;//10
+	weapontimer=6;
+	flighttime=4.2;
+	weaponvelocity=280;//350//250
+	startvelocity=150;//350//250
+	weaponacceleration=120;//150
+	areaofeffect=48;
+	metalpershot=0;
+	
+	Trajectoryheight=1.1;//1.0
+	Wobble=1500;//1000
+	turnrate=1000;//4000
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+	craterMult=.4;
+	craterBoost=.4;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=250;//300
+		Heavy=150;
+		BugHeavy=150;
+		ships=320;
+		subs=0;
+		}
+	}
+
+[CORMH2]
+	{
+	ID=54;
+	name=rocket;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-35;
+	model=cormhmsl;
+
+	range=960;//320//500//690//630//650//530
+	reloadtime=6;//2.57//2.25//2.05
+	weaponvelocity=250;//210//270//305
+	areaofeffect=48;//48//32
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+	MovingAccuracy=550;
+	craterMult=.4;
+	craterBoost=.4;
+	cegTag=flameyrocketfire;
+	myGravity=0.1;
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//startsmoke=1;
+	smoketrail=1;
+
+	[DAMAGE]
+		{
+		default=250;
+		subs=0;
+		}
+	}
+
+[CORAH_WEAPON]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	canAttackGround=0;
+
+	model=missile;
+
+	range=700;//600
+	reloadtime=3.6;//4.5
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=500;//450
+	weaponacceleration=-10;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+	//heightMod=1.4;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//toairweapon=1;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=56;//40//62//64//70
+		Air=111;//120//132//106
+		Bladewing=111;
+		subs=0;
+		}
+	}
+
+[ARMSH_WEAPON]
+	{
+	ID=195;
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	canAttackGround=0;
+
+	range=312;//210
+	reloadtime=.8;
+	weaponvelocity=450;//450
+	areaofeffect=8;
+	burstrate=.2;
+	duration=.1;
+	soundtrigger=1;
+
+	soundstart=lasrfast;
+	soundhit=lashit;
+
+	firestarter=50;
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=1.25;
+	corethickness=0.35;
+	laserflaresize=10;
+	//targetMoveError=0.1;
+	//beamtime=0.12;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:FLASH1red;
+
+	[DAMAGE]
+		{
+		default=53;//58
+		Light=66;
+        BugLight=66;
+		Medium=40;
+        BugMedium=40;
+		Heavy=13;//25
+		BugHeavy=13;
+		ships=33;
+		subs=0;
+		}
+	}
+
+[ARMANAC_WEAPON]
+	{
+	ID=50;
+	name=Hovercraft Light Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	
+	//heightMod=1.1;
+
+	range=420;//240//420
+	reloadtime=3.07;//1.53
+	weaponvelocity=350;//170
+	areaofeffect=26;//32
+	soundstart=canlite3;
+	soundhit=xplosml3;
+	//MovingAccuracy=1200;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:TANKSHOT_Expl;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=150;//50//75
+		//ships=110;
+		Heavy=75;
+		BugHeavy=75;
+		subs=0;
+		}
+	}
+
+[ARMAH_WEAPON]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=700;//600
+	reloadtime=3.6;//4.5
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=500;//450
+	weaponacceleration=-10;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+    //heightMod=1.4;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//toairweapon=1;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=56;//40//62//64//70
+		Air=111;//120//132//106
+		Bladewing=111;
+		subs=0;
+		}
+	}
+
+[ARMHOVER_ARTILLERY]
+	{
+	ID=58;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=950;
+	reloadtime=6.8;//7.05
+	weaponvelocity=358;//280
+	areaofeffect=64;
+	soundstart=cannhvy2;
+	soundhit=xplomed4;
+	accuracy=850;//600
+	//MovingAccuracy=1200;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	craterMult=.5;
+	craterBoost=.5;
+	impulsefactor=.7;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=350;//300
+		Medium=300;
+        BugMedium=300;
+		Heavy=200;
+		BugHeavy=200;
+		subs=0;
+		}
+	}
+
+[COR_HTORPEDO]
+	{
+	ID=34;
+	name=Depth Charge;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=590;//420;//400
+	reloadtime=6;
+	weapontimer=3;
+	weaponvelocity=107;//80
+	startvelocity=40;
+	weaponacceleration=40;//15	
+
+	turnrate=5000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	soundhit=xplodep2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+
+	[DAMAGE]
+		{
+		default=200;
+		subs=440;//250
+		}
+	}
+
+[ARM_HTORPEDO]
+	{
+	ID=34;
+	name=Depth Charge;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=590;//420;//400
+	reloadtime=6;
+	weapontimer=3;
+	weaponvelocity=90;
+	startvelocity=40;
+	weaponacceleration=30;	
+
+	turnrate=5000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	soundhit=xplodep2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+
+	[DAMAGE]
+		{
+		default=200;
+		subs=440;//250
+		}
+	}

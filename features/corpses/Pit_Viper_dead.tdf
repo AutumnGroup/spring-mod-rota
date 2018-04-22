@@ -1,0 +1,37 @@
+[Pit_Viper_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=Pit_Viper_dead;
+	featuredead=Pit_Viper_heap;
+	footprintx=5;
+	footprintz=5;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=140;
+	energy=0;
+	damage=311;
+	reclaimable=1;
+	featurereclamate=smudge03;
+	seqnamereclamate=tree1reclamate;
+	}
+[Pit_Viper_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=5x5d;
+	footprintx=5;
+	footprintz=5;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=69;
+	energy=0;
+	damage=189;
+	reclaimable=1;
+	featurereclamate=smudge03;
+	seqnamereclamate=tree1reclamate;
+	}

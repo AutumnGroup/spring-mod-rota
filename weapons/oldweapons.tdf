@@ -1,0 +1,1346 @@
+[Armlatnk_weapon]
+	{
+	ID=166;
+	name=Lightning Gun;
+	rendertype=7;
+	lineofsight=1;
+	turret=1;
+
+	range=280;//240
+	reloadtime=2.2;//1.55//1.7
+	weaponvelocity=400;
+	areaofeffect=64;//8
+	duration=10;
+	soundtrigger=1;
+	//heightMod=1.4;
+
+	soundstart=lghthvy1;
+	soundhit=lashit;
+
+	firestarter=50;
+
+	beamweapon=1;
+	rgbcolor=0 1 0.8;
+	rgbcolor2=1 1 1;
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	explosiongenerator=custom:LIGHTNING;
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=180;//200
+		Heavy=120;
+		BugHeavy=120;
+		subs=0;
+		}
+	}
+
+[Armlatnk_laser]
+	{
+	ID=195;
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=312;//210
+	reloadtime=1.3;
+	weaponvelocity=450;//450
+	areaofeffect=8;
+	burst = 3;
+	burstrate=.25;
+	duration=.05;
+	soundtrigger=1;
+
+	soundstart=lasrfast;
+	soundhit=lashit;
+
+	firestarter=50;
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=1.25;
+	corethickness=0.35;
+	laserflaresize=10;
+	//targetMoveError=0.1;
+	//beamtime=0.12;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:FLASH1red;
+
+	[DAMAGE]
+		{
+		default=43;//58
+		Light=54;
+        BugLight=54;
+		Medium=32;
+        BugMedium=32;
+		Heavy=11;//25
+		BugHeavy=11;
+		subs=0;
+		}
+	}
+
+[Armlatnk_MISSILE]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=650;//700//600//700
+	reloadtime=3.4;//4.5
+	weapontimer=5;
+	flighttime=1.6;
+	weaponvelocity=640;//540
+	startvelocity=450;//450
+	weaponacceleration=-10;
+	turnrate=13000;//14000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	//burst=2;
+	//burstrate=.6;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	craterMult=.1;
+	craterBoost=.1;
+	//startsmoke=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:MINIMISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=40;
+		Air=88;//88
+		Bladewing=88;
+		FlyingFortress=88;
+		subs=0;
+		}
+	}
+
+[CORVIPE_LASER]
+	{
+	ID=47;
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=610;//380
+	reloadtime=1;
+	energypershot=25;
+	weaponvelocity=800;
+	areaofeffect=8;
+	
+	soundstart=Lasrmas2;
+	soundhit=lasrhit1;
+
+	firestarter=80;
+	beamweapon=1;
+
+	tolerance=2000;
+
+	duration=.2;
+	//beamlaser=1;
+	thickness=1.5;
+	corethickness=0.75;
+	laserflaresize=10;
+	//targetMoveError=0.4;
+	//beamtime=0.15;
+	rgbcolor=0.2 1 0.2;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:FLASH1green; 
+
+	[DAMAGE]
+		{
+		default=195;
+		Heavy=165;
+		BugHeavy=165;
+		subs=0;
+		}
+	}
+
+[CORTRON_WEAPON]
+	{
+	ID=121;
+	name=Scrambler Missile;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	vlaunch=1;
+
+	model=tronmisl;
+
+	range=32000;
+	reloadtime=120;//10//6
+	weapontimer=11;//13
+	flighttime=400;
+	weaponvelocity=500;
+	startvelocity=50;
+	weaponacceleration=50;
+	areaofeffect=2800;
+
+	energypershot=45000;//40000
+	metalpershot=200;
+
+	stockpile=1;
+	commandfire=1;
+	targetable=1;
+	
+	turnrate=2500;
+
+	soundstart=misicbm1;
+	soundhit=tronthing;
+
+	paralyzer=1;
+	paralyzetime=30;
+	edgeeffectiveness=.5;
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	impulsefactor=0;
+	craterMult=0;
+	craterBoost=0;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	explosiongenerator=custom:TRON_LIGHTNING; 
+
+	[DAMAGE]
+		{
+		default=600;
+		Light=1200;
+        	BugLight=1200;
+		ships = 1400;
+		Air=1200;
+		scram=0;
+		subs=0;
+		}
+	}
+
+
+[CORTOAST_GUN]
+	{
+	ID=44;
+	name=Pop-up Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=1500;//885//1200
+	reloadtime=3.2;
+	weaponvelocity=450;//380
+	areaofeffect=105;
+	soundstart=cannhvy5;
+	soundhit=xplomed2;
+	//minbarrelangle=-40;
+	
+	accuracy=300;	
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:PLASMA_Expl;
+
+	[DAMAGE]
+		{
+		default=345;//295
+		Medium=295;
+        BugMedium=295;//olddefault
+		Heavy=196;
+		BugHeavy=196;
+		subs=0;
+		}
+	}
+
+[CORSUMO_WEAPON]
+	{
+	ID=174;
+	name=High Energy Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=525;//525//550
+	reloadtime=1.05;
+	energypershot=100;
+	weaponvelocity=600;
+	areaofeffect=12;
+	soundstart=lasrhvy3;
+	soundhit=lasrhit1;
+	firestarter=90;
+
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=2;
+	corethickness=.7;
+	laserflaresize=10;
+	duration=.4;
+	//targetMoveError=0.2;
+	//beamtime=0.15;
+	rgbcolor=0.2 1 0.2;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:FLASH1green; 
+
+	[DAMAGE]
+		{
+		default=330;
+		Heavy=280;
+		BugHeavy=280;
+		Air=260; // just like BA >.<
+		subs=0;
+		}
+	}
+
+[CORPLAS_WEAPON]
+	{
+	ID=138;
+	name=immolator;  
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+
+	range=560;//320  //fl=180 llt=300
+	reloadtime=.8;  //fl=.4 llt=.52
+	weaponvelocity=310;  //fl=300 llt=800
+	areaofeffect=140;//80
+	soundstart=cannon3;  //c
+	soundhit=xplosml4;  //C
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	craterMult=0;
+	craterBoost=0;
+	myGravity=0.125;
+	explosiongenerator=custom:IMMOLATOR_Expl;
+
+	[DAMAGE]
+		{
+		Default=70;  //100 //fl=12 llt=60
+		Light=90;
+        BugLight=90;
+		firethrower=10;
+		Medium=40;
+        BugMedium=40;
+		Heavy=20;
+		BugHeavy=20;
+		subs=0;
+		}
+	}
+
+[CORE_MORT]
+	{
+	ID=46;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-35;
+
+	range=800;//655//1146
+	reloadtime=2.175;//1.45//2.175//2.795
+	weaponvelocity=320;//290//400
+	areaofeffect=36;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	//minbarrelangle=-35;
+	accuracy=300;
+	movingaccuracy=500;
+
+	craterMult=0;
+	craterBoost=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//startsmoke=1;
+	myGravity=0.125;
+	explosiongenerator=custom:MARY_SUE;
+
+	[DAMAGE]
+		{
+		default=68;//105//55//45
+		Medium=47;
+        BugMedium=47;//45//34
+		Heavy=28;//23//34//20
+		BugHeavy=28;
+		subs=0;
+		}
+	}
+
+[CORLEVLR_WEAPON]
+	{
+	ID=172;
+	name=Heavy Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=600;//260//455
+	reloadtime=1.83;//1.83//3.66//2.8
+	weaponvelocity=330;//280
+	areaofeffect=84;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+
+
+	tolerance=2000;
+	
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:PLASMA_Expl;
+	impulsefactor=.7;
+	myGravity=0.125;
+	noselfdamage=1;
+	[DAMAGE]
+		{
+		default=330;
+		hovertank=260;
+		Medium=220;
+        BugMedium=220;
+		Heavy=147;
+		BugHeavy=147;
+		subs=0;
+		}
+	}
+
+[CORKROG_HEAD]
+	{
+	ID=149;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=1350;//700
+	reloadtime=7;
+	energypershot=2000;
+	weaponvelocity=1000;
+	areaofeffect=32;
+	targetMoveError=0.3;
+	beamlaser=1;
+	thickness=4;
+	beamtime=0.3;
+
+	soundstart=annigun1;
+	soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0 0.012 1;
+	rgbcolor2=1 1 1;
+
+	tolerance=5000;
+	thickness=4;
+	corethickness=0.95;
+	laserflaresize=23;
+	impactonly=1;
+
+	[DAMAGE]
+		{
+		default=3600;
+		subs=0;
+		}
+	}
+
+[CORKROG_FIRE]
+	{
+	ID=150;
+	name=Gauss Cannon;//now with exploding shells!!!
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+
+	range=800;//300
+	reloadtime=1.6;//1.6//1
+	weaponvelocity=700;//450
+	areaofeffect=82;//64
+	soundstart=Krogun1;
+	soundhit=xplomed2;
+	explosiongenerator=custom:HUGEPLASMA_Expl;
+
+	tolerance=500;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//startsmoke=1;
+	noselfdamage=1;
+	[DAMAGE]
+		{
+		default=1100;//598
+		Medium=877;
+        BugMedium=877;//658//480
+		Heavy=583;//438//320
+		BugHeavy=583;
+		subs=0;
+		}
+	}
+
+
+[CORKROG_ROCKET]
+	{
+	ID=126;
+	name=Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	Trajectoryheight=1.4;
+	//toairweapon=1;
+	burnblow=1;
+
+	model=RBU-M;
+
+	range=1500;//1850
+	reloadtime=1.5;
+
+	//noautorange=1;
+	weapontimer=3.27;
+	flighttime=3.27;
+
+	weaponvelocity=780;
+	startvelocity=80;
+	weaponacceleration=250;//250
+	turnrate=24000;
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=mercury_launch;
+	soundhit=mercury_impact;
+
+	Wobble=0;
+	turnrate=10000;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//guidance=1;
+	tracks=1;
+	//twophase=1;
+	tolerance=4000;
+	craterMult=0;
+	craterBoost=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+	impulsefactor=0;
+	explosiongenerator=custom:HUGEMISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=190;//220
+		Air=386;
+		subs=0;
+		}
+	}
+
+[CORFAST_WEAPON]
+	{
+	ID=161;
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=300;//180
+	reloadtime=.6;
+	weaponvelocity=610;//450
+	areaofeffect=8;
+	soundtrigger=1;
+
+	soundstart=lasrfast;
+	soundhit=lashit;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=1000;//1500
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=22;//47
+		Light=28;
+        BugLight=28;
+		Medium=14;
+        BugMedium=14;
+		Heavy=5;//10
+		BugHeavy=5;
+		ships=14;
+		subs=0;
+		}
+	}
+
+[CORBUZZ_WEAPON]
+	{
+	ID=84;
+	name=Bertha Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=5120;//3800
+	reloadtime=0.5;
+	weaponvelocity=900;
+	energypershot=2000;
+	areaofeffect=120;
+
+	soundstart=xplonuk4;
+	soundhit=xplonuk1;
+
+	firestarter=50;
+	accuracy=800;
+	//aimrate==2500;
+	tolerance=1000;//300
+//	//holdtime==1;
+
+	//explosiongaf=fx;
+	//explosionart=NUKE1;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplashlg;
+
+	//startsmoke=1;
+	explosiongenerator=custom:LRPC_Expl;
+	//explosiongenerator=custom:DRAGONGUN_Expl;
+	avoidFriendly=0;
+	avoidFeature=0;
+	CollideFriendly=0;
+	myGravity=0.125;
+
+	[DAMAGE]
+		{
+		default=1800;
+		subs=0;
+		}
+	}
+[CORAMPH_WEAPON1]
+	{
+	ID=159;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-35;
+
+	range=402;//230
+	reloadtime=1.9;
+	weaponvelocity=210;
+	areaofeffect=48;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	tolerance=5000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//startsmoke=1;
+	explosiongenerator=custom:MARY_SUE;
+
+	[DAMAGE]
+		{
+		default=80; //105
+		subs=0;
+		}
+	}
+
+[CORAMPH_WEAPON2]
+	{
+	ID=192;
+	name=High Energy Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=450;//300//525
+	reloadtime=1.55;
+	energypershot=100;
+	weaponvelocity=700;
+	areaofeffect=12;
+	soundstart=lasrhvy3;
+	soundhit=lasrhit1;
+	firestarter=90;
+	duration=.1;
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=1.5;
+	corethickness=0.5;
+	laserflaresize=10;
+	//targetMoveError=0.2;
+	//beamtime=0.15;
+	rgbcolor=0.2 1 0.2;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:FLASH1green;
+
+	tolerance=5000;
+
+	[DAMAGE]
+		{
+		default=150;
+		Heavy=115;//85%
+		BugHeavy=115;
+		subs=0;
+		}
+	}
+
+[ARMWAR_EMG]
+	{
+	ID=171;
+	name=E.M.G.;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=280;//255
+	reloadtime=.5;
+	weapontimer=1;
+	weaponvelocity=500;//300
+	sprayangle=512;//1024
+	areaofeffect=8;
+	burst=3;
+	burstrate=.07;
+	soundstart=armsml2;
+	soundhit=lasrhit1;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-.1;
+	AlphaDecay=.5;
+
+	//startsmoke=1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:blueEMGhit;
+
+	[DAMAGE]
+		{
+		default=23;//12//6
+		Light=30;
+        BugLight=30;//16
+		Medium=16;
+        BugMedium=16;//9
+		Heavy=8;//4
+		BugHeavy=8;
+		Hovertank=26;//14
+		subs=0;
+		}
+	}
+
+[ARMWAR_LCANNON]
+	{
+	ID=54;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-35;
+
+	range=255;
+	reloadtime=1.55;
+	weaponvelocity=200;
+	areaofeffect=48;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	MovingAccuracy=550;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:MARY_SUE;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=70;
+		Heavy=35;
+		BugHeavy=35;
+		subs=0;
+		}
+	}
+
+[ARMVULC_WEAPON]
+	{
+	ID=2;
+	name=Bertha Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=4096;//3080
+	reloadtime=0.25;
+	weaponvelocity=800;
+	energypershot=1000;//2000
+	areaofeffect=100;
+
+	soundstart=xplonuk4;
+	soundhit=xplonuk1;
+
+	accuracy=800;
+	//aimrate=2500;//2500
+	tolerance=5000;//300//3500
+//	//holdtime==1;
+
+	//explosiongaf=fx;
+	//explosionart=NUKE1;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplashlg;
+
+	//startsmoke=1;
+	explosiongenerator=custom:LRPC_Expl;
+	//explosiongenerator=custom:DRAGONGUN_Expl;
+	avoidFriendly=0;
+	avoidFeature=0;
+	CollideFriendly=0;
+	myGravity=0.125;
+
+	[DAMAGE]
+		{
+		default=1000;
+		subs=0;
+		}
+	}
+
+[ARMSNIPE_WEAPON]
+	{
+	ID=160;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=650;//700
+	reloadtime=15;//20
+	energypershot=0;
+	weaponvelocity=1610;//1000
+	areaofeffect=8;
+	
+	//heightMod=1.3;
+
+	soundstart=sniper_fire;
+	soundhit=xplolrg1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	firestarter=90;
+	duration=.02;
+	beamweapon=1;
+	thickness=4.8;
+	corethickness=0.43;
+	laserflaresize=10;
+	rgbcolor=1.0 0.2 0.2;
+	accuracy=50;
+	laserflaresize=10;
+	//targetMoveError=0.2;
+	explosiongenerator=custom:FLASH1blue;
+
+	[DAMAGE]
+		{
+		default=270;
+		Light=360;
+        BugLight=360;
+		Medium=240;
+       	BugMedium=240;
+		Heavy=96;//135
+		BugHeavy=96;//135
+		hovertank=340;
+		subs=0;
+		}
+	}
+
+[ARMMAV_WEAPON]
+	{
+	ID=190;
+	name=Gauss Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+	//model=minisabot_round;
+	
+	//heightMod=1.3;
+
+	range=570;//340//595
+	reloadtime=.8;
+	weaponvelocity=500;//350//480//610
+	areaofeffect=25;//8
+	soundstart=Mavgun2;
+	soundhit=xplomed3;//xplomed2
+
+	tolerance=300;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//startsmoke=1;
+	myGravity=0.125;
+	explosiongenerator=custom:MARY_LARGE;
+
+	[DAMAGE]
+		{
+		default=180;//320//220//200
+		Light=200;
+        BugLight=200;
+		Medium=136;
+        BugMedium=136;
+		Heavy=80;//110//100
+		BugHeavy=80;
+		subs=0;
+		}
+	}
+
+[ARMMANNI_WEAPON]
+	{
+	ID=175;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	thickness=4;
+	targetMoveError=0.3;
+	beamtime=0.2;
+
+	range=1400;//700//1250
+	reloadtime=7;//6
+	energypershot=1238;//1500
+	weaponvelocity=1000;
+	areaofeffect=32;
+	targetMoveError=0.5;
+
+	soundstart=annigun1;
+	soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0 0.012 1;
+	rgbcolor2=1 1 1;
+	thickness=3.5;
+	corethickness=0.75;
+	laserflaresize=20;
+
+	tolerance=5000;
+	explosiongenerator=custom:FLASH1blue;
+	//guidance=1;
+	impactOnly=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	[DAMAGE]
+		{
+		default=2080;//3200
+		subs=0;
+		}
+	}
+
+[ARMFLEA_WEAPON]
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=360;
+	reloadtime=.8;
+	weaponvelocity=400;
+	areaofeffect=8;
+	duration=.02;
+	soundtrigger=1;
+
+	soundstart=lasrfir1;
+	soundhit=lasrhit2;
+
+	tolerance=500;
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0 0.5059;
+	rgbcolor2=1 1 1;
+	thickness=1;
+	intensity=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=20;//5
+		Medium=10;
+        BugMedium=10;
+		Heavy=4;//4
+		BugHeavy=4;
+		subs=0;
+		}
+	}
+
+[ARMEMP_WEAPON_OLD]
+	{
+	ID=121;
+	name=Long Range EMP Missile;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=empmisl;
+
+	range=5000;//4096
+	reloadtime=180;//120
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=500;
+	startvelocity=0;
+	weaponacceleration=500;
+	areaofeffect=468;//768
+	
+
+	energypershot=80000;//60000
+	metalpershot=400;
+
+	//noautorange=1;
+	stockpile=1;
+	commandfire=1;
+	targetable=1;
+	
+	Trajectoryheight=1.4;//.6
+	turnrate=1000;
+
+	soundstart=misicbm1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+
+	impulsefactor=0;
+	paralyzetime=60;
+	paralyzer=1;
+	craterMult=0;
+	craterBoost=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//interceptedbyshieldtype=16;
+	explosiongenerator=custom:STUNNER_Expl;
+
+	[DAMAGE]
+		{
+		default=35000;
+		ships=20000;
+		scram=0;
+		BugLight=0;
+		BugMedium=0;
+		BugHeavy=0;
+		roost=0;
+		}
+	}
+
+[ARMEMP_WEAPON]
+	{
+	name=Long Range EMP Missile;
+	rendertype=1;
+	lineofsight=1;
+	vlaunch=1;
+
+	model=empmisl;
+
+	range=32000;
+	reloadtime=180;
+
+	//noautorange=1;
+	weapontimer=10;//8
+	flighttime=400;
+
+	weaponvelocity=450;
+	weaponacceleration=100;
+	startvelocity=5;
+	turnrate=3000;
+	areaofeffect=750;//568
+
+	energypershot=80000;
+	metalpershot=400;
+
+	stockpile=1;
+	targetable=1;
+	commandfire=1;
+	//cruise=1;
+
+	soundstart=misicbm1;
+	soundhit=tronthing;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//propeller=1;
+	//startsmoke=1;
+
+	impulsefactor=0;
+	paralyzetime=60;
+	paralyzer=1;
+	craterMult=0;
+	craterBoost=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	//twophase=1;
+	//guidance=1;
+	tolerance=4000;
+	//interceptedbyshieldtype=16;
+	explosiongenerator=custom:STUNNER_Expl;
+
+	[DAMAGE]
+		{
+		default=150000;
+		scram=0;
+		BugLight=0;
+		BugMedium=0;
+		BugHeavy=0;
+		roost=0;
+		}
+	}
+
+[ARMAMPH_WEAPON1]
+	{
+	ID=156;
+	name=Energy Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=360;//260
+	reloadtime=1.3;//1.6
+	weaponvelocity=500;
+	areaofeffect=8;
+
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+	firestarter=20;
+	beamweapon=1;
+	duration=.1;
+	//beamlaser=1;
+	thickness=1.25;
+	corethickness=0.35;
+	laserflaresize=10;
+	//targetMoveError=0.1;
+	//beamtime=0.12;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	rgbcolor=1 0.2 0.2;
+	explosiongenerator=custom:FLASH1red;
+
+	[DAMAGE]
+		{
+		default=44;//64
+		Light=52;
+        BugLight=52;
+		Medium=30;
+        BugMedium=30;
+		Heavy=10;//30
+		BugHeavy=10;
+		ships=29;
+		subs=0;
+		}
+	}
+
+[ARMAMPH_WEAPON2]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=654;
+	reloadtime=3.08;
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=650;
+	startvelocity=400;
+	weaponacceleration=-10;
+	turnrate=13000;//33000
+	areaofeffect=48;
+	metalpershot=0;
+	burnblow=1;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	craterMult=0;
+	craterBoost=0;
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:MINIMISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=25;//30//33
+		Air=76;//88//97
+		Bladewing=76;
+		FlyingFortress=76;
+		subs=0;
+		}
+	}
+
+[ARMAMPH_WEAPON3]
+	{
+	ID=120;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=554;//400//500
+	reloadtime=5.0;//5.5
+	weapontimer=2;
+	weaponvelocity=250;
+	startvelocity=250;
+	weaponacceleration=120;
+	areaofeffect=32;//48
+	metalpershot=0;
+	wobble=500;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=160;//120
+		subs=0;
+		}
+	}
+
+[ARMAMB_GUN]
+	{
+	ID=40;
+	name=Pop-up Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=1500;//910//1250
+	reloadtime=3.1;
+	weaponvelocity=450;//350
+	areaofeffect=95;
+	soundstart=cannhvy5;
+	soundhit=xplomed2;
+	//minbarrelangle=-35;
+
+	accuracy=300;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+
+	//startsmoke=1;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+
+	[DAMAGE]
+		{
+		default=355;//310
+		Medium=310;
+        BugMedium=310;
+		Heavy=206;
+		BugHeavy=206;
+		subs=0;
+		}
+	}
+
+
+
+
+

@@ -1,0 +1,112 @@
+[BUILDING_COLLAPSE]
+	{
+	name=rubble;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=80;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:building_small_collapse;
+
+	[DAMAGE]
+		{
+		default=300;
+		subs=0;
+		}
+	}
+
+[BUILDING_COLLAPSE2]
+	{
+	name=rubble;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=80;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:building_med_collapse;
+
+	[DAMAGE]
+		{
+		default=300;
+		subs=0;
+		}
+	}
+
+[BUILDING_COLLAPSE3]
+	{
+	name=rubble;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=80;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:building_large_collapse;
+
+	[DAMAGE]
+		{
+		default=300;
+		subs=0;
+		}
+	}
+
+
+[BUILDING_COLLAPSE4]
+	{
+	name=rubble;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=80;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:building_huge_collapse;
+
+	[DAMAGE]
+		{
+		default=300;
+		subs=0;
+		}
+	}

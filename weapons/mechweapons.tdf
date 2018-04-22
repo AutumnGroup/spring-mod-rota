@@ -1,0 +1,640 @@
+[SHORE_CANNON]
+	{
+	ID=220;
+	name=Shore Bombardment Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-35;
+
+	range=900;
+	reloadtime=2.15;//2.45
+	weaponvelocity=350;
+	areaofeffect=64;
+	soundstart=cannon1;
+	soundhit=xplomed3;
+	//minbarrelangle=-35;
+
+	accuracy=600;
+	MovingAccuracy=1400;
+	//startsmoke=1;
+	craterMult=.4;
+	craterBoost=.4;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=110;
+		subs=0;
+		}
+	}
+
+[volc1]
+	{
+	ID=250;
+	name=Rapid-Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=400;
+	reloadtime=0.5;
+	weapontimer=2;
+	weaponvelocity=450;
+	startvelocity=250;
+	weaponacceleration=120;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Volcfire;
+	soundhit=Volchit;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=105;
+		subs=0;
+		}
+	}
+
+[RAPTOR_ROCKET]
+	{
+	ID=121;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=500;//400//700//730//690
+	reloadtime=8.1;//3.7//6.1
+	weapontimer=2;
+	weaponvelocity=250;//250
+	startvelocity=10;//250
+	weaponacceleration=600;//120
+	areaofeffect=48;
+	metalpershot=0;
+	wobble=1000;
+	burst=4;
+	burstrate=.36;
+	
+	//heightMod=1.3;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//startsmoke=1;
+	//targetMoveError=.01;
+	craterMult=.1;
+	craterBoost=.1;
+	tolerance=1000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+
+	[DAMAGE]
+		{
+		default=100;
+		subs=0;
+		}
+	}
+
+[RAPTOR_MCANNON]
+	{
+	name=E.M.G.;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=325;
+	reloadtime=.6;
+	weapontimer=1;
+	weaponvelocity=500;
+	sprayangle=512;
+	areaofeffect=8;
+	burst=4;
+	burstrate=.07;
+	soundstart=ultraauto;
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=5000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	heightMod=1.1;
+
+	//startsmoke=1;
+	explosiongenerator=custom:FLASH1white;
+
+	[DAMAGE]
+		{
+		default=10;
+		Heavy=5;
+		BugHeavy=5;
+		subs=0;
+		}
+	}
+
+[RAPTOR_MAINGUN]
+	{
+	ID=56;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=500;
+	reloadtime=3.2;//6.5
+	weaponvelocity=330;
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	heightMod=1.1;
+
+	//startsmoke=1;
+	craterMult=.5;
+	craterBoost=.5;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	targetMoveError=0.1;
+	explosiongenerator=custom:MEDTANKSHOT_Expl;
+
+	[DAMAGE]
+		{
+		default=150;//254
+		Heavy=75;
+		BugHeavy=75;
+		}
+	}
+
+[CORCRABE_MISSILE]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=590;
+	reloadtime=3.5;//4.3
+	weapontimer=5;
+	flighttime=1.6;
+	weaponvelocity=650;
+	startvelocity=450;
+	weaponacceleration=-10;
+	turnrate=13500;//33000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+	craterMult=.1;
+	craterBoost=.1;
+	//startsmoke=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	canAttackGround=0;
+	//heightMod=1.1;
+
+	[DAMAGE]
+		{
+		default=43;
+		Air=99;
+		Bladewing=99;
+		subs=0;
+		}
+	}
+
+[COUGAR_LASER]
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=280;
+	reloadtime=.5;//.865//.6
+	weaponvelocity=600;
+	areaofeffect=8;
+	duration=.1;
+
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	tolerance=1000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=40;
+		Light=60;
+        BugLight=60;
+		Medium=25;
+        BugMedium=25;
+		Heavy=9;//18
+		BugHeavy=9;
+		ships=22;
+		subs=0;
+		}
+	}
+
+[COUGAR_ROCKETS]
+	{
+	name=Salvo Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile_tiny;
+
+	range=500;
+	reloadtime=6.6;//3.7//6.1
+	weapontimer=2;
+	weaponvelocity=250;//250
+	startvelocity=10;//250
+	weaponacceleration=600;//120
+	areaofeffect=48;
+	metalpershot=0;
+	wobble=1000;
+	burst=8;
+	burstrate=.1;
+
+	//guidance=1;
+	//tracks=1;
+	//turnrate=1000;
+
+	soundstart=lrm;
+	soundhit=xplosml2;
+	soundtrigger=1;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//startsmoke=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	tolerance=1000;
+
+	[DAMAGE]
+		{
+		default=45;
+		subs=0;
+		}
+	}
+
+[DRAKE_LIGHTNING]
+	{
+	ID=26;
+	name=Lightning Gun;
+	rendertype=7;
+	lineofsight=1;
+	turret=1;
+
+	range=280;
+	reloadtime=1.85;
+	weaponvelocity=400;
+	areaofeffect=8;
+	duration=10;
+	soundtrigger=1;
+
+	soundstart=lghthvy1;
+	soundhit=lashit;
+
+	firestarter=50;
+
+	beamweapon=1;
+	rgbcolor=0 1 0.776;
+	rgbcolor2=1 1 1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//startsmoke=1;
+	explosiongenerator=custom:LIGHTNING;
+
+	[DAMAGE]
+		{
+		default=240;
+		subs=0;
+		}
+	}
+
+[DRAKE_LASER]
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	thickness=0.9;
+	intensity=0.8;
+
+	range=280;
+	reloadtime=.4;
+	weaponvelocity=400;
+	areaofeffect=8;
+
+	soundstart=lasrfast;
+	soundhit=lashit;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=12;
+		Light=18;
+        BugLight=18;
+		hovertank=16;
+		Medium=8;
+        BugMedium=8;
+		Heavy=6;
+		BugHeavy=6;
+		ships=8;
+		subs=0;
+		}
+	}
+
+[MADCAT_LASER]
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=500;
+	reloadtime=1.4;
+	energypershot=25;
+	weaponvelocity=800;
+	areaofeffect=8;
+	
+	soundstart=Lasrmas2;
+	soundhit=lasrhit1;
+
+	firestarter=80;
+	beamweapon=1;
+	rgbcolor=0 1 0.259;
+	rgbcolor2=1 1 1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	tolerance=2000;
+
+	[DAMAGE]
+		{
+		default=140;
+		subs=0;
+		}
+	}
+
+[MADCAT_ROCKETS]
+	{
+	name=Salvo Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile_tiny;
+
+	range=500;
+	reloadtime=9.6;
+	weapontimer=2;
+	weaponvelocity=250;
+	startvelocity=10;
+	weaponacceleration=600;
+	areaofeffect=48;
+	wobble=6500;//1500
+	burst=15;
+	burstrate=.05;
+	//guidance=1;
+	tracks=1;
+	turnrate=5500;
+
+	soundstart=lrm;
+	soundhit=xplosml2;
+	soundtrigger=1;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=45;
+		subs=0;
+		}
+	}
+
+[MADFIREPLAS]
+	{
+	ID=138;
+	name=Immolator;  
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+
+	range=560;//320  //fl=180 llt=300
+	reloadtime=1.8;  //fl=.4 llt=.52
+	weaponvelocity=310;  //fl=300 llt=800
+	areaofeffect=140;//80
+	soundstart=cannon3;  //c
+	soundhit=xplosml4;  //C
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	craterMult=0;
+	craterBoost=0;
+	explosiongenerator=custom:IMMOLATOR_Expl;
+
+	[DAMAGE]
+		{
+		Default=70;  //100 //fl=12 llt=60
+		light=90;
+		firethrower=10;
+		Medium=40;
+		Heavy=20;
+		subs=0;
+		}
+	}	
+
+[ARMRAZ_GUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	range=715;//650//580
+	reloadtime=.08;
+	weapontimer=1;
+	weaponvelocity=1000;//700
+	sprayangle=512;
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	soundstart=ratatat;
+	soundhit=softblat;
+	soundtrigger=1;
+	tolerance=2500;
+
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	//toairweapon=1;
+	cylinderTargeting=0.15;//0.2
+	predictBoost=0.7;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=3;//3
+		Medium=2;
+        BugMedium=2;
+		Heavy=1;
+		BugHeavy=1;
+		Air=22;//16//20
+		Ships=1;
+		subs=0;
+		}
+	}
+
+
+[ARMRAZ_LASERSIGHT]
+	{
+	name=AA BEAM;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=0.05;
+	thickness=.5;
+	intensity=.5;
+	//toairweapon=1;
+	//paralyzer=1;
+
+	range=650;
+	reloadtime=.05;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	targetMoveError=0.05;
+
+	//soundstart=fryer2;
+	//soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=500;
+	corethickness=0;
+	soundtrigger=1;
+	SweepFire=0;
+	cylinderTargeting=0.15;//0.2
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=0;
+		subs=0;
+		}
+	}
+
+[COR_BLAZER]
+	{
+	ID=171;
+	name=Blazer;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=300;
+	reloadtime=1;
+	weapontimer=1;
+	weaponvelocity=500;//300
+	sprayangle=512;//1024
+	areaofeffect=8;
+	burst=3;
+	burstrate=.07;
+	soundstart=armsml2;
+	soundhit=lasrhit1;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.9 0.5 0.2;
+	Stages=4;
+	SizeDecay=-.1;
+	AlphaDecay=.5;
+
+	//startsmoke=1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:MINIOTA_PLAS;
+
+	[DAMAGE]
+		{
+		default=36;
+		light=48;
+		Medium=24;
+		Heavy=12;
+		Hovertank=42;
+		subs=0;
+		}
+	}

@@ -1,0 +1,79 @@
+[GAME]
+{
+	Mapname=Canyon_Redux-v01;
+	Maphash=2066767815;
+	[modoptions]
+	{
+		MaxUnits=500;
+		limitdgun=0;
+		ghostedbuildings=1;
+		fixedallies=0;
+		disablemapdamage=0;
+		maxspeed=9.2;
+		minspeed=0.3;
+		mission_name=xants-pd;
+		startoptions=noe;
+		teamcom=1;
+		mo_noshare=1;
+		stupid=0;
+		hilltime=8;
+		mo_queentime=40;
+		mo_maxburrows=40;
+		noe_mapping=0.5;
+		noe_many_ais_mapping=0;
+		noe_thinking_split=4;
+	}
+	StartPosType=2;
+	GameType=NOTA 1.80;
+    IsHost=1;
+    onlylocal=1;
+	MyPlayerName=AstonishedSpectator;
+	NumPlayers=1;
+	[PLAYER0]
+	{
+		Name=AstonishedSpectator;
+		countryCode=cz;
+		Rank=6;
+		Spectator=1;
+	}
+	[AI0]
+	{
+		Name=Bot3;
+		ShortName=Mission AI;
+		Team=1;
+		Host=0;
+	}
+	[AI1]
+	{
+		Name=Bot5;
+		ShortName=Mission AI;
+		Team=0;
+		Host=0;
+	}
+	[TEAM1]
+	{
+		TeamLeader=0;
+		AllyTeam=0;
+		RgbColor=0.588235294117647 0.0392156862745098 0.705882352941176 ;
+		Side=ARM;
+		Handicap=0;
+	}
+	[TEAM0]
+	{
+		TeamLeader=0;
+		AllyTeam=1;
+		RgbColor=1 1 0 ;
+		Side=ARM;
+		Handicap=0;
+	}
+	NumTeams=2;
+	[ALLYTEAM0]
+	{
+		NumAllies=0;
+	}
+	[ALLYTEAM1]
+	{
+		NumAllies=0;
+	}
+	NumRestrictions=0;
+}

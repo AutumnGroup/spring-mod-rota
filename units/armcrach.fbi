@@ -1,0 +1,57 @@
+[UNITINFO]
+	{
+	UnitName=ARMCRACH;
+	Version=3;
+	Side=ARM;
+	Objectname=ARMCRACH;
+	Designation=ARM-RFC;
+	Name=Spitter;
+	Description=Anti-Aircraft Machine Gun;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=820;//1500
+	BuildCostMetal=60;//110
+	MaxDamage=400;
+	MaxWaterDepth=0;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=1729;
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=550;
+	RadarDistance=0;
+	SoundCategory=LLT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNITEX;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=FORT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=oooo;
+	Corpse=armcrach_dead;
+	firestandorders=1;
+	StandingFireOrder=0;
+	canstop=1;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	//buildangle=0;
+	canattack=1;
+	Weapon1=ARM_ANTIAIR_MGUN;
+	OnlyTargetCategory1=VTOL;//LOWVTOL
+	idletime=2200;
+	idleautoheal=2;
+	iconType=mgun;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=25 20 25;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:machinegun_muzzle1;
+		}
+	}

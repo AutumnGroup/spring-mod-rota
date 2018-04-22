@@ -1,0 +1,111 @@
+[UNITINFO]
+{
+	Name=Skybus;
+	UnitName=corbtrans;
+	
+	//    Required Tags
+	BuildCostEnergy=6300;//7000
+	BuildCostMetal=855;//950
+	BuildTime=18000;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	Description=Infantry Transport;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=1800;
+	ObjectName=CORBTRANS;
+	Side=ARM;
+	SoundCategory=ARM_VTOL;
+	TEDClass=VTOL;
+	
+	//    Movement
+	BrakeRate=5;
+	Acceleration=0.15;
+	CanMove=1;
+	MaxVelocity=7;
+	MaxSlope=10;
+	TurnRate=380;
+	
+	//    Airplane Moventment
+	Cruisealt=135;//90
+	
+	//    Buildings
+	
+	//    Construction
+	Builder=0;
+	WorkerTime=0;
+	
+	//    Resources
+	EnergyMake=3;
+	EnergyStorage=0;
+	EnergyUse=3;
+	MetalStorage=0;
+	
+	//    Abilities
+	CanFly=1;
+	CanStop=1;
+	TransportCapacity=20;
+	TransportSize=1;
+	transportmaxunits=20;
+	transmaxunits=20;
+	TransportMass=10002;
+	unloadSpread=3;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=460;
+	
+	//    Weapons
+	weapon1=ARM_BTRANSGUN;
+	weapon2=ARM_BTRANSGUN;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	OnlyTargetCategory1=VTOL;
+	OnlyTargetCategory2=VTOL;
+	WeaponMainDir1=-1 0 0;
+	MaxAngleDif1=250;
+	WeaponMainDir2=1 0 0;
+	MaxAngleDif2=250;
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	Upright=1;
+	
+	//    Random
+	NoChaseCategory=NOTAIR;
+	bmcode=1;
+	noautofire=0;
+	//firestandorders=0;
+	//mobilestandorders=0;
+	//standingmoveorder=1;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=VTOL_standby;
+	maneuverleashlength=1280;
+	bankscale=1;
+	canload=1;
+	moverate1=1;
+	PitchScale=1;
+	MoveRate2=2;
+	iconType=airnofightbig;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	HoldSteady=1;
+	MinAirBasePower=100000;
+	transportUnloadMethod=2;
+	LoadingRadius=400;//200
+	collide=0;
+	collisionVolumeType=ellipsoid;
+	collisionVolumeScales=100 50 100;
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:TRANSPORTENGINE;
+		explosiongenerator1=custom:TRANSPORTENGINE;
+		}
+}

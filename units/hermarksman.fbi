@@ -1,0 +1,97 @@
+[UNITINFO]
+{
+	UnitName=hermarksman;
+	Version=1.2;
+	Side=MERC;
+	Objectname=hermarksman;
+	Designation=HER-CD4;
+	Name=Marksman;
+	Description=Mercenary Sniper Bot;
+	
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=10000;
+	BuildCostMetal=1000;
+	MaxDamage=850;//320
+	
+	MaxWaterDepth=22;
+	MaxSlope=14;
+	EnergyUse=1;
+	EnergyMake=13;
+	BuildTime=8045;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=650;//290//608
+	RadarDistance=0;
+	SoundCategory=ARM_KBOT;
+	EnergyStorage=1000;
+	MetalStorage=0;
+	ExplodeAs=MINIBANG_UNIT;
+	SelfDestructAs=MINISUIC_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=KBOT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=ARMSNIPE_dead;
+	GermanName=Shooter;
+	GermanDescription=Scharfschützen-Kbot;
+	UnitNumber=250;
+	FrenchName=Tireur;
+	Frenchdescription=Kbot Tireur d'Elite;
+	firestandorders=1;
+	StandingFireOrder=0;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Shooter;
+	SpanishDescription=Kbot francotirador;
+	ItalianName=Shooter;
+	ItalianDescription=Kbot cecchino;
+	canguard=1;
+	MaxVelocity=1.1;//1.1
+	BrakeRate=0.15;
+	Acceleration=0.1;
+	TurnRate=1216;
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=KBOTGOOD_MINI;
+	Upright=1;
+	canattack=1;
+	Weapon1=MARKSMAN_RIFLE;
+	OnlyTargetCategory1=NOTAIR;
+	downloadable=1;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	//OnlyTargetCategory1=NOTAIR;
+	NoChaseCategory=VTOL;
+	
+	canCloak=1;
+	CloakCost=10;
+	//CloakCostMoving=60;
+	mincloakdistance=120;
+	decloakonfire=0;
+	SeismicSignature=0;
+	
+	//for Spring:	
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=12;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+	idletime=650;
+	idleautoheal=15;
+	TransportByEnemy=0;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=30 60 30;
+	
+	iconType=star;
+}

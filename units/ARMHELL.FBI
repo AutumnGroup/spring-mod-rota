@@ -1,0 +1,128 @@
+[UNITINFO]
+	{
+	UnitName=ARMHELL;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMHELL;
+	Designation=HB-08;
+	Name=Hellfish;
+	Description=Attack Bomber;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=4963;//3777//4055//4136
+	BuildCostMetal=202;//120//145//165//168
+	MaxDamage=412;//196//256
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=0.7;
+	BuildTime=13132;//9753//10728//10943
+	WorkerTime=0;
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1000;//350
+	RadarDistance=0;
+	SoundCategory=ARM_GNDVTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_AIRUNITEX;
+	SelfDestructAs=SMALL_AIRUNIT;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Freedom Fighter;
+	GermanDescription=Jäger;
+	UnitNumber=31;
+	FrenchName=Libérator;
+	Frenchdescription=Chasseur;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Freedom Fighter;
+	SpanishDescription=Caza;
+	ItalianName=Freedom Fighter;
+	ItalianDescription=Caccia;
+	canguard=1;
+	BankScale=1;//1
+	EnergyMake=0.7;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	SonarDistance=0;
+	canattack=1;
+	Weapon1=ARM_HELL_BOMB;
+	Weapon2=ARM_HELL_MGUN;//VTOL_MGUN_ARM
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	//wpri_badTargetCategory=VTOL;
+	//BadTargetCategory=VTOL;
+	MoveRate1=8;
+	Ovradjust=1;
+	maxwaterdepth=255;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	//CanDropFlare=1;
+	//FlareReload=6;//4
+	//FlareEfficiency=0.1;
+	//FlareDelay=0.2;
+	//FlareDropVector=0 0 -1;
+	myGravity=.6;
+	WeaponMainDir1=0 -1 0.3;
+	WeaponMainDir2=0 .2 -1;
+	MaxAngleDif2=90;
+	
+	MaxVelocity=9;//10
+	BrakeRate=6;//6
+	Acceleration=0.55;//.35
+	TurnRate=512;//512//750
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=120;//160
+	maxElevator=.009;
+	maxAileron=.013;//.015//.01
+	maxRudder=.006;
+	maxBank=.65;
+	maxPitch=.4;
+	turnRadius=620;
+	
+	//FUEL
+	maxfuel=180;
+	RefuelTime=18;//6
+	WeaponFuelUsage1=70;//30
+	iconType=airbomb;
+	MinAirBasePower=200;
+	
+	collide=0;
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=13 13 35;
+	collisionVolumeType=box;
+	collisionVolumeScales=22 10 35;
+	
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=180;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=180;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=10;
+		unit_to_team_transfer_rate_custom_resource1=10;
+	}
+	}

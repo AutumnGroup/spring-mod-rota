@@ -1,0 +1,95 @@
+[UNITINFO]
+	{
+	UnitName=CORWALKS;
+	Version=1;
+	Side=CORE;
+	Objectname=CORWALKS;
+	Designation=DD-45;
+	Name=Enforcer;
+	Description=Walking Destroyer; // IS FAILURE
+	FootprintX=8;//4
+	FootprintZ=8;
+	BuildCostEnergy=20005;
+	BuildCostMetal=4150;
+	MaxDamage=4840;
+	EnergyUse=1.9;
+	BuildTime=13368;
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1277;//330
+	RadarDistance=2500;
+	SoundCategory=CORE_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTAIR NOTSUB ;
+	TEDClass=KBOT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armexcal_dead;
+	UnitNumber=131;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+
+	canguard=1;
+	MaxVelocity=2;//2.93
+	BrakeRate=0.01831;//0.018310547
+	Acceleration=0.049155273;//0.009155273
+	TurnRate=128;//256
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.3;
+	EnergyMake=1.9;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=TANKHOVER3;
+	//MinWaterDepth=12;
+	SonarDistance=800;//305
+	buildangle=16384;
+	canattack=1;
+
+	// WEAPONS
+	Weapon1=COR_ROY_MAINGUN;
+	Weapon2=COR_ROY_SECGUN;
+	Weapon3=ARM_SHIPTORPEDO;
+	Weapon4=ARM_SHIPTORPEDO;
+	Weapon5=CORE_SHIPFLAK;
+	Weapon6=CORE_SHIPFLAK;
+	Weapon7=ARM_SHIPSAM;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	OnlyTargetCategory7=VTOL;
+	NoChaseCategory=VTOL;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=270;
+	WeaponMainDir2=0 0 -1;
+	MaxAngleDif2=270;
+	WeaponMainDir3=-1 0 0;
+	MaxAngleDif3=180;
+	WeaponMainDir4=1 0 0;
+	MaxAngleDif4=180;
+	WeaponMainDir5=0 1 0;
+	MaxAngleDif5=160;
+	WeaponMainDir6=0 1 0;
+	MaxAngleDif6=160;
+	WeaponMainDir7=0 -1 0;
+	MaxAngleDif7=270;
+
+	ActivateWhenBuilt=1;
+	
+	Floater=0;
+	canhover=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=.5;
+	}

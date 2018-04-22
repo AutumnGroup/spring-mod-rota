@@ -1,0 +1,65 @@
+[CorGal_Laser]
+	{
+	name=Medium Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+	//model=minisabot_round;
+
+	range=520;
+	reloadtime=.8;
+	weaponvelocity=680;//350//480
+	areaofeffect=28;
+
+	//soundstart=CorGal_FIRE;
+	soundstart=Mavgun2;
+	soundhit=xplomed2;
+
+	tolerance=300;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:TANKSHOT_Expl;
+	[DAMAGE]
+		{
+		default=112;//150
+		Heavy=56;//75
+		BugHeavy=56;
+		subs=0;
+		}
+	}
+
+[CorGal_LRCannon]
+	{
+	name=Galactic Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=1250;//1500
+	reloadtime=3.36;//2.8
+	weaponvelocity=660;
+	areaofeffect=85;
+	soundstart=cannhvy5;
+	soundhit=xplomed2;
+	//holdtime==.6;
+
+	accuracy=100;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:PLASMA_Expl;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=360;//320
+		Medium=320;
+        BugMedium=320;
+		Heavy=206;
+		BugHeavy=206;
+		subs=0;
+		}
+	}
+

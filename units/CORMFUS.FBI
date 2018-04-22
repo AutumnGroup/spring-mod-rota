@@ -1,0 +1,60 @@
+[UNITINFO]
+	{
+	UnitName=CORMFUS;
+	Version=1;
+	Side=CORE;
+	Objectname=CORMFUS;
+	Designation=EF-8;
+	Name=Heavy Fusion Power Plant;
+	Description=Produces Energy;
+	FootprintX=8;
+	FootprintZ=8;
+	BuildCostEnergy=37865;
+	BuildCostMetal=4500;
+	MaxDamage=4000;
+	MaxWaterDepth=1;
+	MaxSlope=14;
+	EnergyUse=0;
+	BuildTime=94281;
+	//WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=367;//210
+	RadarDistance=0;
+	SoundCategory=CORE_FUS;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_NUKE;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=ENERGY;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo;
+	//Corpse=cormfus_dead;
+	GermanName=Fusionreaktor;
+	GermanDescription=Liefert Energie;
+	UnitNumber=106;
+	FrenchName=Réacteur nucléaire;
+	Frenchdescription=Produit de l'énergie;
+	SpanishName=Planta de Fusión;
+	SpanishDescription=Produce energía;
+	ItalianName=Generatore a Fusione;
+	ItalianDescription=Produce energia;
+	EnergyMake=1575;//1050;
+	buildangle=16384;
+	DamageModifier=0.25;
+	ActivateWhenBuilt=1;
+	onoffable=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	iconType=power;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=130 80 130;
+	
+	}

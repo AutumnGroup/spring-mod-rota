@@ -1,0 +1,73 @@
+[UNITINFO]
+	{
+	UnitName=ARMANGEL;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMANGEL;
+	Designation=AFD-S5;
+	Name=Archangel;
+	Description=High Altitude Spyplane;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=26066;//25555
+	BuildCostMetal=357;//350
+	MaxDamage=440;
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=4;
+	BuildTime=41644;//40827
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=900;
+	SoundCategory=ARM_VTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_AIRUNITEX;
+	SelfDestructAs=SMALL_AIRUNIT;
+	Category=VTOL NOTSUB NOTSHIP;
+	TEDClass=VTOL;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=19;
+	BrakeRate=9;
+	Acceleration=0.5;//1
+	TurnRate=800;
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=460;
+	turnRadius=700;
+	BankScale=1;
+	EnergyMake=4;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	CanDropFlare=1;
+	FlareSalvoSize=2;
+	FlareReload=.1;//4
+	FlareEfficiency=0.3;//.25
+	FlareDelay=0.1;
+	FlareDropVector=0 0 -1;
+	// no FUEL
+	iconType=airhighscout;
+	MinAirBasePower=199;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=15 15 25;
+	collisionVolumeType=box;
+	collisionVolumeScales=15 10 35;
+
+	}

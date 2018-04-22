@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+	UnitName=bug2;
+	Version=3;
+	Side=CORE;
+	Objectname=bug2;
+	Designation=AS;
+	Name=Delta Montro;
+	Description=Spitter Bug;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=6000;
+	BuildCostMetal=400;
+	MaxDamage=700;
+	MaxWaterDepth=0;//35
+        MaxSlope=20;
+	EnergyUse=0.0;
+	BuildTime=4000;
+	//WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=620;
+	RadarDistance=0;
+	SoundCategory=CORSCORP;		
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BUG_DIE;
+	SelfDestructAs=BUG_DIE;
+	Category= NOTAIR NOTSUB BUG ;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	//Corpse=coralpmo_dead;
+	GermanName=Parasite Warriors Bug;
+	GermanDescription=Parasite d'assaut;
+	UnitNumber=5435435;
+	FrenchName=Parasite Warriors Bug;
+	Frenchdescription=Parasite d'assaut;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	canhover=1;
+	MaxVelocity=2.5;//3.2
+	BrakeRate=0.152587891;
+	Acceleration=0.852587891;
+	TurnRate=990;
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=0.7;
+	Stealth=1;
+	decloakonfire=0;
+	mass=400;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BUGLARGEHOVER;
+	Weapon1=SPIKE;
+	Weapon2=SPIKE_AA;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=115;
+	WeaponMainDir2=0 .2 1;
+	MaxAngleDif2=150;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	canattack=1;
+	//waterline=1;
+	Mass=500;
+	iconType=kbotbig;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=38 32 38;
+	
+	[SFXTypes]
+	{
+		explosiongenerator0=custom:NONE;
+		explosiongenerator1=custom:dirt;
+	}
+	[customParams] 
+	{
+		gaia=1;
+		burnmofoburn=3;
+	}
+	}

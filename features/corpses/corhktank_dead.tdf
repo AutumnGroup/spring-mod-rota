@@ -1,0 +1,36 @@
+[corhktank_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=corhktank_dead;
+	featuredead=corhktank_heap;
+	footprintx=3;
+	footprintz=3;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=347;
+	damage=1200;
+	reclaimable=1;
+	featurereclamate=smudge01;
+      	seqnamereclamate=tree1reclamate;
+	}
+
+[corhktank_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3c;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=143;
+	damage=1200;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

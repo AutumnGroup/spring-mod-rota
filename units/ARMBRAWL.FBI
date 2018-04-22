@@ -1,0 +1,108 @@
+[UNITINFO]
+	{
+	UnitName=ARMBRAWL;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMBRAWL;
+	Designation=AFD-J17;
+	Name=Brawler;
+	Description=Gunship;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=4149;
+	BuildCostMetal=213;
+	MaxDamage=660;//420//920
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=0.8;
+	BuildTime=12110;
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=612;//350
+	RadarDistance=0;
+	SoundCategory=ARM_VTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=GUNSHIP_DEATH;
+	SelfDestructAs=BIG_UNIT;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Brawler;
+	GermanDescription=Kampfhubschrauber;
+	UnitNumber=15;
+	FrenchName=Frelon;
+	Frenchdescription=Hélicoptère de combat;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Brawler;
+	SpanishDescription=Helicóptero de combate;
+	ItalianName=Brawler;
+	ItalianDescription=Elicottero;
+	canguard=1;
+	MaxVelocity=5.2;//6.6
+	BrakeRate=4;
+	Acceleration=0.20;//.16
+	TurnRate=800;//800
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=150;//100//60
+	Scale=1;
+	BankScale=1;
+	EnergyMake=0.8;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	canattack=1;
+	Weapon1=VTOL_EMG;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	HoverAttack=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	// fuel
+	maxfuel=120;//180
+	RefuelTime=15;//5
+	WeaponFuelUsage1=4;
+	iconType=airbomb;
+	MinAirBasePower=199;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=13 10 25;
+	collisionVolumeType=box;
+	collisionVolumeScales=22 10 25;
+	
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=120;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=120;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=8;
+		unit_to_team_transfer_rate_custom_resource1=8;
+	}
+	}

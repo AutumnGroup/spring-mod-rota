@@ -1,0 +1,17 @@
+[armexcal_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armexcal_dead;
+	footprintx=6;
+	footprintz=12;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=302;
+	damage=35000;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

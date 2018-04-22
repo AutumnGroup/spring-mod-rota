@@ -1,0 +1,67 @@
+[UNITINFO]
+	{
+	UnitName=ARMRL;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMRL;
+	Designation=ARM-SRDS;
+	Name=Defender;
+	Description=Anti-Air Missile Tower;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=2940;//3000
+	BuildCostMetal=343;//79//350
+	MaxDamage=1160;//295//760
+	MaxWaterDepth=0;
+	MaxSlope=20;
+	EnergyUse=0;
+	BuildTime=7980;//8143
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=650;
+	RadarDistance=0;
+	SoundCategory=ARM_KBOT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=FORT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=ooooooooo;
+	Corpse=armrl_dead;
+	GermanName=Defender;
+	GermanDescription=Raketenturm;
+	UnitNumber=57;
+	FrenchName=Défensor;
+	Frenchdescription=Tourelle lance-missiles;
+	firestandorders=1;
+	StandingFireOrder=2;
+	canstop=1;
+	SpanishName=Defender;
+	SpanishDescription=Torre Lanzamisiles;
+	ItalianName=Defender;
+	ItalianDescription=Torretta missilistica;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	canattack=1;
+	Weapon1=ARMRL_MISSILE;
+	wpri_badTargetCategory=NOTAIR;
+	BadTargetCategory=NOTAIR;
+	OnlyTargetCategory1=VTOL;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	WeaponMainDir1=0 -1 0;
+	MaxAngleDif1=243;
+	iconType=antiairbig;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=55 80 55;
+	
+	}

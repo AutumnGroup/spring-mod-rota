@@ -1,0 +1,98 @@
+[UNITINFO]
+{
+	Name=Drone Carrier;
+	UnitName=cordcarry;
+	
+	//    Required Tags
+	BuildCostEnergy=7000;
+	BuildCostMetal=550;
+	BuildTime=10000;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL NOTAIR;
+	Description=Light Infantry Transport;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=1100;
+	ObjectName=CORDCARRY;
+	Side=CORE;
+	SoundCategory=CORE_VTOL;
+	TEDClass=VTOL;
+	
+	//    Movement
+	BrakeRate=0.05;
+	Acceleration=0.05;
+	CanMove=1;
+	MaxVelocity=4;
+	MaxSlope=10;
+	TurnRate=180;
+	
+	//    Airplane Moventment
+	Cruisealt=140;
+	
+	//    Buildings
+	
+	//    Construction
+	Builder=0;
+	WorkerTime=0;
+	
+	//    Resources
+	EnergyMake=10;
+	EnergyStorage=0;
+	EnergyUse=10;
+	MetalStorage=0;
+	
+	//    Abilities
+	CanFly=1;
+	CanStop=1;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=460;
+	
+	//    Weapons
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	Upright=1;
+
+	//WEapon
+	Weapon1=corcarry_carriertargeting;
+	
+	//   LOL
+	bmcode=1;
+	noautofire=0;
+	unitnumber=1985;
+	firestandorders=0;
+	mobilestandorders=0;
+	standingmoveorder=1;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=VTOL_standby;
+	maneuverleashlength=1280;
+	bankscale=1;
+	canload=1;
+	moverate1=1;
+	PitchScale=1;
+	MoveRate2=2;
+	iconType=airnofightbig;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	HoldSteady=1;
+	MinAirBasePower=100000;
+	collide=0;
+	hoverattack=1;
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:TRANSPORTENGINE;
+		explosiongenerator1=custom:TRANSPORTENGINE;
+		}
+}

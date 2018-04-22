@@ -1,0 +1,111 @@
+[UNITINFO]
+	{
+	UnitName=ARMEXCAL2;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMEXCAL2;
+	Designation=SL-D34;
+	Name=Crusader;
+	Description=Heavy Destroyer;
+	FootprintX=6;//4
+	FootprintZ=6;
+	BuildCostEnergy=10712;//10202
+	BuildCostMetal=2004;//1909
+	MaxDamage=3650;//4060
+	EnergyUse=2;
+	BuildTime=24034;//22890
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=800;//1277
+	SoundCategory=ARM_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_SHIP;
+	SelfDestructAs=SMALL_SHIP;
+	Category=SHIP NOTAIR NOTSUB ;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armexcal2_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+
+	canguard=1;
+	MaxVelocity=2.2;//1.9//2.2
+	BrakeRate=0.007155;//0.01431
+	Acceleration=0.098;//0.049155273
+	TurnRate=228;//190//186//256//162
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.6;
+	EnergyMake=5;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATS6;
+	MinWaterDepth=12;
+	buildangle=16384;
+	canattack=1;
+	onoffable=1;
+
+	// WEAPONS
+	RadarDistance=2500;//2500
+	losEmitHeight=50;
+	radarEmitHeight=50;
+	Weapon1=ARM_ROY2_MAINGUN;
+	Weapon2=ARM_ROY2_SECGUN;
+	Weapon3=ARM_SHIPCRAPTORPEDO;
+	Weapon4=ARM_DESTROYER_FLAK;
+	Weapon5=ARM_DESTROYER_FLAK;
+	Weapon6=ARM_ROYSAM;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	OnlyTargetCategory6=VTOL;
+	OnlyTargetCategory4=VTOL;
+	OnlyTargetCategory5=VTOL;
+	BadTargetCategory3=NOTSUB;
+	NoChaseCategory=VTOL;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=270;
+	WeaponMainDir2=0 0 -1;
+	MaxAngleDif2=270;
+	WeaponMainDir4=0 1 0;
+	MaxAngleDif4=180;
+	WeaponMainDir5=0 1 0;
+	MaxAngleDif5=180;
+	WeaponMainDir6=0 -1 0;
+	MaxAngleDif6=260;
+
+	ActivateWhenBuilt=1;
+	
+	//wsec_badTargetCategory=NOTSUB ;
+	//wsec_badTargetCategory=NOTSUB ;
+	Floater=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=900;
+	idleautoheal=15;
+	iconType=destroyer2;
+	SeismicSignature=8;
+	//CollisionSphereScale=.9;
+	SonarDistance=580;//305//600//630
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=1.9;
+
+	collisionVolumeType = box;
+	collisionVolumeScales =55 100 155;//45 90 150
+	collisionVolumeOffsets = 0 -30 -15;
+	collisionVolumeTest = 0;
+	[SFXTypes]
+		{
+		//explosiongenerator0=custom:smallrocketsmoke1;
+		explosiongenerator0=custom:smallrocketsmoke2;
+		}
+	}

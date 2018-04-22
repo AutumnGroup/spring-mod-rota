@@ -1,0 +1,18 @@
+[CORBLACKHY_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=CORBLACKHY_dead;
+	footprintx=6;
+	footprintz=18;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=3026;//8617
+	damage=66931;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+

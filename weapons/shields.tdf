@@ -1,0 +1,59 @@
+[BIGANTIROCKETREPULSOR]
+{
+	name=Flying fortress rocket repulsor;
+	weapontype=Shield;
+	
+	IsShield=1;
+	ShieldRepulser=1;
+	ExteriorShield=1;
+	VisibleShield=0;
+	VisibleShieldRepulse=1;
+
+	ShieldForce=10;
+	ShieldRadius=220;
+	
+	ShieldEnergyUse=20;
+	ShieldPower=10000;
+	ShieldStartingPower=1000;
+	ShieldPowerRegen=20;
+	ShieldPowerRegenEnergy=200;
+	
+	ShieldInterceptType=4;
+	
+	ShieldGoodColor=1.0 0.9 0.9;
+	ShieldBadColor=1.0 0.9 0.9;
+	ShieldAlpha=0.7;
+	visibleShieldHitFrames=15;
+}
+[GUIDEDMISSILESJAMMER]
+{
+	name=Guided missiles jammer;
+	weapontype=BeamLaser;
+	interceptor=4;
+	coverage=300;
+	range=300;
+	
+	energyPerShot=1.0;
+	
+	//IsShield=1;
+	//ShieldRepulsor=1;
+	//ExteriorShield=1;
+	//VisibleShield=0;
+	//VisibleShieldRepulse=1;
+
+	//ShieldForce=0.01;
+	//ShieldRadius=150;
+	
+	//ShieldEnergyUse=0;
+	//ShieldPower=10000;
+	//ShieldStartingPower=1000;
+	//ShieldPowerRegen=20;
+	//ShieldPowerRegenEnergy=200;
+	
+	//ShieldInterceptType=4;
+	
+	//ShieldGoodColor=1.0 0.9 0.9;
+	//ShieldBadColor=1.0 0.9 0.9;
+	//ShieldAlpha=0.5;
+	//visibleShieldHitFrames=15;
+}

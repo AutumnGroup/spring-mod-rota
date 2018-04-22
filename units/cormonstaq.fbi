@@ -1,0 +1,85 @@
+[UNITINFO]
+	{
+	UnitName=CORMONSTAQ;
+	Version=3;
+	Side=CORE;
+	Objectname=CORMONSTAQ;
+	Designation=ATAS;
+	Name=Montros Queen;
+	Description=Biomechanoid Assault Spider;
+	FootprintX=6;//12
+	FootprintZ=6;
+	BuildCostEnergy=1400415;
+	BuildCostMetal=120874;
+	MaxDamage=100000;//50000//90000
+	MaxWaterDepth=12;
+	MaxSlope=40;
+	EnergyUse=0.7;
+	BuildTime=507561;
+	//WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	Activatewhenbuilt=1;
+	SightDistance=800;
+	RadarDistance=4000;
+	SoundCategory=KROGOTH;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=MONSTADIE;
+	SelfDestructAs=MONSTADIE;
+	Category= NOTAIR NOTSUB BUG ;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	//Corpse=cormonsta_dead;
+	GermanName=Monsto Tanker;
+	GermanDescription=Verb. Angriffs Spinne;
+	UnitNumber=852741;
+	FrenchName=Monsto Tanker;
+	Frenchdescription=Araignée d'assaut évolué;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=3;//1.5
+	BrakeRate=0.352587891;
+	Acceleration=0.152587891;
+	TurnRate=500;
+	SteeringMode=1;
+	mass=45000;//45000;
+	ShootMe=1;
+	idletime=50;//1000
+	idleautoheal=300;//100
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=MONTRO;
+	Weapon1=FAST_BUGPLASMAQ;
+	Weapon2=MONSTA_MISSILEQ;
+	Weapon3=HIGH_BUGPLASMAQ;
+	Weapon4=HIGH_BUGASTEROIDBEACON;
+	Weapon5=QUEENCRUSH;
+	candgun=1;
+	HighTrajectory=2;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;//LOWVTOL
+	canattack=1;
+	NoChaseCategory=VTOL;
+	onoffable=1;
+	icontype=pod;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=140 125 140;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:warpexplosion;
+		}
+	}

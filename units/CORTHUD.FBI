@@ -1,0 +1,93 @@
+[UNITINFO]
+	{
+	UnitName=CORTHUD;
+	Version=1;
+	Side=CORE;
+	Objectname=CORTHUD;
+	Designation=KA-PS6;
+	Name=Thud;
+	Description=Light Plasma Kbot;
+	FootprintX=1;
+	FootprintZ=1;
+	BuildCostEnergy=895;//661
+	BuildCostMetal=82;//67//87//82
+	MaxDamage=500;//555//800//455
+	MaxWaterDepth=12;
+	MaxSlope=14;
+	EnergyUse=0.6;
+	BuildTime=2050;//1971
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=430;//245
+	RadarDistance=0;
+	SoundCategory=COR_KBOT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=MINIBANG_UNIT;
+	SelfDestructAs=MINISUIC_UNIT;
+	Category=NOTSHIP NOTAIR NOTSUB ;
+	TEDClass=KBOT; 
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=corthud_dead;
+	GermanName=Thud;
+	GermanDescription=Artillerie-Kbot;
+	UnitNumber=142;
+	FrenchName=Pilonax;
+	Frenchdescription=Artillerie Kbot;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Thud;
+	SpanishDescription=Kbot de artillería;
+	ItalianName=Thud;
+	ItalianDescription=Kbot da artiglieria;
+	canguard=1;
+	MaxVelocity=1.03;//1.13
+	BrakeRate=0.183105469;
+	Acceleration=0.091552734;
+	TurnRate=999;
+	SteeringMode=2;
+	ShootMe=1;
+	EnergyMake=0.6;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=KBOTGOOD_MINI;
+	Upright=1;
+	canattack=1;
+	Weapon1=CORE_THUD;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	//OnlyTargetCategory1=NOTAIR;
+	Ovradjust=1;
+	//for Spring:
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=15;
+	trackOffset=0;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=KbotTrack;
+	idletime=650;
+	idleautoheal=15;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	Mass=300;
+	iconType=kbotmed;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=24 19 24;	
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:artbotmuzzle;
+		}
+	}

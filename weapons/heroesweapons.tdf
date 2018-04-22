@@ -1,0 +1,184 @@
+[HERFATBOY_LEVELER_LIKE_GUN]
+	{
+	name=Heavy Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=500;//600
+	reloadtime=1.83;
+	weaponvelocity=450;//330
+	areaofeffect=84;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+
+	tolerance=2000;
+	
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:PLASMA_Expl;
+	impulsefactor=1.0;
+	myGravity=0.125;
+	noselfdamage=1;
+	[DAMAGE]
+		{
+		default=330;
+		hovertank=260;
+		Medium=220;
+        BugMedium=220;
+		Heavy=147;
+		BugHeavy=147;
+		subs=0;
+		}
+	}
+	
+	
+[HERCLEAVER_LASER]
+	//derivated from COUGAR_LASER
+	{
+	name=Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=380;
+	reloadtime=.5;//.865//.6
+	weaponvelocity=600;
+	areaofeffect=8;
+	duration=.1;
+
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	tolerance=1000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+	{
+		default=40;
+		Light=60;
+		BugLight=60;
+		Medium=25;
+		BugMedium=25;
+		Heavy=9;//18
+		BugHeavy=9;
+		ships=22;
+		subs=0;
+	}
+}
+
+[HERCLEAVER_ROCKETS]
+	//derivated from COUGAR_ROCKETS
+	{
+	name=Salvo Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile_tiny;
+
+	range=500;
+	reloadtime=6.6;//3.7//6.1
+	weapontimer=2;
+	weaponvelocity=250;//250
+	startvelocity=10;//250
+	weaponacceleration=600;//120
+	areaofeffect=48;
+	metalpershot=0;
+	wobble=1000;
+	burst=8;
+	burstrate=.3;
+	accuracy=100.0;
+	sprayAngle=0.0;
+
+	//guidance=1;
+	//tracks=1;
+	//turnrate=1000;
+
+	soundstart=lrm;
+	soundhit=xplosml2;
+	soundtrigger=1;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=2;//1;
+
+	//startsmoke=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	tolerance=1000;
+
+	[DAMAGE]
+	{
+		default=90;//45;
+		subs=0;
+	}
+}
+
+[MARKSMAN_RIFLE]
+	{
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=650;//700
+	reloadtime=15;//20
+	energypershot=0;
+	weaponvelocity=1610;//1000
+	areaofeffect=8;
+	
+	//heightMod=1.3;
+	
+	burst=2;
+	burstrate=.1;
+
+	soundstart=sniper_fire;
+	soundhit=xplolrg1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	firestarter=95;
+	duration=.02;
+	beamweapon=1;
+	thickness=4.8;
+	corethickness=0.43;
+	laserflaresize=10;
+	rgbcolor=1.0 0.2 0.2;
+	accuracy=50;
+	laserflaresize=10;
+	//targetMoveError=0.2;
+	explosiongenerator=custom:FLASH1blue;
+
+	[DAMAGE]
+	{
+		default=270;
+		Light=360;
+		BugLight=360;
+		Medium=240;
+		BugMedium=240;
+		Heavy=135;
+		BugHeavy=135;
+		hovertank=340;
+		subs=0;
+	}
+}

@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	UnitName=CORROACH;
+	Version=1;
+	Side=CORE;
+	Objectname=CORROACH;
+	Designation=UV-2-AB;
+	Name=Roach;
+	Description=Crawling Bomb;
+	FootprintX=1;
+	FootprintZ=1;
+	BuildCostEnergy=2254;//5071//4057
+	BuildCostMetal=62;
+	MaxDamage=195;//98//195
+	MaxWaterDepth=112;
+	MaxSlope=32;
+	EnergyUse=5;
+	BuildTime=5340;//8899
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=175;//100
+	RadarDistance=0;
+	SoundCategory=ROACH;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=REALCRAWL_BLASTSML;
+	SelfDestructAs=REALCRAWL_BLAST;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=KBOT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	firestandorders=1;
+	StandingFireOrder=0;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=1.375;//set in script
+	BrakeRate=0.12;
+	Acceleration=0.1;
+	TurnRate=1370;
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=0.1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=CRAWLING_BOMB;//TANKDS2
+	canattack=1;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	kamikaze=1;
+	Ovradjust=1;
+	turnInPlace=0;
+	//turnInPlaceSpeedLimit=3;
+	kamikazedistance=25;//50//40
+	//CloakCost=5;
+	stealth=1;
+	//for Spring:
+	Mass=200;
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=13;
+	trackOffset=0;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=KbotTrack;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	SelfDestructCountdown=0.5;
+	iconType=crawlb;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=14 8 14;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:digdig;
+		explosiongenerator1=custom:jumpdig;
+		}
+	}

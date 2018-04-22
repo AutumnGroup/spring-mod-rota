@@ -1,0 +1,70 @@
+[UNITINFO]
+	{
+	UnitName=corlvl2;
+	Side=CORE;
+	Objectname=corlvl2;
+	Designation=CORE-ET-Bm2;
+	Name=Advanced Constructor;
+	Description=Builds all Level 2 and 3 Structures;
+	FootprintX=6;
+	FootprintZ=6;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=CNSTR;
+	SoundCategory=CORE_COM;
+
+	// Resources
+	EnergyMake=50;
+	EnergyUse=0;
+	MetalMake=2;
+	EnergyStorage=300;
+	MetalStorage=100;
+
+	// Construction
+	BuildDistance=1050;//1700
+	Builder=1;
+	WorkerTime=200;
+	ReclaimSpeed=67;
+	
+	//    Movement
+	BrakeRate=1.5;
+	MovementClass=TINY;
+	Acceleration=0;
+	CanMove=0;
+	MaxVelocity=0;
+	MaxSlope=12;
+	TurnRate=1;
+	CanStop=1;
+
+	// Build Info
+	BuildCostEnergy=73128;//60940
+	BuildCostMetal=2700;//3000//3600
+	MaxDamage=6880;
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	BuildTime=122560;//61280
+	canreclamate=1;
+
+	// LOS, Radar
+	SightDistance=1000;
+	RadarDistance=0;
+	
+	// Weapons
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	SelfDestructCountdown=5;
+	Corpse=corlvl2_dead;
+
+	// Random Crap
+	buildangle=2048;
+	norestrict=1;
+	Ovradjust=1;
+	ActivateWhenBuilt=1;
+	//onoffable=1;
+	SmoothAnim=1;
+	Upright=1;
+	Mass=300000;
+	iconType=nano2;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=80 200 80;
+	}

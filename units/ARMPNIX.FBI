@@ -1,0 +1,124 @@
+[UNITINFO]
+	{
+	UnitName=ARMPNIX;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMPNIX;
+	Designation=AFD-HAB;
+	Name=Phoenix;
+	Description=Heavy Strategic Bomber (Req Tech 2);
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=19659;//13106//12624//10708
+	BuildCostMetal=382;//369//313
+	MaxDamage=1620;//470//1770
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=1.8;
+	BuildTime=21042;//12064//18096//18458
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1000;//350
+	RadarDistance=0;
+	SoundCategory=ARM_VTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=HUGE_UNITEX_AIR;
+	SelfDestructAs=HUGE_UNIT_AIR;
+	Category=VTOL NOTSHIP;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Phoenix;
+	GermanDescription=Strategischer Bomber;
+	UnitNumber=53;
+	FrenchName=Phénix;
+	Frenchdescription=Bombardier stratégique;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Phoenix;
+	SpanishDescription=Bombardero;
+	ItalianName=Phoenix;
+	ItalianDescription=Bombardiere;
+	canguard=1;
+	MaxVelocity=5.5;//9.5//7//6.5
+	BrakeRate=4;
+	Acceleration=1.2;
+	TurnRate=600;
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=550;//450//510
+	Scale=1;
+	BankScale=1;
+	EnergyMake=1.8;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	canattack=1;
+	Weapon1=ARMADVBOMB;
+	NoChaseCategory=UNDERWATER;
+	altfromsealevel=1;
+	//Weapon2=ARMAIR2AIRLASER;
+	Weapon2=ARM_AIR2AIR_MGUN;
+	//Weapon3=DUMMY_FUELWEAPON;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	wsec_badTargetCategory=NOTAIR;
+	attackrunlength=280;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	myGravity=.55;//.7//.6
+	turnRadius=950;//1200
+	maxRudder=.006;
+	maxBank=.3;
+	maxPitch=.25;//.2
+	//Fuel
+	maxfuel=600;
+	RefuelTime=24;//8
+	WeaponFuelUsage1=1;
+	//WeaponFuelUsage3=980;
+	iconType=airhighalt;
+	MinAirBasePower=200;
+	
+	collide=0;
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=20 20 50;
+	collisionVolumeType=box;
+	collisionVolumeScales=45 13 50;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:CRASHNBURN;
+		explosiongenerator1=custom:PYRO_SUICIDE_Expl;
+		}
+	
+	[customParams] 
+	{		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=600;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=600;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=25;
+		unit_to_team_transfer_rate_custom_resource1=25;
+	}
+	}

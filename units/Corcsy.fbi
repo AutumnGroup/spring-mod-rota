@@ -1,0 +1,56 @@
+[UNITINFO]
+	{
+	UnitName=CORCSY;
+	Version=1;
+	Side=CORE;
+	Objectname=CORCSY;
+	Designation=COR-CSY001;
+	Name=Shipyard;
+	Description=Produces Ships;
+	FootprintX=12;
+	FootprintZ=18;
+	BuildCostEnergy=3093;//2325//3488//2093
+	BuildCostMetal=1314;//1460//2190//1314
+	MaxDamage=7230;//4760
+	EnergyUse=0;
+	BuildTime=20120;//10080//15120
+	WorkerTime=300;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=282;
+	RadarDistance=0;
+	EnergyStorage=200;
+	MetalStorage=440;
+	SoundCategory=SHIPYARD;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category= NOTAIR NOTSUB ;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC;
+	Corpse=corcsy_dead;
+	GermanName=Schlachtschiffwerft;
+	GermanDescription=Baut Schlachtschife;
+	UnitNumber=9021;
+	FrenchName=Chantier de navires capitaux;
+	Frenchdescription=Produit des navires capitaux;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canstop=1;
+	MetalMake=0;
+	MinWaterDepth=30;
+	WaterLine=22;
+	NoShadow=1;
+	iconType=factory;
+	CanBeAssisted=0;
+	
+	collisionVolumeType=box;
+	modelCenterOffset=0 -25 -10;
+	collisionVolumeScales=190 125 270;
+	}

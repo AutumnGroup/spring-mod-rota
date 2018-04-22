@@ -1,0 +1,208 @@
+[WEATHER_SNOW_STORM_Expl]
+{
+	usedefaultexplosions=0;	
+	[centersmoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 100, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.04, 0;
+			colorMap=0.99 0.99 0.99 0.1	0 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.9;
+			particleLife=5;
+			particleLifeSpread=150;
+			numParticles=3;
+			particleSpeed=6;
+			particleSpeedSpread=0.1;
+			particleSize=40;
+			particleSizeSpread=20;
+			emitRot=11400;
+			emitRotSpread=11400;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	[smokey1]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=490, 20, 0;
+			emitVector=-1, 0, 0;
+			gravity=0, -0.005, 0;
+			colorMap=0.85 0.8 0.90 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1200;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=380;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey2]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-30, 120, 460;
+			emitVector=0.2, 0, -1;
+			gravity=0, -0.005, 0;
+			colorMap=0.85 0.8 0.95 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1400;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=2000;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey3]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-30, 220, -60;
+			emitVector=0.2, 0, 1;
+			gravity=0, -0.005, 0;
+			colorMap=0.80 0.8 0.90 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1600;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=1500;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey4]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-490, 20, 0;
+			emitVector=1, 0, 0;
+			gravity=0, -0.005, 0;
+			colorMap=0.90 0.85 0.95 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1200;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=950;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey5]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=230, 20, -260;
+			emitVector=-0.2, 0, 1;
+			gravity=0, -0.005, 0;
+			colorMap=0.90 0.8 0.95 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1350;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=1640;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey6]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=130, 120, 160;
+			emitVector=-0.2, 0, -1;
+			gravity=0, -0.005, 0;
+			colorMap=0.85 0.8 0.90 0.85	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=1650;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.8;
+			particleSize=60;
+			particleSizeSpread=1350;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+
+}

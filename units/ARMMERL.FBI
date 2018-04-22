@@ -1,0 +1,97 @@
+[UNITINFO]
+	{
+	UnitName=ARMMERL;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMMERL;
+	Designation=ARM-MRL;
+	Name=Merl;
+	Description=Mobile Heavy Rocket Launcher;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=21413;//20012
+	BuildCostMetal=2534;//2368
+	MaxDamage=1580;//1380
+	MaxWaterDepth=12;
+	MaxSlope=16;
+	EnergyUse=0.5;
+	BuildTime=50592;//8592
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=410;//230
+	RadarDistance=0;
+	SoundCategory=ARM_VEHICLE;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armmerl_dead;
+	GermanName=Merl;
+	GermanDescription=Mobiler Raketen-Werfer;
+	UnitNumber=47;
+	FrenchName=Faucon;
+	Frenchdescription=Lance-roquettes mobile;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Merl;
+	SpanishDescription=Lanzacohetes móvil;
+	ItalianName=Merl;
+	ItalianDescription=Lanciarazzi mobile;
+	canguard=1;
+	
+	MaxVelocity=0.75;//1.2
+	maxReverseVelocity=0.45;
+	BrakeRate=0.027;
+	Acceleration=0.015;
+	TurnRate=300;
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=0.5;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=TANKSH3;
+	canattack=1;
+	Weapon1=ARMTRUCK_ROCKET;
+	Weapon2=MINRANGE_TRUCK_ROCKET;
+	//WeaponSlaveTo2=1;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	Ovradjust=1;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=120;
+
+	//for Spring:
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=40;
+	trackOffset=8;
+	trackStrength=10;
+	trackStretch=1;
+	trackType=VehTrack;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	iconType=scud;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=0.6;
+	mass=3001;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=46 24 68;
+	
+	}

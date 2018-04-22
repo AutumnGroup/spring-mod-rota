@@ -1,0 +1,289 @@
+
+[CLASS0]
+	{
+	Name=TANKSH3;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=12;
+	MaxSlope=18;//15//16
+	CrushStrength=120;//20
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30;  
+	}
+[CLASS1] // TANKS AND KBOTS USE THIS ONE
+	{
+	Name=TANKSH2;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=12;
+	MaxSlope=18;
+	CrushStrength=120;//20
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	}
+[CLASS2]
+	{
+	Name=BOATD3;
+	FootprintX=6;//3x3 subs
+	FootprintZ=6;
+	MinWaterDepth=40;
+	subMarine=1;
+	HeatMapping=1;//0;
+    heatMod=0.8;
+	heatProduced=200;
+	}
+[CLASS3]
+	{
+	Name=BOATD6;
+	FootprintX=16;//6x6 now 16x16 for battleships + battlecruisers
+	FootprintZ=16;
+	MinWaterDepth=20;
+	HeatMapping=1;//0;
+    heatMod=0.8;
+	heatProduced=200; 
+	}
+[CLASS4]
+	{
+	Name=BOATS4;
+	FootprintX=8;//4x4 now 8x8 cruisers
+	FootprintZ=8;
+	MinWaterDepth=15;
+	HeatMapping=1;//0;
+    heatMod=0.8;
+	heatProduced=200;
+	}
+[CLASS5]
+	{
+	Name=LARGE_MECH;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=12;
+	MaxSlope=38;
+	CrushStrength=120;//20
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	}
+[CLASS6]
+	{
+	Name=SPID3;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=16;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+
+[CLASS7]
+	{
+	Name=TANKHOVER3;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxSlope=18;
+	BadSlope=18;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30;  
+	}
+[CLASS8]
+	{
+	Name=HEAVYTANK;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=12;
+	MaxSlope=18;
+	CrushStrength=1200;//200//50
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	}
+[CLASS9]
+	{
+	Name=KBOTSTANDARD;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=12;
+	MaxSlope=30;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+[CLASS10]
+	{
+	Name=KBOTBAD;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=12;
+	MaxSlope=24;//32
+	CrushStrength=300;//50
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+[CLASS11]
+	{
+	Name=AMPHTANK;
+	FootprintX=3;//2
+	FootprintZ=3;//2
+	MaxWaterDepth=512;//256
+	MaxSlope=24;
+	MaxWaterSlope=255;
+	CrushStrength=120;//20
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	depthmod=0.015;
+	minHeight=20;
+	maxHeight=512;
+	maxScale=2;
+	}
+[CLASS12]
+	{
+	Name=KROGOTH;
+	FootprintX=5;
+	FootprintZ=5;
+	MaxWaterDepth=512;//256
+	MaxSlope=24;
+	CrushStrength=9000;//1500//150
+	HeatMapping=0; 
+	}
+[CLASS13]
+	{
+	Name=CRAWLING_BOMB;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxWaterDepth=1024;//256
+	subMarine=1;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	depthmod=0.03;
+	minHeight=20;
+	maxHeight=512;
+	maxScale=2;
+	}
+[CLASS14]
+	{
+	Name=KBOT_MINI;
+	FootprintX=1;//1;
+	FootprintZ=1;//1;
+	MaxWaterDepth=12;
+	MaxSlope=30;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+[CLASS15]
+	{
+	Name=KBOTGOOD_MINI;
+	FootprintX=1;
+	FootprintZ=1;
+	MaxWaterDepth=12;
+	MaxSlope=34;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+[CLASS16]
+	{
+	Name=COMMANDER;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxWaterDepth=512;//256
+	MaxSlope=38;
+	CrushStrength=720;//20
+	HeatMapping=0;
+    depthmod=0.03;
+	minHeight=20;
+	maxHeight=512;
+	maxScale=2;
+	}
+[CLASS17]
+	{
+	Name=POD;
+	FootprintX=5;
+	FootprintZ=5;
+	MaxWaterDepth=50;
+	MaxSlope=18;
+	CrushStrength=6000;//1000//150
+	HeatMapping=0; 
+	}
+[CLASS18]
+	{
+	Name=BOATS6;
+	FootprintX=6;//6x6 destroyers
+	FootprintZ=6;
+	MinWaterDepth=3;
+	HeatMapping=1;//0;
+    heatMod=0.8;
+	heatProduced=200; 
+	}
+[CLASS19]
+	{
+	Name=TANKHOVERBOT;
+	FootprintX=2;
+	FootprintZ=2;
+	MaxSlope=30;
+	BadSlope=30;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	}
+[CLASS20]
+	{
+	Name=BUGSMALLHOVER;
+	FootprintX=1;
+	FootprintZ=1;
+	MaxSlope=55;
+	BadSlope=55;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30;
+	}
+[CLASS21]
+	{
+	Name=BUGLARGEHOVER;
+	FootprintX=3;
+	FootprintZ=3;
+	MaxSlope=40;
+	BadSlope=40;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	CrushStrength=180;//20
+	HeatMapping=1;//0;
+    heatMod=0.2;
+	heatProduced=30; 
+	}
+[CLASS22]
+	{
+	Name=BUGULTRAHOVER;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxSlope=40;
+	BadSlope=40;
+	MaxWaterSlope=255;
+	BadWaterSlope=255;
+	CrushStrength=2100;//350//50
+	HeatMapping=1;//0;
+    heatMod=0.05;
+	heatProduced=30; 
+	}
+[CLASS23]
+	{
+	Name=MONTRO;
+	FootprintX=6;
+	FootprintZ=6;
+	MaxWaterDepth=255;
+	MaxSlope=40;
+	CrushStrength=9000;//1500//500
+	HeatMapping=0; 
+	}

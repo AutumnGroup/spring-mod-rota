@@ -1,0 +1,18 @@
+[CORBCRUS_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CORBCRUS_dead;
+	footprintx=6;
+	footprintz=18;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=2010;//6242
+	damage=30931;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+

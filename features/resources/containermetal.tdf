@@ -1,0 +1,25 @@
+[containermetal]
+	{
+	world=allworld;
+	description=Metal container;
+	category=container;
+	object=containermetal;	
+	BUILDPIC=containermetal.pcx;
+	featuredead=DragonTeeth_heap;
+
+	footprintx=1;
+	footprintz=1;
+	height=10;
+	blocking=1;
+	hitdensity=40;
+	metal=10;
+	damage=500;//4000
+	Mass=1000;
+	reclaimable=1;
+	autoreclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	
+    collisionVolumeType=cylY;
+	collisionVolumeScales=10 10 10;
+	}

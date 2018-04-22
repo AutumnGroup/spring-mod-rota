@@ -1,0 +1,64 @@
+[UNITINFO]
+	{
+	UnitName=CORALAB;
+	Version=1;
+	Side=CORE;
+	Objectname=CORALAB;
+	Designation=COR-KL2;
+	Name=Adv. Kbot Lab;
+	Description=Produces Kbots;
+	FootprintX=7;
+	FootprintZ=6;
+	BuildCostEnergy=2657;//3625
+	BuildCostMetal=934;//1972//1245
+	MaxDamage=3170;
+	MaxWaterDepth=0;
+	MaxSlope=14;
+	EnergyUse=0;
+	BuildTime=14000;
+	WorkerTime=300;//400
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=388;//222
+	RadarDistance=0;
+	SoundCategory=KBOTPLANT;
+	EnergyStorage=200;
+	MetalStorage=200;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=ooooooo ooooooo occccco ccccccc ccccccc oocccoo;
+	Corpse=coralab_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	buildangle=1024;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	
+	DamageModifier=0.25;
+	
+	// decals
+	UseBuildingGroundDecal=1;
+	BuildingGroundDecalType=asphalt512c.dds;
+	BuildingGroundDecalSizeX=7;
+	BuildingGroundDecalSizeY=7;
+	BuildingGroundDecalDecaySpeed=0.01;
+	iconType=factory;
+	CanBeAssisted=0;
+	collisionVolumeType = box;
+	collisionVolumeScales =117 45 100;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 0;
+	}

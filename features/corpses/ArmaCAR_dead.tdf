@@ -1,0 +1,18 @@
+[ArmaCAR_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ArmaCAR_dead;
+	footprintx=4;
+	footprintz=10;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=5652;
+	damage=31294;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+

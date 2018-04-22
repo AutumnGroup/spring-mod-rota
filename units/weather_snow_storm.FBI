@@ -1,0 +1,60 @@
+[UNITINFO]
+	{
+	UnitName=weather_snow_storm;
+	Version=1.2;
+	Side=CORE;
+	Objectname=weather_snow_storm;
+	Designation=weather_snow_storm;
+	Name=Weather Snow Storm;
+	Description=Envelopes enemies in snow in large area;
+	objectname=nothing.3do;
+	FootprintX=1;
+	FootprintZ=1;
+
+	YardMap=y;//o
+	BuildCostEnergy=1765;
+	BuildCostMetal=20;
+	MaxDamage=100000;
+	MaxWaterDepth=0;
+	MaxSlope=15;
+	EnergyUse=1;
+	EnergyMake=1;
+	BuildTime=4881;//6508
+	WorkerTime=10;
+	CanBeAssisted=0;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=32;
+	RadarDistance=0;
+	RadarDistanceJam=1400;
+	//SoundCategory=MINE2;
+	EnergyStorage=0;
+	MetalStorage=0;
+	//ExplodeAs=ARM_EMPMINE;
+	//SelfDestructAs=ARM_EMPMINE;
+	Category=CORE NOTAIR NOTSUB NOTSHIP;
+	TEDClass=PLANT;
+
+	firestandorders=0;
+	StandingFireOrder=2;
+	CloakCost=0;
+	init_cloaked=1;
+	mincloakdistance=0;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	DefaultMissionType=Standby;
+	canattack=1;
+	selfdestructcountdown=1;
+	SmoothAnim=1;
+	activatewhenbuilt=1;
+	stealth=1;
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:WEATHER_SNOW_STORM_Expl;
+		}
+	}

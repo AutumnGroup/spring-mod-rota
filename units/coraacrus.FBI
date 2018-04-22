@@ -1,0 +1,118 @@
+[UNITINFO]
+	{
+	UnitName=CORAACRUS;
+	Version=1;
+	Side=CORE;
+	Objectname=CORAACRUS;
+	Designation=AAC-115;
+	Name=Equalizer;
+	Description=Anti-Air Cruiser;
+	FootprintX=12;//4
+	FootprintZ=12;
+	BuildCostEnergy=21802;//19775//20764
+	BuildCostMetal=3964;//3595//3775
+	MaxDamage=5500;
+	EnergyUse=21;
+	BuildTime=60934;//65297//55800//58032
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1000;//330
+	losEmitHeight=70;
+	radarEmitHeight=70;
+	RadarDistance=3000;
+	SoundCategory=CORE_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_SHIP;
+	SelfDestructAs=SMALL_SHIP;
+	Category=SHIP NOTAIR NOTSUB ;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=coraacrus_dead;
+	UnitNumber=131;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	onoffable=1;
+
+	canguard=1;
+	MaxVelocity=2;//2
+	BrakeRate=0.009155;//0.01831
+	Acceleration=0.098;//0.009155273
+	TurnRate=195;
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.6;
+	EnergyMake=24;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATS4;
+	MinWaterDepth=12;
+	buildangle=16384;
+	canattack=1;
+
+	// WEAPONS
+	Weapon1=CORE_CRUSGUN;
+	//Weapon2=CORE_DOOMSDAY;
+	Weapon2=CORE_VLAUNCHSAM;
+	Weapon3=CORE_SHIPMGUN;
+	Weapon4=CORE_SHIPMGUN;
+	Weapon5=CORE_DESTROYER_FLAK;
+	Weapon6=CORE_DESTROYER_FLAK;
+	Weapon7=CORE_RAPIDSHIPSAM;
+	Weapon8=CORE_SUPERSHIPFLAK;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	OnlyTargetCategory3=VTOL;
+	OnlyTargetCategory4=VTOL;
+	OnlyTargetCategory5=VTOL;
+	OnlyTargetCategory6=VTOL;
+	OnlyTargetCategory7=VTOL;
+	OnlyTargetCategory8=VTOL;
+	NoChaseCategory=VTOL;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=270;
+	WeaponMainDir3=-1 0 0;
+	MaxAngleDif3=180;
+	WeaponMainDir4=1 0 0;
+	MaxAngleDif4=180;
+	WeaponMainDir5=0 1 0;
+	MaxAngleDif5=180;
+	WeaponMainDir6=0 1 0;
+	MaxAngleDif6=180;
+	WeaponMainDir7=0 -1 0;
+	MaxAngleDif7=260;
+	WeaponMainDir8=0 1 0;
+	MaxAngleDif8=180;
+
+	ActivateWhenBuilt=1;
+	
+	Floater=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=900;
+	idleautoheal=17;
+	iconType=coraacrus;
+	//seismictest
+	SeismicSignature=12;
+	//CollisionSphereScale=.9;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2;
+
+	collisionVolumeType = box;
+	collisionVolumeScales =50 80 240;
+	collisionVolumeOffsets = 0 -20 0;
+	collisionVolumeTest = 0;
+
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:LAUNCHTORPEDO_Expl;  // lauching a missile
+		}
+	}

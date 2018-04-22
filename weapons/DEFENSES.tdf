@@ -1,0 +1,1022 @@
+[CORFLAK_GUN]
+	{
+	ID=42;
+	name=Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1850;//700
+	reloadtime=1.2;//2.4
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=132;//120
+	edgeeffectiveness=0.1;//.9//.65
+	soundstart=canlite2;
+	soundhit=flakhit;//xplomed2
+
+	//minbarrelangle=-24;
+
+	accuracy=900;//200;//2200//1850//1500//1430
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=1;//.4
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+
+	color=1;
+	//startsmoke=1;
+	explosiongenerator=custom:FLAK_LARGEBURST_Expl;
+	impulsefactor=0;
+
+	[DAMAGE]
+		{
+		default=180;//130
+		Air=368;//460
+		FlyingFortress=24;//60
+		subs=0;
+		}
+	}
+
+[ARMFLAK_GUN]
+	{
+	ID=42;
+	name=Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1850;//700
+	reloadtime=0.96;//2.4
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=112;//120
+	edgeeffectiveness=0.1;//.9//.65
+	soundstart=canlite2;
+	soundhit=flakhit;//xplomed2
+
+	//minbarrelangle=-24;
+
+	accuracy=950;//200;//2200//1850//1500//1430
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=1;//.4
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	color=1;
+	//startsmoke=1;
+	explosiongenerator=custom:FLAK_BURST_Expl;
+	impulsefactor=0;
+
+	[DAMAGE]
+		{
+		default=160;//180
+		Air=322;//460
+		FlyingFortress=21;//60
+		subs=0;
+		}
+	}
+
+
+
+[Splinter_gun]
+	{
+	ID=190;
+	name=Splinter Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+	model=sabot_round;
+
+	range=710;
+	reloadtime=2.8;//1.4
+	weaponvelocity=620;
+	areaofeffect=8;
+	soundstart=Mavgun2;
+	soundhit=xplomed2;
+
+	tolerance=300;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:GAUSS_Expl;
+	noselfdamage=1;
+	[DAMAGE]
+		{
+		default=460;
+		Light=690;//460
+        BugLight=690;
+		Medium=690;
+        BugMedium=690;
+		Heavy=690;
+		BugHeavy=690;
+		hovertank=690;
+		ships=690;
+		Air=690;
+		subs=0;
+		}
+	}
+
+[BOXTURRET_ROCKET]
+	{
+	ID=121;
+	name=Ballistic Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=960;
+	reloadtime=1.0;
+	weapontimer=6;
+	flighttime=6;
+	weaponvelocity=350;//250
+	startvelocity=60;//250
+	weaponacceleration=150;//120
+	areaofeffect=48;
+	metalpershot=0;
+	
+	Trajectoryheight=1;
+	Wobble=9000;
+	turnrate=4000;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	craterMult=.1;
+	craterBoost=.1;
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:LITTLEBANG_expl; 
+
+	[DAMAGE]
+		{
+		default=220;//250
+		Heavy=110;//176
+		BugHeavy=110;
+		subs=0;
+		}
+	}
+
+[ARM_ANTIAIR_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	range=650;//550//500
+	reloadtime=.8;
+	weapontimer=1;
+	weaponvelocity=1000;//700
+	sprayangle=512;//512
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=8;
+	burstrate=.1;
+	soundstart=ratatat;
+	soundhit=softblat;
+	soundtrigger=1;
+
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	cylinderTargeting=0.2;
+	
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=5;//3
+		Air=20;//16
+		Bladewing=10;
+		subs=0;
+		}
+	}
+
+[CORE_ANTIAIR_MGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	//targetMoveError=.04;
+	range=650;//550//500
+	reloadtime=.8;
+	weapontimer=1;
+	weaponvelocity=1000;//850//700
+	sprayangle=512;//512
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=8;
+	burstrate=.1;
+	soundstart=ratatat;
+	soundhit=softblat;
+	soundtrigger=1;
+
+	beamweapon=1;
+	corethickness=0;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	cylinderTargeting=0.2;
+	
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=18;//52
+		Bladewing=10;
+		subs=0;
+		}
+	}
+
+[SPIT3G_MISSILE]
+	{
+	ID=107;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+	Trajectoryheight=1.4;
+	burnblow=1;
+
+	model=missile;
+
+	range=900;//700//780
+	reloadtime=5;
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=152;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+	edgeeffectiveness=1;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=65000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	//startsmoke=1;
+	[DAMAGE]
+		{
+		default=65;
+		Air=155;
+		FlyingFortress=155;
+		subs=0;
+		}
+	}
+
+[COR_SPITMISS] // UNUSED
+	{
+	//ID=107;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+	Trajectoryheight=1.4;
+	burnblow=1;
+
+	model=missile;
+
+	range=1400;
+	reloadtime=5;
+	weapontimer=5;
+	weaponvelocity=550;
+	startvelocity=360;
+	weaponacceleration=152;
+	turnrate=38000;
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=50000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=65;
+		Air=165;
+		FlyingFortress=165;
+		subs=0;
+		}
+	}
+
+
+[CORUBERFLAK_GUN]
+	{
+	ID=43;
+	name=Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=2000;//750
+	reloadtime=0.3;
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=125;//125
+	edgeeffectiveness=0.70;
+
+	soundstart=canlite2;
+	soundhit=flakhit;//xplomed2
+
+	//minbarrelangle=-24;
+	
+	accuracy=1850;//2200
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_BURST_Expl;
+
+	[DAMAGE]
+		{
+		default=186;
+		FlyingFortress=25;
+		subs=0;
+		}
+	}
+
+[ARM_BASE_MISSILE]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	burnblow=1;
+	//toairweapon=1;
+	canAttackGround=0;
+
+	model=missile;
+
+	range=1500;
+	reloadtime=5;
+	weapontimer=5;
+	flighttime=3.6;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=142;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	burnblow=1;
+	smoketrail=1;
+	tolerance=3000;//10000
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=275;
+		subs=0;
+		}
+	}
+
+[CORE_BASE_ZAPPER]
+	{
+	name=Anti-Air Lightning Gun;  // Used no more
+	rendertype=7;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1500;//180//280//240
+	reloadtime=7;
+	weaponvelocity=400;
+	areaofeffect=8;
+	duration=10;
+	soundtrigger=1;
+
+	soundstart=lghthvy1;
+	soundhit=lashit;
+
+	firestarter=50;
+
+	beamweapon=1;
+	rgbcolor=0 1 0.776;
+	rgbcolor2=1 1 1;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=330;
+		subs=0;
+		}
+	}
+
+[CORE_BASE_ZAPPO]
+	{
+	name=PEW PEW;  // Used no more
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=0.15;
+	thickness=5.00;
+	intensity=1;
+
+	range=1300;
+	reloadtime=3;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	targetMoveError=0.05;
+
+	soundstart=zap;
+	//soundhit=xplolrg1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=500;
+	corethickness=.5;
+	soundtrigger=1;
+	explosiongenerator=custom:COMMANDERLASER_Expl;
+
+	[DAMAGE]
+		{
+		default=300;
+		Light=500;
+        BugLight=500;
+		subs=0;
+		}
+	}
+
+[CORE_BASE_BEAM]
+	{
+	name=AA BEAM;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=0.05;
+	thickness=8.00;
+	intensity=1;
+	//toairweapon=1;
+	
+	heightMod=2;
+
+	range=1500;
+	reloadtime=.05;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	targetMoveError=0.05;
+
+	soundstart=fryer2;
+	//soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	tolerance=500;
+	corethickness=0;
+	soundtrigger=1;
+	SweepFire=0;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=3;//2.6
+		subs=0;
+		}
+	}
+
+[POINT_DEFENSE]
+	{
+	ID=100;
+	name=Missiles; // Doesnt' work :(
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	
+	vlaunch=1;
+	weapontimer=1.2;
+	flighttime=60;
+
+	//model=missile;
+
+	range=10000;
+	reloadtime=2.4;//2.4
+	weapontimer=5;
+	weaponvelocity=1000;
+	startvelocity=800;
+	weaponacceleration=101;
+	turnrate=60000;//33000
+	areaofeffect=100;
+	metalpershot=0;
+	accuracy=2000;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=0;
+	tolerance=9000;
+
+	//startsmoke==0;
+	coverage=10000;
+	interceptor=1;
+	Wobble=15000;
+
+	[DAMAGE]
+		{
+		default=500;
+		subs=0;
+		}
+	}
+
+[OMEGA_WEAPON]
+	{
+	ID=252;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=2100;
+	reloadtime=10;
+	weaponvelocity=550;
+	//energypershot=500;
+	areaofeffect=48;//64
+
+	//soundstart=omegatir;
+	soundstart=coastalarty;
+	soundhit=xplomed2;
+	//soundhit=explode2;
+
+	firestarter=50;
+	accuracy=656;//820
+	//aimrate==2500;
+	tolerance=300;
+	//holdtime==1;
+	rgbcolor=1 .8 .5;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:LONGGUN_Expl; 
+	noselfdamage=1;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=1500;//1600
+		ships=2400;
+		subs=0;
+		}
+	}
+
+[PLASMAGUN3G]
+	{
+	ID=129;
+	name=Long Range Plasma Cannon;
+	rendertype=1;
+	ballistic=1;
+	turret=1;
+
+	//energypershot=450;
+
+	range=2270;
+	reloadtime=9.72;//6.46//7.72
+	weaponvelocity=550;//478
+	accuracy=656;//820
+	areaofeffect=40;//54
+	edgeeffectiveness=.515;
+
+	soundstart=arty3g;
+	soundhit=xplomed2;
+	//soundhit=impact;
+	rgbcolor=1 .8 .5;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:LONGGUN_Expl; 
+	noselfdamage=1;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=1300;//1400
+		ships=2200;
+		subs=0;
+		}
+	}
+
+[ARM_SHIKALASER]
+	{
+	ID=91;
+	name=High Energy Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=690;//655
+	reloadtime=.38;
+	energypershot=75;
+	weaponvelocity=600;//800
+	areaofeffect=8;
+
+	soundstart=Lasrmas2;
+	soundhit=lasrhit1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0.2 1 0.2;
+	rgbcolor2=1 1 1;
+
+	tolerance=8000;
+
+	duration=.18;
+	//beamlaser=1;
+	thickness=1.5;
+	corethickness=0.5;
+	laserflaresize=10;
+	//targetMoveError=0.4;
+	//beamtime=0.15;
+	rgbcolor=0.2 1 0.2;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:FLASH1green; 
+
+
+	[DAMAGE]
+		{
+		default=195;
+		Heavy=165;
+		BugHeavy=165;
+		subs=0;
+		}
+	}
+
+[ARMSALVO_WEAPON]
+	{
+	ID=255;
+	name=Precision Quad Missile;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//vlaunch=1;
+
+	model=arm_salvomiss;
+
+	range=5000;
+	reloadtime=120;
+	burst=4;
+	burstrate=1;
+
+	//noautorange=1;
+	weapontimer=8;
+	flighttime=40;
+
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=400;
+	areaofeffect=150;//90
+	edgeeffectiveness=0.25;
+
+	energypershot=38000;//30000
+	metalpershot=700;
+
+	stockpile=1;
+	commandfire=1;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+	//accuracy=500;
+	tolerance=4000;
+	Trajectoryheight=1.4;
+	//turnrate=1000;
+	Wobble=100;
+
+	//startsmoke=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+  	AvoidFeature=0;
+
+	[DAMAGE]
+		{
+		default=1525;//1375//1425
+		subs=0;
+		}
+	}
+
+[ORBITAL_LASER]
+	{
+	ID=24;
+	name=Orbital Beam of Death;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=4.0;
+	thickness=20;
+	intensity=15;
+	corethickness=6;
+
+	range=64000;
+	reloadtime=120;
+	weaponvelocity=1000;
+	areaofeffect=200;
+
+	soundstart=Orbitlaser;//annigun1
+	soundhit=xplolrg1;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0 0.012 1;
+	rgbcolor2=1 1 1;
+	targetable=1;
+	commandfire=1;
+
+	laserflaresize=40;
+
+	tolerance=500;
+	impulsefactor=.1;
+	craterMult=.05;
+	craterBoost=.05;
+	explosiongenerator=custom:ORBITALLASER_Expl;
+	[DAMAGE]
+		{
+		default=50000;
+		}
+	}
+
+[COR_SUPERGUN]
+	{
+	ID=140;
+	name=Supergun;//more like subpar
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	Stages=0;
+
+	soundtrigger=1;
+	burst=40;
+	burstrate=0;
+	sprayangle=100;
+	range=64000;
+	weaponvelocity=2540;
+	areaofeffect=75;//190
+	reloadtime=55;
+	energypershot=10000;
+
+	soundstart=xplonuk3;
+	soundhit=AMATIR;
+
+	firestarter=75;
+	accuracy=10;
+	//aimrate==2500;
+	tolerance=300;
+	//holdtime==10;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	myGravity=0.125;
+	//explosiongenerator=custom:SUPERGUN_Expl;
+	//explosiongenerator=custom:BIGFIREBALL_W;
+	[DAMAGE]
+		{
+		default=3500;
+		subs=0;
+		}
+	}
+
+[MERCURY_MISSILE]
+{
+	name=Mercury High-Alt SAM;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+	model=mercurymissile;
+	range=1500;
+	reloadtime=14;
+	weapontimer=8;
+	weaponvelocity=1200;
+	startvelocity=300;
+	weaponacceleration=300;
+	turnrate=66000;
+	areaofeffect=80;
+	edgeeffectiveness=0.25;
+	soundstart=mercurylaunch;
+	soundhit=mercuryimpact;
+	firestarter=90;
+	//smokedelay=0;
+	//guidance=1;
+	tracks=1;
+	trajectoryheight=0.55;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=10000;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+	//startsmoke=1;
+	impulsefactor=0;
+	impulseboost=0;
+	cratermult=0;
+	craterboost=0;
+	noselfdamage=1;
+	[DAMAGE]
+	{
+		default=550;
+		Air=2000;
+		BladeWing=2000;
+		FlyingFortress=2000;
+		subs=0;
+	}
+}
+
+[ARM_BASE_ROCKET]
+	{
+	name=Ballistic Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=cormhmsl;
+
+	range=1300;
+	reloadtime=5;//10
+	weapontimer=6;
+	flighttime=6;
+	weaponvelocity=350;//250
+	startvelocity=60;//250
+	weaponacceleration=150;//120
+	areaofeffect=48;
+	metalpershot=0;
+	
+	Trajectoryheight=2;
+	Wobble=2000;
+	turnrate=9000;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+	craterMult=.4;
+	craterBoost=.4;
+	//guidance=1;
+	tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	//canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=300;//300
+		subs=0;
+		}
+	}
+
+[ARM_TARTILLERY]
+	{
+	ID=58;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=1450;//1100//850
+	reloadtime=7.45;//7.45
+	weaponvelocity=460;//330
+	areaofeffect=64;//48//70
+	soundstart=cannhvy2;
+	soundhit=xplomed4;
+	accuracy=600;//2000//500
+	//MovingAccuracy=1400;//1000
+
+	//startsmoke=1;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	craterMult=.5;
+	craterBoost=.5;
+	impulsefactor=.7;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	noselfdamage=1;
+	[DAMAGE]
+		{
+		default=310;//250
+		Medium=240;
+        BugMedium=240;
+		hovertank=260;
+		Heavy=166;
+		BugHeavy=166;
+		subs=0;
+		}
+	}

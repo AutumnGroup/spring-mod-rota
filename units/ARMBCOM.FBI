@@ -1,0 +1,100 @@
+[UNITINFO]
+	{
+	UnitName=ARMBCOM;
+	Version=1;
+	Side=ARM;
+	Objectname=spherebot.s3o;
+	BuildPic=armbcom.pcx;
+	Designation=ARM-BM;
+	Name=Battle Commander;
+	Description=Assault Leader;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=120978;
+	BuildCostMetal=0;
+	MaxDamage=5400;
+	MaxWaterDepth=35;
+	MaxSlope=20;
+	EnergyUse=0;
+	BuildTime=43845;
+	BMcode=1;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	SightDistance=650;
+	RadarDistance=2600;//400
+	SoundCategory=ARM_COM;
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=COMMANDER;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Commander;
+	GermanDescription=Commander;
+	UnitNumber=21;
+	FrenchName=Commandeur;
+	Frenchdescription=Commandant;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=0;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	onoffable=1;
+	MaxVelocity=3.6;
+	BrakeRate=0.15;
+	Acceleration=0.1;
+	TurnRate=800;
+	SteeringMode=2;
+	ShootMe=1;
+	Builddistance=60;
+	CanReclamate=1;
+	EnergyMake=20;
+	MetalMake=0;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=COMMANDER;
+	Upright=1;
+	SonarDistance=500;//400
+	canattack=1;
+	Weapon1=ARMBCOM_EMG;
+	Weapon2=WARPBOOM;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	ActivateWhenBuilt=1;
+	norestrict=1;
+	Ovradjust=1;
+	EnergyStorage=500;
+	MetalStorage=0;
+	//for Spring:
+	mass=2999; // so it's transportable damnit
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=33;
+	trackOffset=0;
+	trackStrength=15;
+	trackStretch=1.5;
+	trackType=KbotTrack;
+	iconType=armcom;
+	idletime=320;
+	idleautoheal=100;
+	SeismicSignature=0;
+	UnitRestricted=1;
+	TransportByEnemy=0;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.8;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=38 62 30;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:emg_shells;
+		explosiongenerator1=custom:bcommuzzle;
+		explosiongenerator2=custom:fusionfx;
+		explosiongenerator3=custom:warpexplosion;
+		}
+	}

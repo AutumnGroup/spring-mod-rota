@@ -1,0 +1,161 @@
+[GAME]
+{
+	[AI1]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=V;
+		ShortName=Mission AI;
+		Team=0;
+		Version=<not-versioned>;
+	}
+	[AI2]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=I;
+		ShortName=Mission AI;
+		Team=1;
+		Version=<not-versioned>;
+	}
+	[AI3]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=VI;
+		ShortName=N.O.E. - Normal;
+		Team=2;
+		Version=<not-versioned>;
+	}
+	[AI4]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=IV;
+		ShortName=Mission AI;
+		Team=3;
+		Version=<not-versioned>;
+	}
+	[AI5]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=III;
+		ShortName=Mission AI;
+		Team=4;
+		Version=<not-versioned>;
+	}
+	[AI6]
+	{
+		Host=0;
+		IsFromDemo=0;
+		Name=II;
+		ShortName=Mission AI;
+		Team=5;
+		Version=<not-versioned>;
+	}
+	[ALLYTEAM0]
+	{
+		NumAllies=0;
+		StartRectBottom=0.0954774;
+		StartRectLeft=0;
+		StartRectRight=1;
+		StartRectTop=0;
+	}
+	[ALLYTEAM1]
+	{
+		NumAllies=0;
+		StartRectBottom=1;
+		StartRectLeft=0;
+		StartRectRight=1;
+		StartRectTop=0.904523;
+	}
+	GameType=NOTA 1.80;
+	IsHost=1;
+	MapHash=3479193038;
+	MapName=TitanDuel;
+	ModHash=0;
+	MyPlayerName=Spectator;
+	[PLAYER0]
+	{
+		CountryCode=CZ;
+		IsFromDemo=0;
+		Name=Spectator;
+		Password=3311551305;
+		Rank=6;
+		Spectator=1;
+	}
+	[TEAM0]
+	{
+		AllyTeam=0;
+		Handicap=0;
+		RGBColor=1.00000 0.00000 1.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[TEAM1]
+	{
+		AllyTeam=0;
+		Handicap=0;
+		RGBColor=0.00000 1.00000 1.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[TEAM2]
+	{
+		AllyTeam=1;
+		Handicap=0;
+		RGBColor=0.00000 0.39216 1.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[TEAM3]
+	{
+		AllyTeam=0;
+		Handicap=0;
+		RGBColor=0.00000 1.00000 0.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[TEAM4]
+	{
+		AllyTeam=0;
+		Handicap=0;
+		RGBColor=1.00000 0.00000 0.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[TEAM5]
+	{
+		AllyTeam=0;
+		Handicap=0;
+		RGBColor=1.00000 0.70588 0.00000;
+		Side=ARM;
+		TeamLeader=0;
+	}
+	[mapoptions]
+	{
+	}
+	[modoptions]
+	{
+		disablemapdamage=0;
+		fixedallies=0;
+		ghostedbuildings=1;
+		hilltime=8;
+		limitdgun=0;
+		maxspeed=31;
+		maxunits=500;
+		minspeed=0.5;
+		mission_name=xants-sort;
+		mo_maxburrows=40;
+		mo_noshare=1;
+		mo_queentime=40;
+		noe_many_ais_mapping=1;
+		noe_mapping=1;
+		noe_thinking_split=8;
+		startoptions=normal;
+		stupid=0;
+		teamcom=1;
+	}
+	startpostype=3;
+}

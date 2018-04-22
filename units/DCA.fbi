@@ -1,0 +1,54 @@
+[UNITINFO]
+	{
+	UnitName=DCA;
+	Version=3;
+	Side=CORE;
+	Objectname=DCA;
+	Designation=DCA-AA1;
+	Name=DCA;
+	Description=Anti-Aircraft Machine Gun;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=810;//1800
+	BuildCostMetal=65;//120
+	MaxDamage=400;
+	MaxWaterDepth=0;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=1823;
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=650;
+	RadarDistance=0;
+	SoundCategory=GUARD;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_UNITEX;
+	SelfDestructAs=SMALL_UNITEX;
+	Category=NOTSHIP NOTAIR NOTSUB ;
+	TEDClass=FORT;
+	//Copyright 2001 TAAN. All rights reserved.;
+	YardMap=oooo;
+	Corpse=DCA_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	canstop=1;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	//buildangle=8192;
+	canattack=1;
+	Weapon1=CORE_ANTIAIR_MGUN;
+	//wpri_badTargetCategory=NOTAIR;
+	OnlyTargetCategory1=VTOL;//LOWVTOL
+	idletime=2200;
+	idleautoheal=2;
+	iconType=mgun;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=27 20 27;
+	
+	}

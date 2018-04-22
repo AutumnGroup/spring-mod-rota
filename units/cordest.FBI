@@ -1,0 +1,119 @@
+[UNITINFO]
+	{
+	UnitName=CORDEST;
+	Version=1;
+	Side=CORE;
+	Objectname=CORDEST;
+	Designation=DD-45;
+	Name=Enforcer;
+	Description=Destroyer;
+	FootprintX=6;//4
+	FootprintZ=6;
+	BuildCostEnergy=8875;//10503
+	BuildCostMetal=1617;//1914
+	MaxDamage=3760;//3209
+	EnergyUse=9;
+	BuildTime=21436;//16489
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=800;//1000
+	losEmitHeight=50;
+	radarEmitHeight=50;
+	RadarDistance=2500;
+	SoundCategory=CORE_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_SHIP;
+	SelfDestructAs=SMALL_SHIP;
+	Category= SHIP NOTAIR NOTSUB ;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=cordest_dead;
+	UnitNumber=131;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	onoffable=1;
+
+	canguard=1;
+	MaxVelocity=2.4;//2.2//2.93
+	BrakeRate=0.009155;//0.01831
+	Acceleration=0.147;//0.009155273
+	TurnRate=312;//260//256//230
+	SteeringMode=1;
+	ShootMe=1;
+	Scale=0.6;
+	EnergyMake=12;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATS6;
+	MinWaterDepth=12;
+	SonarDistance=580;//700//630
+	buildangle=16384;
+	canattack=1;
+
+	// WEAPONS
+	Weapon1=COR_ROY_MAINGUN;
+	Weapon2=COR_ROY_SECGUN;
+	Weapon3=CORE_SHIPTORPEDO;
+	Weapon4=CORE_SHIPTORPEDO;
+	Weapon5=CORE_DESTROYER_FLAK;
+	Weapon6=CORE_DESTROYER_FLAK;
+	Weapon7=CORE_ROYSAM;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	OnlyTargetCategory5=VTOL;
+	OnlyTargetCategory6=VTOL;
+	OnlyTargetCategory7=VTOL;
+	NoChaseCategory=VTOL;
+	BadTargetCategory3=NOTSUB;
+	BadTargetCategory4=NOTSUB;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=270;
+	WeaponMainDir2=0 0 -1;
+	MaxAngleDif2=270;
+	WeaponMainDir3=-1 0 0;
+	MaxAngleDif3=180;
+	WeaponMainDir4=1 0 0;
+	MaxAngleDif4=180;
+	WeaponMainDir5=0 1 0;
+	MaxAngleDif5=180;
+	WeaponMainDir6=0 1 0;
+	MaxAngleDif6=180;
+	WeaponMainDir7=0 -1 0;
+	MaxAngleDif7=260;
+
+	ActivateWhenBuilt=1;
+	
+	//wsec_badTargetCategory=NOTSUB ;
+	//wsec_badTargetCategory=NOTSUB ;
+	Floater=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=900;
+	idleautoheal=16;
+	iconType=destroyer;
+	//seismictest
+	SeismicSignature=6;
+	//CollisionSphereScale=.9;
+	//CollisionSphereOffset=0 10 0;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.2;
+
+	collisionVolumeType = box;
+	collisionVolumeScales =35 105 170;
+	collisionVolumeOffsets = 0 -30 0;
+	collisionVolumeTest = 0;
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:smallrocketsmoke2;
+		}
+	}

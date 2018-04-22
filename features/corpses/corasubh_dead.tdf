@@ -1,0 +1,17 @@
+[corasubh_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=corasubh_dead;
+	footprintx=2;
+	footprintz=2;
+	height=14;
+	blocking=0;
+	hitdensity=100;
+	metal=198;
+	damage=464;
+	reclaimable=1;
+	featurereclamate=smudge01;
+      seqnamereclamate=tree1reclamate;
+	}

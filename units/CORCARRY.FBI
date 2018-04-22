@@ -1,0 +1,116 @@
+[UNITINFO]
+	{
+	UnitName=CORCARRY;
+	Version=1;
+	Side=CORE;
+	Objectname=CORCARRY;
+	Designation=SB-3-VT;
+	Name=Shamshir;
+	Description=Strike Carrier;
+	FootprintX=14;
+	FootprintZ=14;
+	BuildCostEnergy=35490;//33800
+	BuildCostMetal=6825;//6500
+	MaxDamage=7000;
+	EnergyUse=42;
+	BuildTime=68535;//65271
+	WorkerTime=400;//800//200
+	repairSpeed=200;
+	BMcode=1;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=1000;//350
+	losEmitHeight=70;
+	radarEmitHeight=70;
+	RadarDistance=3800;//1780
+	SoundCategory=CORE_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=ATOMIC_BLAST3;
+	SelfDestructAs=ATOMIC_BLAST3;
+	Category=SHIP NOTAIR NOTSUB;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=corcarry_dead;
+	UnitNumber=92;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Hive;
+	canguard=1;
+	MaxVelocity=2.0;
+	BrakeRate=0.01;//.02
+	Acceleration=0.02;//.01
+	TurnRate=128;//64
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=45;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATD6;
+	MinWaterDepth=30;
+	buildangle=16384;
+	ActivateWhenBuilt=1;
+	IsAirBase=1;
+	Floater=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=900;
+	idleautoheal=20;
+	iconType=carrier;
+	SeismicSignature=13;
+	onoffable=1;
+
+	//Weapons
+	Weapon1=CORE_CRUSGUN;
+	Weapon2=CORE_VLAUNCHSAM;
+	Weapon3=CORE_HEAVYSHIPFLAK;
+	Weapon4=CORE_HEAVYSHIPFLAK;
+	Weapon5=CORE_BADSHIPFLAK;
+	Weapon6=CORE_BADSHIPFLAK;
+	Weapon7=CORE_BADSHIPFLAK;
+	Weapon8=CORE_BADSHIPFLAK;
+	Weapon9=FMD_ROCKET;
+
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=VTOL;
+	OnlyTargetCategory3=VTOL;
+	OnlyTargetCategory4=VTOL;
+	OnlyTargetCategory5=VTOL;
+	OnlyTargetCategory6=VTOL;
+	OnlyTargetCategory7=VTOL;
+	OnlyTargetCategory8=VTOL;
+	OnlyTargetCategory9=VTOL;
+	NoChaseCategory=NOTAIR;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=270;
+	//WeaponMainDir3=-1 1 0;
+	//MaxAngleDif3=270;
+	//WeaponMainDir4=-1 1 0;
+	//MaxAngleDif4=270;
+	WeaponMainDir5=1 0 0;
+	MaxAngleDif5=175;
+	WeaponMainDir6=1 0 0;
+	MaxAngleDif6=175;
+	WeaponMainDir7=1 0 0;
+	MaxAngleDif7=175;
+	WeaponMainDir8=1 0 0;
+	MaxAngleDif8=175;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.0;
+
+	//CollisionSphereScale=.85;
+	collisionVolumeType = box;
+	collisionVolumeScales =85 60 350;
+	collisionVolumeOffsets = 0 -26 25;
+	collisionVolumeTest = 0;
+
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:LAUNCHTORPEDO_Expl;  // lauching a missile
+		}
+	}

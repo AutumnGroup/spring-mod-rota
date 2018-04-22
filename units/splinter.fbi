@@ -1,0 +1,62 @@
+[UNITINFO]
+	{
+	UnitName=SPLINTER;
+	Version=1;
+	Side=CORE;
+	Objectname=SPLINTER;
+	Designation=SABOT-TOWER;
+	Name=Splinter;
+	Description=Transportable Sabot Tower;
+	FootprintX=3;//4
+	FootprintZ=3;//7
+	BuildCostEnergy=4000;
+	BuildCostMetal=650;
+	MaxDamage=1300;
+	MaxWaterDepth=0;
+	MaxSlope=20;
+	MaxVelocity=0.001;
+	EnergyUse=0;
+	BuildTime=8200;//6200
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=700;
+	RadarDistance=0;
+	SoundCategory=COR_KBOT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTSHIP NOTAIR NOTSUB;
+	TEDClass=TANK;
+	MovementClass=TANKSH2;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	//YardMap=ooooooooo;
+	Corpse=SPLINTER_dead;
+	
+	canstop=1;
+	canmove=1;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	canattack=1;
+	Upright=1;
+	Weapon1=Splinter_gun;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	WeaponMainDir1=0 -1 0;
+	MaxAngleDif1=270;
+	Ovradjust=1;
+	Mass=500;
+	idletime=2200;
+	idleautoheal=2;
+	SeismicSignature=0;
+	iconType=tower;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=65 50 65;
+	
+	}

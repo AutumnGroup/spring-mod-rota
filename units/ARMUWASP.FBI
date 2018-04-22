@@ -1,0 +1,69 @@
+[UNITINFO]
+	{
+	UnitName=ARMUWASP;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMUWASP;
+	Designation=ARM-SP1;
+	Name=Underwater Seaplane Support Station;
+	Description=Refuels Seaplanes;
+	FootprintX=7;
+	FootprintZ=3;
+	BuildCostEnergy=2660;//3510
+	BuildCostMetal=325;//255
+	MaxDamage=750;
+	MaxSlope=24;
+	EnergyUse=0;
+	BuildTime=3477;//6953
+	BUILDPIC=armuwasp.bmp;
+	MinWaterDepth=30;
+	WorkerTime=197;//under200
+	RepairSpeed=800;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=350;//175//350
+	RadarDistance=0;
+	stealth=1;
+	SoundCategory=AIRPLANT;
+	EnergyStorage=50;
+	MetalStorage=0;
+	ExplodeAs=HUGE_UNITEX;
+	SelfDestructAs=MEDIUM_BUILDING;
+	Category=NOTAIR NOTSUB;
+	TEDClass=SPECIAL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=yyy yyy yyy yyy yyy yyy yyy;
+	Corpse=armuwasp_dead;
+	GermanName=Luftfahrt-Reparaturset;
+	GermanDescription=Repariert Lufteinheiten automatisch;
+	UnitNumber=154;
+	FrenchName=Piste de réparations;
+	Frenchdescription=Répare automatiquement les avions;
+	SpanishName=Plat. Aérea Reparaciones;
+	SpanishDescription=Repara aviones automáticamente;
+	ItalianName=Piattaforma Aerei;
+	ItalianDescription=Ripara automaticamente i velivoli;
+	Builddistance=6;
+	EnergyMake=8;
+	buildangle=1024;
+	ActivateWhenBuilt=1;
+	sortbias=0;
+	IsAirBase=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	Mass=30000;
+	idleautoheal=2;
+	iconType=landpad;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=110 45 70;
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

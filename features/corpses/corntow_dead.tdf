@@ -1,0 +1,35 @@
+[corntow_dead]
+	{
+	world=All Worlds; // NOT USED...
+	description=Core Nanotower Remains;
+	category=core_corpses;
+	object=corntow_dead;
+	footprintx=4;
+	footprintz=4;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=600;
+	damage=2808;
+	reclaimable=1;
+	featurereclamate=smudge01;
+      seqnamereclamate=tree1reclamate;
+	}
+
+[corntow_heap]
+	{
+	world=All Worlds; // NOT USED 
+	description=Wreckage;
+	category=heaps;
+	object=3x3b;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=372;
+	damage=340;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

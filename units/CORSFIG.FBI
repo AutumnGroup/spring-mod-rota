@@ -1,0 +1,129 @@
+[UNITINFO]
+	{
+	UnitName=CORSFIG;
+	Version=1.2;
+	Side=CORE;
+	Objectname=CORSFIG;
+	Designation=SB-BR4;
+	Name=Voodoo;
+	Description=Seaplane Fighter;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=5989;//6654//6524
+	BuildCostMetal=167;//186//182
+	MaxDamage=200;//159
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=0.7;
+	BuildTime=10841;//9034
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=500;
+	RadarDistance=0;
+	SoundCategory=CORE_FIGVTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SMALL_AIRUNITEX;
+	SelfDestructAs=SMALL_AIRUNIT;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Voodoo;
+	GermanDescription=Jäger-Wasserflugzeug;
+	UnitNumber=295;
+	FrenchName=Vaudou;
+	Frenchdescription=Hydravion de Chasse;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canDropFlare=1;
+	SpanishName=Voodoo;
+	SpanishDescription=Hidroavión de Combate;
+	ItalianName=Voodoo;
+	ItalianDescription=Caccia idrovolante;
+	canguard=1;
+	MaxVelocity=11;//11.2
+	BrakeRate=50;//4
+	Acceleration=10;//.4//0.5
+	TurnRate=1500;//512//682
+	//maxAileron=.03;//.015//.01
+	//maxElevator=.024;//.008
+	//maxRudder=.004;//.004
+	//WingDrag=.07;//.07
+	//WingAngle=.08;//.08 //angle between front and the wing plane 
+	//Drag=.005; //.005//how fast the aircraft loses speed
+	frontToSpeed=.04;//.1 //fudge factor for lining up speed and front of plane 
+	speedToFront=.02;//.07//fudge factor for lining up speed and front of plane 
+	//myGravity=0.4;
+	
+	CanDropFlare=1;
+	FlareSalvoSize=1;
+	FlareReload=.1;
+	FlareEfficiency=0.7;
+	FlareDelay=0.1;
+	FlareDropVector=0 0 -1;
+	
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=500;//70//120
+	EnergyMake=0.7;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	Downloadable=1;
+	canattack=1;
+	Weapon1=SVTOL_MISSILE;
+	Weapon2=SVTOL_MISSILE2;
+	NoChaseCategory=NOTAIR;
+	OnlyTargetCategory1=VTOL;
+	OnlyTargetCategory2=VTOL;
+	MoveRate1=8;
+	maxwaterdepth=255;
+	amphibious=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	CanLoopbackAttack=1;
+	canSubmerge=1;
+	//Fuel
+	maxfuel=150;
+	RefuelTime=15;//5
+	WeaponFuelUsage1=10;
+	iconType=air;
+	
+	//collisionVolumeType=ellipsoid;
+	//modelCenterOffset=0 -3 -3;
+	//collisionVolumeScales=20 15 30;
+	collisionVolumeType=box;
+	collisionVolumeScales=20 8 30;
+	
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=150;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=150;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=10;
+		unit_to_team_transfer_rate_custom_resource1=10;
+	}
+	}

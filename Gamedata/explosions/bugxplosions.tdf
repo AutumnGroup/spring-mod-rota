@@ -1,0 +1,1064 @@
+[BUGBIGFLAMEYTRAIL_Expl]
+{
+	usedefaultexplosions=1;	
+	[rocks]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.95;
+			particleLife=50;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=1.2;
+			particleSpeedSpread=1;
+			particleSize=8;
+			particleSizeSpread=8;
+			emitRot=360;
+			emitRotSpread=0;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+
+[BUG_BLUEBOMBAIR]
+{
+	[flamey] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0,0,0;
+		delay=0;			
+		explosionGenerator=custom:BUGBIGFLAMEYTRAIL_Expl;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+	[flamey2]
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0,0,0;
+		delay=0;			
+		explosionGenerator=custom:DGUN_SHOT;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+[BUG_BLUEPOOF]
+{
+	usedefaultexplosions=0;
+	[groundflash]
+	{
+		flashSize = 6;
+		flashAlpha = 2.1;
+		ttl = 30;
+		color = 0.1,0.6,1;
+	}
+	[nova]
+	{
+      		class=heatcloud;
+                [properties]
+      		{
+		Texture=blueexplo;
+      		heat = 24;
+      		maxheat = 24;
+      		heatFalloff = 1;
+      		size = 0.2;
+      		sizeGrowth = 1;
+      		speed = 0, 0, 0;
+      		pos = 0, 0, 0;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=2;
+	}
+        [center]
+   		{
+      		class=heatcloud;
+                [properties]
+      		{
+		Texture=blueexplo;
+      		heat = 30;
+      		maxheat = 40;
+      		heatFalloff = 1;
+      		size = 1;
+      		sizeGrowth = .5;
+      		speed = 0, 1, 0;
+      		pos = 0, 0, 0;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=2;
+	}
+}
+
+[BUG_GIANTBLUEBOMB]
+{
+	usedefaultexplosions=0;
+	[poofy] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=-50 r100, 0,  -50 r100;
+		delay=0 i1 r1;			
+		explosionGenerator=custom:BUG_BLUEPOOF;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=30;
+	}
+	[poofy2] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0,0,0;
+		delay=0;			
+		explosionGenerator=custom:ATOMIC_BLASTSML;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}	
+	[groundflash]
+	{
+		flashSize = 200;
+		flashAlpha = 2;
+		circleGrowth = 8;
+		circleAlpha = 0.555;
+		ttl = 30;
+		color = 0.11, 0.6, 0.6;
+
+	}
+	[heatcloud]
+   		{
+      		[properties]
+      		{
+      		heat = 35;
+      		maxheat = 35;
+      		heatFalloff = 1;
+      		size = 1.15;
+      		sizeGrowth = 0.5;
+      		sizemod = 0;
+      		sizemodmod = 0;
+      		speed = 0, 0.45r, 0;
+      		pos = 0, -0.55, 0;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=10;
+	}
+	[smoke]
+	{
+	[properties]
+      		{
+         		color = 5.0;
+         		startSize = 10.25;
+         		sizeExpansion = 0.4;
+         		ageSpeed=0.03;
+         		size = 1.25;
+         		sizeGrowth = 0.75;
+         		pos = 0, -2, 0;
+         		speed=0, 0.33, 0;
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=1;
+   	}
+}
+
+
+[BUGDIE_Expl]
+{
+	usedefaultexplosions=0;
+	[goop]
+   		{
+      		class=CSimpleParticleSystem;
+                [properties]
+      		{
+		texture=bugblood;
+                colorMap = 1 1 1 1   0 0 0 0;
+                pos = 0, 2, 0;
+      		gravity= 0, -0.2, 0; 
+                emitVector = 0, 1, 0; 
+                emitRot = 5; 
+                emitRotSpread = 32; 
+                sizeGrowth = 0.4; 
+                sizeMod = 1.0; 
+                airdrag = 0.8; 
+                particleLife = 20; 
+                particleLifeSpread = 20; 
+                numParticles = 1; 
+                particleSpeed = 4; 
+                particleSpeedSpread = 1; 
+                particleSize = 15; 
+                particleSizeSpread = 0; 
+                directional = 0; 
+                useAirLos = 0; 
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=1;
+	}
+
+	
+        [spray]
+   		{
+      		class=CSimpleParticleSystem;
+                [properties]
+      		{
+		texture=randdots;
+                colorMap = 0.5 0.5 1.0 0.01   0.8 1.0 0.2 0.01   0.0 0.0 0.0 0.01;
+                pos = 0, 2, 0;
+      		gravity= 0, -0.2, 0; 
+                emitVector = 0, 1, 0; 
+                emitRot = 20; 
+                emitRotSpread = 32; 
+                sizeGrowth = 0.3; 
+                sizeMod = 1.0; 
+                airdrag = 0.94; 
+                particleLife = 20; 
+                particleLifeSpread = 20; 
+                numParticles = 8; 
+                particleSpeed = 3; 
+                particleSpeedSpread = 3; 
+                particleSize = 10; 
+                particleSizeSpread = 0; 
+                directional = 0; 
+                useAirLos = 0; 
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=1;
+	}
+}
+
+[BUG5DIE_Expl]
+{
+   	[splashes]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=-.1;
+			sizemod=1;
+			size=0.1;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, -.1, 0;
+			Texture=blooddropwhite;
+			colorMap=1 1 0 1   1 1 0 1   0 0 0 0;
+			airdrag=.96;
+			particleLife=40;
+			particleLifeSpread=8;
+			numParticles=16;
+			particleSpeed=4;
+			particleSpeedSpread=8;
+			particleSize=24;
+			particleSizeSpread=16;
+			emitRot=0;
+			emitRotSpread=80;
+			directional=1;
+		}
+		air=1;
+		ground=1;
+	}
+
+	[pop]
+	{
+		class=CSimpleParticleSystem;
+		[properties] {
+			sizegrowth=3;
+			sizemod=1;
+			size=0.2;
+			pos=0, 1.0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, -.1, 0;
+			Texture=bloodblastwhite;
+			colorMap=1 1 0 1   1 1 0 1   0 0 0 0;
+			airdrag=.9;
+			particleLife=40;
+			particleLifeSpread=0;
+			numParticles=3;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=24;
+			particleSizeSpread=16;
+			emitRot=45;
+			emitRotSpread=30;
+			directional=0;
+		}
+		air=1;
+		ground=1;
+	}
+}
+
+[BUGSPIT]
+{
+	usedefaultexplosions=1;	
+
+	[smoke_Back]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0.5;
+			sizeMod=1.0;
+			pos=0, 1, 3;
+			emitVector=dir;
+			gravity=0, 0.05, 0;
+			colorMap=0.055 0.25 0.0165 0.05 0 0 0 0.01;
+			Texture=smoke;
+			airdrag=0.8;
+			particleLife=5;
+			particleLifeSpread=5;
+			numParticles=20;
+			particleSpeed=1;
+			particleSpeedSpread=12;
+			particleSize=0.4;
+			particleSizeSpread=0.1;
+			emitRot=0;
+			emitRotSpread=10;
+			directional=0;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[BUGSPIT_AIR]
+{
+	[spray]
+   		{
+      		class=CSimpleParticleSystem;
+                [properties]
+      		{
+		texture=randdots;
+                colorMap = 0.5 0.5 1.0 0.01   0.8 1.0 0.2 0.01   0.0 0.0 0.0 0.01;
+                pos = 0, 0, 0;
+      		gravity= 0, -0.2, 0; 
+                emitVector = 0, 1, 0; 
+                emitRot = 20; 
+                emitRotSpread = 32; 
+                sizeGrowth = 0.2; 
+                sizeMod = 1.0; 
+                airdrag = 0.94; 
+                particleLife = 20; 
+                particleLifeSpread = 20; 
+                numParticles = 3; 
+                particleSpeed = 1; 
+                particleSpeedSpread = 1; 
+                particleSize = 5; 
+                particleSizeSpread = 0; 
+                directional = 0; 
+                useAirLos = 0; 
+      		}
+	air=1;
+      	water=1;
+      	ground=1;
+      	count=1;
+	}
+}
+
+[ASTEROIDTRAIL_Expl]
+{
+	usedefaultexplosions=1;	
+	[rocks]
+	{
+		alwaysVisible=1;
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.95;
+			particleLife=50;
+			particleLifeSpread=20;
+			numParticles=1;
+			particleSpeed=6;
+			particleSpeedSpread=1;
+			particleSize=60;
+			particleSizeSpread=60;
+			emitRot=360;
+			emitRotSpread=360;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+	[smokey]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0	0 0 0 0	  0.3 0.3 0.3 .7	0.3 0.3 0.3 .7	0.3 0.3 0.3 .6	0 0 0 0.01;
+			Texture=graysmoke;
+			airdrag=0.95;
+			particleLife=200;
+			particleLifeSpread=100;
+			numParticles=1;
+			particleSpeed=6;
+			particleSpeedSpread=1;
+			particleSize=100;
+			particleSizeSpread=100;
+			emitRot=360;
+			emitRotSpread=360;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+
+[DARKSWARM_Expl]
+{
+	usedefaultexplosions=0;	
+	[smokey]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0.42 0.3 0.1 0.3	0.4 0.35 0.25 0.5	  0.7 0.55 0.41 0.85	0.7 0.55 0.41 0.85	0.4 0.35 0.25 0.5	0 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.95;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=6;
+			particleSpeedSpread=1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=180;
+			emitRotSpread=180;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+
+[DARKSWARMSTATIONARY_Expl]
+{
+	usedefaultexplosions=0;	
+	[centersmoke]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.04;
+			sizeMod=1.0;
+			pos=0, 100, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0.04, 0;
+			colorMap=0.42 0.3 0.1 0.3	0 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.95;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=6;
+			particleSpeedSpread=1;
+			particleSize=40;
+			particleSizeSpread=20;
+			emitRot=180;
+			emitRotSpread=180;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	[smokey1]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=90, 20, 0;
+			emitVector=-1, 0, 0;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey2]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-30, 20, 60;
+			emitVector=0.2, 0, -1;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey3]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-30, 20, -60;
+			emitVector=0.2, 0, 1;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey4]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=-90, 20, 0;
+			emitVector=1, 0, 0;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey5]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=30, 20, -60;
+			emitVector=-0.2, 0, 1;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+	[smokey6]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=30, 20, 60;
+			emitVector=-0.2, 0, -1;
+			gravity=0, -0.005, 0;
+			colorMap=0.8 0.65 0.55 1.0	0.01 0 0 0.01;
+			Texture=dirt;
+			airdrag=0.985;
+			particleLife=150;
+			particleLifeSpread=80;
+			numParticles=1;
+			particleSpeed=3.5;
+			particleSpeedSpread=0.1;
+			particleSize=60;
+			particleSizeSpread=20;
+			emitRot=150;
+			emitRotSpread=150;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=2;
+	}
+
+}
+
+[KDARTTRAIL_Expl]
+{
+	usedefaultexplosions=1;	
+	[rocks]
+	{
+		alwaysVisible=1;
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.95;
+			particleLife=8;
+			particleLifeSpread=4;
+			numParticles=1;
+			particleSpeed=.6;
+			particleSpeedSpread=1;
+			particleSize=6;
+			particleSizeSpread=6;
+			emitRot=360;
+			emitRotSpread=360;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+	[smokey]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0	0 0 0 0	  0.3 0.3 0.3 .7	0.3 0.3 0.3 .7	0.3 0.3 0.3 .6	0 0 0 0.01;
+			Texture=graysmoke;
+			airdrag=0.95;
+			particleLife=25;
+			particleLifeSpread=10;
+			numParticles=1;
+			particleSpeed=.6;
+			particleSpeedSpread=1;
+			particleSize=10;
+			particleSizeSpread=10;
+			emitRot=360;
+			emitRotSpread=360;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+
+[MINIASTEROIDTRAIL_Expl]
+{
+	usedefaultexplosions=1;	
+	[rocks]
+	{
+		alwaysVisible=1;
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.9 0.9 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=fireball;
+			airdrag=0.95;
+			particleLife=30;
+			particleLifeSpread=15;
+			numParticles=1;
+			particleSpeed=2;
+			particleSpeedSpread=1;
+			particleSize=20;
+			particleSizeSpread=20;
+			emitRot=360;
+			emitRotSpread=360;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+	[smokey]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0	0 0 0 0	  0.3 0.3 0.3 .7	0.3 0.3 0.3 .7	0.3 0.3 0.3 .6	0 0 0 0.01;
+			Texture=graysmoke;
+			airdrag=0.95;
+			particleLife=100;
+			particleLifeSpread=75;
+			numParticles=1;
+			particleSpeed=4;
+			particleSpeedSpread=1;
+			particleSize=40;
+			particleSizeSpread=40;
+			emitRot=360;
+			emitRotSpread=360;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=3;
+	}
+}
+
+
+[BUG_FLYINGBEACON]
+{
+	[pop1]
+	{
+		class=heatcloud;
+		[properties]
+        	{
+			texture=flare;//bluenovaexplo
+			heat = 1.5;
+			maxheat = 1.5;
+			heatFalloff = 0.6;
+			size = 90;
+			sizeGrowth = 1.2;
+			pos = 0,0,0;
+			speed=0, 0, 0;
+		}
+	air=1;
+        water=1;
+        ground=1;
+        count=1;
+	}
+	[smokey]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=1;
+			sizeGrowth=0.05;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0, 0, 0;
+			colorMap=0 0 0 0	0.8 0.8 0.8 .7	0.8 0.8 0.8 .7	0 0 0 0.01;
+			Texture=graysmoke;
+			airdrag=0.95;
+			particleLife=10;
+			particleLifeSpread=6;
+			numParticles=1;
+			particleSpeed=.4;
+			particleSpeedSpread=.4;
+			particleSize=8;
+			particleSizeSpread=8;
+			emitRot=360;
+			emitRotSpread=360;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[BUG_BEACONHIT_lightball]
+{
+	[LightBall]
+	{
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			sizeGrowth=0;
+			sizeMod=1.1;
+			pos=0, 0, 0;
+			emitVector=dir;
+			gravity=0, 0, 0;
+			colorMap=1 1 1 0.005  0 0 0 0.005;
+			texture=flare;
+			airdrag=0.95;
+			particleLife=10;
+			particleLifeSpread=0;
+			numParticles=1;
+			particleSpeed=0;
+			particleSpeedSpread=0;
+			particleSize=360;
+			particleSizeSpread=0;
+			emitRot=0;
+			emitRotSpread=1;
+			directional=0;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}
+
+[BUG_BEACONHIT]
+{
+	[poofy] 
+	{
+		class=CExpGenSpawner;
+		[properties]
+		{
+			pos=0,60,0;
+			delay=0 i10;			
+			explosionGenerator=custom:BUG_BEACONHIT_lightball;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=5;
+	}
+	
+}
+
+[wormfiretrail]
+{
+	usedefaultexplosions=1;	
+	[rocks]
+	{
+		alwaysVisible=0;
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=0;
+			sizeGrowth=0.1;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.0 0.0 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=plasmaball21;
+			airdrag=0.95;
+			particleLife=30;
+			particleLifeSpread=15;
+			numParticles=1;
+			particleSpeed=1;
+			particleSpeedSpread=1;
+			particleSize=16;
+			particleSizeSpread=16;
+			emitRot=360;
+			emitRotSpread=360;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+	[rocks2]
+	{
+		alwaysVisible=0;
+		class=CSimpleParticleSystem;
+		[properties]
+		{
+			alwaysVisible=0;
+			sizeGrowth=0.1;
+			sizeMod=1.0;
+			pos=0, 0, 0;
+			emitVector=0, 1, 0;
+			gravity=0,0,0;
+			colorMap= 0 0 0  0.01   0.0 0.0 0 0.05  0.9 0.9 0 0.1  0.9 0.9 0 0.15     0.9 0.9 0 0.2     0.9 0.9 0 0.25       0.8 0.8 0.1 0.3       0.7 0.7 0.2 0.4      0.5 0.35 0. 0.5   0.5 0.35 0. 0.5   0.5 0.35 0. 0.5    0.5 0.35 0. 0.5   0 0 0 0.01;
+			Texture=burn2;
+			airdrag=0.95;
+			particleLife=30;
+			particleLifeSpread=15;
+			numParticles=1;
+			particleSpeed=1;
+			particleSpeedSpread=1;
+			particleSize=20;
+			particleSizeSpread=20;
+			emitRot=360;
+			emitRotSpread=360;
+			directional=1;
+		}
+		air=1;
+		water=1;
+		ground=1;
+		count=1;
+	}
+}
+
+[wormfireball]
+{
+   [pop1]
+   {
+   class=heatcloud;
+
+      [properties]
+            {
+      texture=blueexplo;
+            heat = 10;
+            maxheat = 7;
+            heatFalloff = 0.8;
+
+            size = 8.5;
+            sizeGrowth = 1.15;
+
+            pos = r-2 r2, 5, r-2 r2;
+            speed=0, 0, 0;
+            }
+   air=1;
+         water=1;
+         ground=1;
+         count=1;
+   }
+
+   [pop2]
+   {
+   class=heatcloud;
+
+      [properties]
+            {
+      texture=blueexplo;
+            heat = 10;
+            maxheat = 10;
+            heatFalloff = 1;
+
+            size = 8.5;
+            sizeGrowth = 1.1;
+
+            pos = r-3 r3, 5, r-3 r3;
+            speed=0, 1, 0;
+            }
+   air=1;
+         water=1;
+         ground=1;
+         count=3;
+   }
+   [flameytrail] 
+	{
+	    class=CExpGenSpawner;
+		[properties]
+		{
+		pos=0,0,0;
+		delay=0;			
+		explosionGenerator=custom:wormfiretrail;
+		}
+	air=1;
+	water=1;
+	ground=1;
+	count=1;
+	}
+}

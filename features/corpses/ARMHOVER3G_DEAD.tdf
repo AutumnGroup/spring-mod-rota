@@ -1,0 +1,39 @@
+[ARMHOVER3G_DEAD]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=ARM_corpses;
+	object=ARMHOVER3G_DEAD;
+	featuredead=ARMHOVER3G_HEAP;
+	footprintx=4;
+	footprintz=4;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=121;
+	energy=0;
+	damage=200;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ARMHOVER3G_HEAP]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3c;
+	footprintx=3;
+	footprintz=3;
+	height=1;
+	blocking=0;
+	hitdensity=100;
+	metal=61;
+	damage=100;
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+

@@ -1,0 +1,56 @@
+[UNITINFO]
+	{
+	UnitName=ARMCSY;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMCSY;
+	Designation=ARM-CSY001;
+	Name=Shipyard;
+	Description=Produces Ships;
+	FootprintX=12;
+	FootprintZ=18;
+	BuildCostEnergy=3162;//2402//3603//2162
+	BuildCostMetal=1372;//1524//2286//1372
+	MaxDamage=7230;//4820
+	EnergyUse=0;
+	BuildTime=20465;//10310//15465
+	WorkerTime=300;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=280;
+	RadarDistance=0;
+	SoundCategory=SHIPYARD;
+	EnergyStorage=500;
+	MetalStorage=500;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category=NOTAIR NOTSUB;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC CCCCCCCCCCCC;
+	Corpse=armcsy_dead;
+	GermanName=Schlachtschiffwerft;
+	GermanDescription=Baut Schlachtschife;
+	UnitNumber=9020;
+	FrenchName=Chantier de navires capitaux;
+	Frenchdescription=Produit des navires capitaux;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canstop=1;
+	MetalMake=0;
+	MinWaterDepth=30;
+	WaterLine=1;
+	NoShadow=1;
+	iconType=factory;
+	CanBeAssisted=0;
+	
+	collisionVolumeType=box;
+	//modelCenterOffset=0 -55 -5;
+	collisionVolumeScales=180 65 290;
+	}

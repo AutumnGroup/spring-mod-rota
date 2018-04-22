@@ -1,0 +1,41 @@
+[UNITINFO]
+	{
+	UnitName=CORDRAG;
+	Version=1;
+	Side=CORE;
+	Objectname=CORDRAG;
+	Designation=A-102-C;
+	Name=Dragon's Teeth;
+	Description=Perimeter Defense;
+	FootprintX=1;
+	FootprintZ=1;
+	BuildCostEnergy=180;//300
+	BuildCostMetal=3;//8//5
+	MaxDamage=350;//3600
+	MaxWaterDepth=0;
+	MaxSlope=32;
+	EnergyUse=0;
+	BuildTime=830;//565
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=100;
+	RadarDistance=0;
+	SoundCategory=NONE;
+	EnergyStorage=0;
+	MetalStorage=0;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=FORT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=f;
+	Corpse=DragonsTeeth_core;
+	EnergyMake=0;
+	buildangle=8192;
+	IsFeature=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	Mass=1600;//49;
+	}

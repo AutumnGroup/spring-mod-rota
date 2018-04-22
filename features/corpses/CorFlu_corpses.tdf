@@ -1,0 +1,17 @@
+[CorFlu_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CorFlu_dead;
+	footprintx=5;
+	footprintz=5;
+	height=55;
+	blocking=1;
+	hitdensity=100;
+	metal=13604;
+	damage=2580;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

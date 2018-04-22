@@ -1,0 +1,17 @@
+[ArmTabi_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=ArmTabi_dead;
+	footprintx=5;
+	footprintz=5;
+	height=50;
+	blocking=1;
+	hitdensity=100;
+	metal=14814;
+	damage=2380;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

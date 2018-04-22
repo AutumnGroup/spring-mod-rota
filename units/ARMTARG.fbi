@@ -1,0 +1,45 @@
+[UNITINFO] // Generated with TAS Modit v2.2 Beta
+{
+	name=ARM Research Facility;
+	unitname=armtarg;
+	buildcostenergy=6802;
+	buildcostmetal=757;
+	buildtime=28707;
+	category=ARM NOTAIR NOTSUB NOTSHIP;
+	description=Advanced Research;
+	footprintx=8;
+	footprintz=8;
+	maxdamage=5000;
+	objectname=ARMTARG;
+	side=ARM;
+	soundcategory=ARM_TARG;
+	tedclass=SPECIAL;
+	brakerate=0;
+	acceleration=0;
+	maxvelocity=0;
+	maxslope=10;
+	turnrate=0;
+	yardmap=oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo;
+	Builder=0;
+	workertime=0;
+	energystorage=0;
+	energyuse=0;
+	metalstorage=0;
+	metaluse=0;
+	onoffable=0;
+	istargetingupgrade=1;
+	idletime=1000;
+	idleautoheal=10;
+	activatewhenbuilt=1;
+	sightdistance=273;
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	maxwaterdepth=0;
+	corpse=ARMTARG_DEAD;
+	smoothanim=1;
+	icontype=bigstar;
+	bmcode=0;
+	noautofire=0;
+	buildangle=4096;
+	seismicsignature=0;
+}

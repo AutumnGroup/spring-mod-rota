@@ -1,0 +1,67 @@
+[UNITINFO]
+	{
+	icontype=factory;
+	UnitName=ARMPLAB;
+	BuildPic=ARMPLAB.PCX;
+	Version=1.0;
+	Side=ARM;
+	Objectname=ARMPLAB;
+	Designation=WG-101;
+	Name=Warp Gate;
+	Description=Warps in the Commander;
+	FootprintX=9;
+	FootprintZ=8;
+	BuildCostEnergy=52169;
+	BuildCostMetal=5400;//7400
+	MaxDamage=3086;
+	MaxWaterDepth=0;
+	MaxSlope=14;
+	EnergyUse=0;
+	BuildTime=103520;
+	WorkerTime=400;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=385;//220
+	RadarDistance=0;
+	SoundCategory=CORGANT;
+	EnergyStorage=1000;
+	MetalStorage=0;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=ooooooooo ooooooooo ooooooooo ooooooooo oocccccoo oocccccoo oocccccoo oocccccoo;
+	Corpse=armplab_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	buildangle=2048;
+	UnitRestricted=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	
+	DamageModifier=0.25;
+	
+	// decals
+	UseBuildingGroundDecal=1;
+	BuildingGroundDecalType=asphalt512c.dds;
+	BuildingGroundDecalSizeX=9;
+	BuildingGroundDecalSizeY=8;
+	BuildingGroundDecalDecaySpeed=0.01;
+	iconType=factory;
+	CanBeAssisted=0;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=120 80 120;
+	
+	}

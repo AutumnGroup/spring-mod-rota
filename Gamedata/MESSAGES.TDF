@@ -1,0 +1,27 @@
+//
+// Generated with TAS Modit v2.2 Beta
+//
+
+[MESSAGES]
+{
+	[Team %i (lead by %s) is no more]
+	{
+		tr1=Team %i (%s) has been obliterated;
+		tr2=Team %i (%s) has been liquidated;
+		tr3=Team %i (%s) has been eradicated;
+		tr4=Team %i (%s) has been terminated;
+		tr5=Team %i (%s) has bowed out;
+		tr6=Team %i (%s) forces have gone to a better place;
+		tr7=Team %i (%s) has been shown the door;
+		tr8=Team %i (%s) has left the scene;
+		tr9=Team %i (%s) has been annihilated;
+		tr10=Team %i (%s) has become one with the force;
+		tr11=Team %i (%s) has been eliminated;
+		tr12=Team %i (%s) has left the building;
+		tr13=Team %i (%s) tried and failed;
+		tr14=Team %i (%s) went up in flames;
+		tr15=Team %i (%s) just became a few thousand degrees hotter;
+		tr16=Team %i (%s) pushed the red button;
+		tr17=Team %i (%s) failed at the peace process;
+	}
+}

@@ -1,0 +1,88 @@
+[UNITINFO]
+	{
+	UnitName=CORCV;
+	Version=1;
+	Side=CORE;
+	Objectname=CORCV;
+	Designation=CMA-17;
+	Name=Construction Vehicle;
+	Description=Tech Level 1;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=2145;
+	BuildCostMetal=175;
+	MaxDamage=825;
+	MaxWaterDepth=19;
+	MaxSlope=16;
+	EnergyUse=0.2;
+	BuildTime=5146;
+	WorkerTime=100;
+	BMcode=1;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=350;//200
+	RadarDistance=0;
+	SoundCategory=CORE_CVEHICLE;
+	EnergyStorage=50;
+	MetalStorage=50;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=TANK;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=corcv_dead;
+	GermanName=Konstr.-Fahrzeug;
+	GermanDescription=Tech Level 1;
+	UnitNumber=98;
+	FrenchName=Véhicule de construction;
+	Frenchdescription=Niveau Tech 1;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	
+	SpanishName=Vehículo de Constr.;
+	SpanishDescription=Nivel Tecn. 1;
+	ItalianName=Veicolo Costruttore;
+	ItalianDescription=Tecnologia Livello 1;
+
+	MaxVelocity=1.9;
+	maxReverseVelocity=1.14;
+	BrakeRate=0.085;
+	Acceleration=0.011;
+	TurnRate=414;//207
+	SteeringMode=1;
+	ShootMe=1;
+	Builddistance=128;//40
+	CanReclamate=1;
+	EnergyMake=5.2;
+	MetalMake=0;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=TANKSH3;
+	Ovradjust=1;
+	//for Spring:
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=28;
+	trackOffset=3;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=VehTrack;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=1.52;
+	iconType=construction;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=32 27 50;
+	
+	}

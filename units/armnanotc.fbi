@@ -1,0 +1,86 @@
+[UNITINFO]
+{
+	Name=Level 1 Base Constructor;
+	UnitName=ARMNANOTC;
+	
+	//    Required Tags
+	BuildCostEnergy=12021;
+	BuildCostMetal=600;//1200
+	BuildTime=60936;//20312
+	Category= NOTAIR NOTSUB NOTSHIP;
+	Description=Builds Expansion Bases;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=4050;
+	ObjectName=ARMNANOTC;
+	Side=ARM;
+	SoundCategory=ARM_COM;
+	TEDClass=CNSTR;
+	Commander=0;
+	
+	//    Movement
+	BrakeRate=1.5;
+	MovementClass=TINY;
+	Acceleration=0;
+	CanMove=0;
+	MaxVelocity=0;
+	MaxSlope=12;
+	TurnRate=1;
+	
+	//    Airplane Moventment
+	
+	//    Buildings
+	
+	//    Construction
+	BuildDistance=940;
+	Builder=1;
+	WorkerTime=150;
+	ReclaimSpeed=50;
+	RepairSpeed=75;
+	
+	//    Resources
+	EnergyMake=20;
+	EnergyStorage=300;
+	EnergyUse=0;
+	MetalMake=1;
+	MetalStorage=300;
+	
+	//    Abilities
+	CanStop=1;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=940;
+	
+	//    Weapons
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	SelfDestructCountdown=5;
+	
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	Upright=1;
+	Mass=10000;
+	pushResistant=1;
+	
+	//    Not Used By TASpring
+	noautofire=0;
+	unitnumber=9904;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=Standby;
+	maneuverleashlength=0;
+	canreclamate=1;
+	CantBeTransported=1;
+	iconType=nano1;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=70 90 70;
+}

@@ -1,0 +1,2252 @@
+[RBU-M]
+	{
+	ID=193;
+	name=RBU-M;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+        //ballistic=1;
+	model=RBU-M;
+
+	range=1100;
+	reloadtime=5.25;//5
+        //waterweapon=1;
+	//noautorange=1;
+	//weapontimer=0.6;
+	//flighttime=0.64;
+
+	startvelocity=300;
+	weaponacceleration=100;
+	weaponvelocity=500;
+	turnrate=5000;
+	areaofeffect=96;
+	metalpershot=0;
+
+	soundstart=MisLite3;
+	SoundHit=XploSml2;
+	//soundwater==SplsMed;
+
+	firestarter=100;
+	//smokedelay=.01;
+	//selfprop=1;
+	smoketrail=1;
+
+	tracks=1;
+	//guidance=1;
+	tolerance=4000;
+
+	//startsmoke=1;
+	Trajectoryheight=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=350;//500
+		hovertank=420;//525
+		subs=0;
+		}
+	}
+
+[RBU-M2]
+	{
+	ID=193;
+	name=RBU-M2;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+        //ballistic=1;
+	model=RBU-M;
+
+	range=600;
+	reloadtime=10;//5
+        //waterweapon=1;
+	//noautorange=1;
+	//weapontimer=0.6;
+	//flighttime=0.64;
+
+	startvelocity=200;
+	weaponacceleration=400;
+	weaponvelocity=400;
+	turnrate=5000;
+	areaofeffect=64;
+	metalpershot=0;
+
+	soundstart=MisLite3;
+	SoundHit=XploSml2;
+	//soundwater==SplsMed;
+
+	firestarter=100;
+	//smokedelay=.01;
+	//selfprop=1;
+	smoketrail=1;
+
+	tracks=1;
+	//guidance=1;
+	tolerance=4000;
+
+	//startsmoke=1;
+	Trajectoryheight=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=420;//500
+		hovertank=464;//580
+		subs=0;
+		}
+	}
+
+[RBU-M3]
+	{
+	ID=193;
+	name=RBU-M;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+        //ballistic=1;
+	model=RBU-M;
+
+	range=1400;
+	reloadtime=1.05;//1
+        //waterweapon=1;
+	//noautorange=1;
+	//weapontimer=0.6;
+	//flighttime=0.64;
+
+	startvelocity=300;
+	weaponacceleration=100;
+	weaponvelocity=500;
+	turnrate=5000;
+	areaofeffect=96;
+	metalpershot=0;
+
+	soundstart=MisLite3;
+	SoundHit=XploSml2;
+	//soundwater==SplsMed;
+
+	firestarter=100;
+	//smokedelay=.01;
+	//selfprop=1;
+	smoketrail=1;
+
+	tracks=1;
+	//guidance=1;
+	tolerance=4000;
+
+	//startsmoke=1;
+	Trajectoryheight=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=250;
+		hovertank=300;//375
+		subs=0;
+		}
+	}
+
+[ARM_SHIPTORPEDO]
+	{
+	ID=34;
+	name=Destroyer Torpedo;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=630;//730//600
+	reloadtime=3.5;//7
+	weapontimer=3.15;//3
+	weaponvelocity=110;
+	startvelocity=70;
+	weaponacceleration=30;	
+
+	//burst=2;
+	//burstrate=2.2;
+
+	turnrate=5000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	//soundhit=xplodep2;
+	soundhit=explode2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	tolerance=3000;
+	//pitchtolerance=30000;
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=233;//300
+		subs=450;//260
+		Light=312;
+        BugLight=312;
+		Medium=312;
+        BugMedium=312;
+		hovertank=116;
+		}
+	}
+
+[ARM_SHIPCRAPTORPEDO]
+	{
+	ID=34;
+	name=Depth Charge;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=580;//560
+	reloadtime=4.1;//3
+	weapontimer=3;
+	weaponvelocity=110;
+	startvelocity=0;
+	weaponacceleration=15;	
+
+	turnrate=37000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	soundhit=xplodep2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=200;//200
+		subs=440;//300
+		Light=300;
+        BugLight=300;
+		Medium=300;
+        BugMedium=300;
+		hovertank=100;
+		}
+	}
+
+
+[CORE_SHIPTORPEDO]
+	{
+	name=Destroyer Torpedo;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=630;//730//600
+	reloadtime=3.5;//7
+	weapontimer=3.15;//3
+	weaponvelocity=110;//90
+	startvelocity=70;//70
+	weaponacceleration=30;	
+
+	//burst=2;
+	//burstrate=.4;
+
+	turnrate=5000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	//soundhit=xplodep2;
+	soundhit=explode2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	tolerance=3000;
+	//pitchtolerance=30000;
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=300;//233
+		subs=450;//260
+		Light=400;
+        BugLight=400;
+		Medium=400;
+        BugMedium=400;
+		hovertank=150;
+		}
+	}
+
+[SHIELD1]
+	{
+	ID=133;
+	name=PlasmaShield;
+	weaponType=Shield;
+	ShieldRepulser=1;
+	SmartShield=1;
+	ExteriorShield=0;
+	VisibleShield=0;
+	VisibleShieldRepulse=0;
+	ShieldEnergyUse=0;
+	ShieldForce=.3;//.3
+	ShieldRadius=1400;
+	ShieldMaxSpeed=.3;//.3
+	ShieldPower=3400;//1700
+	ShieldPowerRegen=3160;//1580
+	ShieldPowerRegenEnergy=0;
+	ShieldInterceptType=8;
+	ShieldGoodColor=0.925 1 0.875;
+	ShieldBadColor=0.35 0.275 0.225;
+	ShieldAlpha=0.4;
+	[DAMAGE]
+		{
+		default=10;
+		}
+	}
+
+[ARM_SHIPMGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	range=550;//500//580
+	reloadtime=.8;
+	weapontimer=.9;//1
+	weaponvelocity=1000;//850//700
+	sprayangle=512;//32
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=8;
+	burstrate=.1;
+	soundstart=ratatat;
+	soundhit=softblat;
+	soundtrigger=1;
+	corethickness=0;
+
+	beamweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cylinderTargeting=0.2;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=20;
+		subs=0;
+		}
+	}
+
+[ARM_SHIPSAM]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=900;//600
+	reloadtime=4.5;
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=540;//540
+	startvelocity=450;//450
+	weaponacceleration=-3;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	burnblow=1;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+	canAttackGround=0;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=150;//164
+		Air=325;//396
+		Bladewing=325;
+		subs=0;
+		}
+	}
+
+[ARM_ROYSAM]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=900;//600
+	flighttime=2.5;
+	reloadtime=4.5;
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=450;//450
+	weaponacceleration=-3;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	burnblow=1;
+	explosiongenerator=custom:MISSILE_SPLASH;
+	canAttackGround=0;
+
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=80;//164
+		Air=150;//396
+		Bladewing=150;
+		subs=0;
+		}
+	}
+
+[CORE_SHIPSAM]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=900;//600
+	flighttime=2.5;
+	reloadtime=3;//4.5
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=450;//450
+	weaponacceleration=-5;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	burnblow=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+	canAttackGround=0;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=150;
+		Air=250;//240//345
+		Bladewing=250;
+		subs=0;
+		}
+	}
+
+[CORE_ROYSAM]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=900;//600
+	flighttime=2.5;
+	reloadtime=4.5;
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=450;//450
+	weaponacceleration=-5;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	burnblow=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+	canAttackGround=0;
+
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=80;
+		Air=150;//240
+		Bladewing=150;
+		subs=0;
+		}
+	}
+
+[ARM_MSHIPCANNON]
+	{
+	ID=64;
+	name=Heavy Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=800;//660//1155
+	reloadtime=2;
+	weaponvelocity=600;//480
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=300;
+
+	//startsmoke=1;
+	//targetMoveError=.15;
+	explosiongenerator=custom:TANKSHOT_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=115;//135
+		hovertank=138;//172
+		Heavy=58;
+		BugHeavy=58;
+		subs=0;
+		}
+	}
+
+[ARM_SHIPFLAK]
+	{
+	ID=42;
+	name=Mini Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1450;//700
+	reloadtime=1.2;//0.6
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=102;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1700;//2200
+	sprayangle=1700;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=130;
+		Air=260;//130
+		FlyingFortress=30;//25
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[ARM_BCRUS_MAINGUN]
+	{
+	ID=68;
+	name=BattleCruiser Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=2100;
+	reloadtime=3.36;//1.8//3.2
+	weaponvelocity=560;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=750;//200//800
+
+	//startsmoke=1;
+	targetMoveError=.03;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:HUGEPLASMA_Expl;
+	myGravity=0.125;
+	[DAMAGE]
+		{
+		default=825;//850
+		hovertank=990;//1237
+		subs=0;
+		}
+	}
+
+[ARM_BCRUS_SECGUN]
+	{
+	ID=68;
+	name=BattleCruiser Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=2070;//1250
+	reloadtime=3.36;//1.8//3.2
+	weaponvelocity=560;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=770;//200//820
+
+	//startsmoke=1;
+	targetMoveError=.03;	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:HUGEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=725;//750
+		hovertank=870;//1087
+		subs=0;
+		}
+	}
+
+[ARM_LITTLEROY_GUN]
+	{
+	ID=66;
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=820;
+	reloadtime=2.5;//2.9
+	weaponvelocity=490;//350
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=500;//550
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=125;//111
+		hovertank=150;//188//166
+		subs=0;
+		Heavy=82;//73
+		BugHeavy=82;
+		}
+	}
+
+[ARM_ROY2_MAINGUN]
+	{
+	ID=66;
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1300;
+	reloadtime=3.1;//2.9
+	weaponvelocity=490;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=850;//230//350//750
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=258;//208
+		hovertank=310;//387
+		subs=0;
+		Heavy=172;
+		BugHeavy=172;
+		}
+	}
+
+[ARM_ROY2_SECGUN]
+	{
+	ID=64;
+	name=Med Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=820;//900
+	reloadtime=2.59;//2
+	weaponvelocity=420;//300
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=800;//300//600
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=153;//165
+		hovertank=182;//228
+		subs=0;
+		Heavy=101;
+		BugHeavy=101;
+		}
+	}
+
+[ARM_DRAGON_SECGUN]
+	{
+	ID=68;
+	name=Dragon Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=2100;//1250
+	reloadtime=3.045;//1.8//2.9
+	weaponvelocity=560;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=820;//200
+
+	//startsmoke=1;
+	targetMoveError=.03;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:BIGPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=420;//260
+		hovertank=504;//630
+		subs=0;
+		Heavy=320;
+		BugHeavy=320;
+		}
+	}
+
+[ARM_DRAGON_SHORTGUN]
+	{
+	ID=66;
+	name=Short Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1500;
+	accuracy=1400;
+	reloadtime=1.995;//1.9
+	weaponvelocity=480;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+
+	//startsmoke=1;
+	//targetMoveError=.05;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=174;
+		hovertank=209;//261
+		subs=0;
+		Heavy=115;
+		BugHeavy=115;
+		}
+	}
+[DRAGON_GUN]
+	{
+	ID=125; 
+	name=HEAVY Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=2100;
+	reloadtime=7.665;//8//6.7//7.3
+	weaponvelocity=600;//1000
+	energypershot=500;
+	areaofeffect=150;
+
+	soundstart=dragontir;
+	soundhit=explode2;
+
+	firestarter=50;
+	accuracy=320;//580//480//380//420
+	//aimrate==2500;
+	tolerance=300;
+	//holdtime==1;
+	targetMoveError=.03;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:DRAGONGUN_Expl;
+
+	[DAMAGE]
+		{
+		default=1910;//2010//1760
+		subs=0;
+		}
+	}
+[ARMHMSHIP_ROCKET]
+	{
+	ID=121;
+	name=Long Range Ballistic Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=toma2;
+
+	range=2430;//2800//2630
+	reloadtime=7;//10//14
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=96;
+	metalpershot=0;
+	
+	Trajectoryheight=.8;//.6
+	Wobble=2000;
+	turnrate=400;
+	accuracy=0;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	AvoidFeature=0;
+	ProximityPriority=-0.5;
+
+	//interceptedbyshieldtype=8;
+
+	[DAMAGE]
+		{
+		default=1650;
+		ships=2062;
+		subs=0;
+		}
+	}
+
+[COR_ROY_MAINGUN]
+	{
+	ID=66;
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=960;
+	reloadtime=2.3;//2.6
+	weaponvelocity=490;//350
+	areaofeffect=64;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=630;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=140;//212
+		hovertank=168;//210
+		subs=0;
+		Heavy=94;
+		BugHeavy=94;
+		}
+	}
+
+[COR_ROY_SECGUN]
+	{
+	ID=64;
+	name=Med Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=840;//535
+	reloadtime=2.4;
+	weaponvelocity=420;//300
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=650;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=140;
+		hovertank=168;//210
+		subs=0;
+		Heavy=94;
+		BugHeavy=94;
+		}
+	}
+
+[CORE_SHIPFLAK]
+	{
+	ID=42;
+	name=Mini Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1250;//700
+	reloadtime=1.2;//0.6
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=100;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1650;//2200
+	sprayangle=1650;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=125;
+		Air=250;//125
+		FlyingFortress=30;//25
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[CORE_BADSHIPFLAK]
+	{
+	ID=42;
+	name=Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1650;//700
+	reloadtime=.88;//.88
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=115;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1650;//2200
+	sprayangle=1650;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=135;
+		Air=135;
+		FlyingFortress=15;
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[CORE_BLACK_CANNON]
+	{
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1900;
+	reloadtime=3.99;//3.8
+	weaponvelocity=490;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=730;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:BIGPLASMA_Expl;
+
+	[DAMAGE]
+		{
+		default=520;
+		hovertank=624;//780
+		subs=0;
+		}
+	}
+
+[CORE_BLACK_SMALLGUN]
+	{
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1800;
+	reloadtime=3.465;//3.3
+	weaponvelocity=490;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=730;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+
+	[DAMAGE]
+		{
+		default=280;
+		hovertank=336;//420
+		subs=0;
+		Heavy=186;
+		BugHeavy=186;
+		}
+	}
+
+[CORE_BLACK_LASER]
+	{
+	name=Heavy Laser Cannon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=0.6;
+	//holdtime==1;
+	thickness=2.0;
+	intensity=2.8;
+
+	range=2100;//1200
+	reloadtime=4.725;//4.5
+	energypershot=1500;
+	weaponvelocity=1000;
+	areaofeffect=32;
+	targetMoveError=0.5;
+
+	//soundstart=gunfire;
+	//soundhit=impact;
+	soundstart=annigun1;
+	soundhit=xplosml3;
+
+	thickness=4;
+	corethickness=0.95;
+	laserflaresize=25;
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0 0.012 0.2;//0 0.012 1;
+	rgbcolor2=1 1 1;
+	impactOnly=1;
+	collideFriendly=0;
+
+	tolerance=5000;
+	explosiongenerator=custom:FLASH1blue_LONG;
+
+	[DAMAGE]
+		{
+		default=2500;//1800
+		subs=0;
+		}
+	}
+
+[ARM_PT_TORPEDO]
+	{
+	ID=34;
+	name=Patrol Torpedo Boat Torpedo;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=450;
+	reloadtime=9;
+	weapontimer=3;
+	weaponvelocity=90;
+	startvelocity=70;
+	weaponacceleration=15;	
+	tracks=1;
+	//guidance=1;
+	turnrate=4000;
+
+	burst=2;
+	burstrate=.4;
+
+	areaofeffect=48;
+	soundstart=torpedo1;
+	//soundhit=xplodep2;
+	soundhit=explode2;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	tolerance=3000;
+	//pitchtolerance=30000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=400;
+		subs=400;
+		hovertank=200;
+		}
+	}
+
+[CORE_PT_TORPEDO]
+	{
+	ID=34;
+	name=Patrol Torpedo Boat Torpedo;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=450;
+	reloadtime=6;
+	weapontimer=3;
+	weaponvelocity=90;
+	startvelocity=70;
+	weaponacceleration=15;	
+	tracks=1;
+	//guidance=1;
+	turnrate=4000;
+
+	burst=2;
+	burstrate=.4;
+
+	areaofeffect=48;
+	soundstart=torpedo1;
+	//soundhit=xplodep2;
+	soundhit=explode2;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	tolerance=3000;
+	//pitchtolerance=30000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+
+	[DAMAGE]
+		{
+		default=400;
+		subs=400;
+		hovertank=200;
+		}
+	}
+
+[CORE_CRUS_MAINGUN]
+	{
+	ID=68;
+	name=BattleCruiser Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1700;//1250
+	reloadtime=3.36;//1.8//3.2
+	weaponvelocity=560;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=800;//200
+
+	//startsmoke=1;
+	targetMoveError=.03;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:BIGPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=450;//260
+		hovertank=540;//675
+		subs=0;
+		Heavy=380;
+		BugHeavy=380;
+		}
+	}
+
+[CORE_CRUS_SECGUN]
+	{
+	ID=66;
+	name=Small Cruiser cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1550;//1700
+	reloadtime=2.94;//2.8
+	weaponvelocity=560;
+	areaofeffect=44;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=630;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=198;//208
+		hovertank=238;//297
+		subs=0;
+		Heavy=131;
+		BugHeavy=131;
+		}
+	}
+
+[CORE_CRUS_REARGUN]
+	{
+	ID=66;
+	name=cruiser rear cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=1600;
+	reloadtime=3.36;//3.2
+	weaponvelocity=490;
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=630;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:BIGPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=390;//208
+		hovertank=468;//585
+		subs=0;
+		Heavy=275;
+		BugHeavy=275;
+		}
+	}
+
+[COREHMSHIP_ROCKET]
+	{
+	ID=121;
+	name=Long Range Ballistic Rockets;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=toma2;
+
+	range=2430;//2630
+	reloadtime=3;//10//6
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=210;
+	areaofeffect=96;//96
+	metalpershot=0;
+	
+	Trajectoryheight=.8;//.6
+	Wobble=2000;
+	accuracy=0;
+	turnrate=400;
+
+	soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	AvoidFeature=0;
+	ProximityPriority=-0.5;
+	//interceptedbyshieldtype=8;
+
+	[DAMAGE]
+		{
+		default=1650;
+		ships=2062;
+		subs=0;
+		}
+	}
+
+[CORHMSHIP_SECGUN]
+	{
+	ID=64;
+	name=Med Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+
+	range=900;//900
+	reloadtime=2.4;
+	weaponvelocity=420;//300
+	areaofeffect=48;
+	soundstart=cannon3;
+	soundhit=xplomed2;
+	accuracy=650;
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:LITTLEPLASMA_Expl;
+	[DAMAGE]
+		{
+		default=175;
+		hovertank=210;//262
+		subs=0;
+		Heavy=117;
+		BugHeavy=117;
+		}
+	}
+
+
+[ARM_DESTROYER_FLAK]
+	{
+	ID=42;
+	name=Destroyer Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1500;//700//1250
+	reloadtime=.6;//.6//1.2
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=102;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1700;//2200
+	sprayangle=1700;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLWHITEBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=100;
+		Air=125;//100//200
+		FlyingFortress=16;//25
+		ships=10;
+		subs=0;
+		Light=10;
+        BugLight=10;
+		Medium=10;
+        BugMedium=10;
+		Heavy=10;
+		BugHeavy=10;
+		hovertank=10;
+		firethrower=10;
+		}
+	}
+
+[ARM_CARRIER_FLAK]
+	{
+	ID=42;
+	name=Carrier Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1500;//700//1250
+	reloadtime=.6;//.6//1.2
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=102;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1700;//2200
+	sprayangle=1700;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLWHITEBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=100;
+		Air=100;//100//200
+		FlyingFortress=15;//25
+		ships=10;
+		subs=0;
+		Light=10;
+        BugLight=10;
+		Medium=10;
+        BugMedium=10;
+		Heavy=10;
+		BugHeavy=10;
+		hovertank=10;
+		firethrower=10;
+		}
+	}
+
+[CORE_DESTROYER_FLAK]
+	{
+	ID=42;
+	name=Destroyer Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1475;//960//1220
+	reloadtime=1.2;//.6
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=100;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1650;//2200
+	sprayangle=1650;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=100;
+		Air=200;//200
+		FlyingFortress=30;//25
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[CORE_HEAVYSHIPFLAK]
+	{
+	ID=42;
+	name=Heavy Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1700;//700
+	reloadtime=2.2;//0.6//1.1
+	weapontimer=1;
+	weaponvelocity=1065;//950
+	areaofeffect=80;//100
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1200;//1650//800
+	sprayangle=1200;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.45;//.4//.55
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_BURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=125;//125
+		Air=500;//250
+		FlyingFortress=120;//120
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[CORE_CRUSGUN]
+	{
+	ID=66;
+	name=Long Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//minbarrelangle=-25;
+	
+	range=1450;//1450
+	reloadtime=3.1395;//2.99
+	weaponvelocity=520;//350
+	areaofeffect=64;
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+	accuracy=830;//430
+
+	//startsmoke=1;
+	targetMoveError=.02;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:PLASMA_Expl;
+	[DAMAGE]
+		{
+		default=244;
+		hovertank=293;//366
+		subs=0;
+		Heavy=162;
+		BugHeavy=162;
+		}
+	}
+
+[CORE_CRUISERTORPEDO]
+	{
+	ID=34;
+	name=Depth Charge;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=600;//700
+	reloadtime=2.9;//3
+	weapontimer=3;
+	weaponvelocity=110;
+	startvelocity=0;
+	weaponacceleration=15;	
+
+	turnrate=37000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	soundhit=xplodep2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=200;//200
+		subs=440;//300
+		Light=300;
+        BugLight=300;
+		Medium=300;
+        BugMedium=300;
+		hovertank=100;
+		}
+	}
+
+[CORE_BIGSHIPSAM]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	burnblow=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=1000;
+	flighttime=3.3;
+	reloadtime=5.5;//5
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=142;
+	turnrate=18000;
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	burnblow=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=3000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=170;//220
+		Air=425;//355//375
+		Bladewing=425;
+		subs=0;
+		}
+	}
+
+[CORE_VLAUNCHSAM]
+	{
+	ID=126;
+	name=Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	Trajectoryheight=1.4;
+	//toairweapon=1;
+	burnblow=1;
+
+	model=RBU-M;
+	
+	heightMod=1.1;
+
+	range=2150;//1850
+	reloadtime=6;
+
+	//noautorange=1;
+	weapontimer=4.27;
+	flighttime=4.27;
+
+	weaponvelocity=780;
+	startvelocity=80;
+	weaponacceleration=250;//250
+	turnrate=24000;
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=mercury_launch;
+	soundhit=mercury_impact;
+
+	Wobble=0;
+	turnrate=10000;
+
+	firestarter=100;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//guidance=1;
+	tracks=1;
+	//twophase=1;
+	tolerance=4000;
+	craterMult=0;
+	craterBoost=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:HUGEMISSILE_SPLASH;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=190;//220
+		Air=625;//355//375
+		Bladewing=625;
+		subs=0;
+		}
+	}
+
+[ARM_CRUISERTORPEDO]
+	{
+	ID=34;
+	name=Depth Charge;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=torpedo;
+	//propeller=1;
+
+	range=580;//700
+	reloadtime=3.1;//3
+	weapontimer=3;
+	weaponvelocity=110;
+	startvelocity=0;
+	weaponacceleration=15;	
+
+	turnrate=37000;
+	areaofeffect=48;
+	soundstart=torpedo1;
+	soundhit=xplodep2;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	waterweapon=1;
+	burnblow=1;
+
+	explosiongenerator=custom:TORPEDO_SPLASH_Expl;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=200;//200
+		subs=440;//300
+		Light=300;
+        BugLight=300;
+		Medium=300;
+        BugMedium=300;
+		hovertank=100;
+		}
+	}
+
+[ARM_CRUSGAUSS]
+	{
+	name=Rail Gun;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+	model=gauss_round;
+
+	range=1500;
+	reloadtime=9.24;//8//8.4
+	weaponvelocity=810;
+	areaofeffect=8;
+	accuracy=350;
+
+	soundstart=cannhvy1;
+	soundhit=xplomed2;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	myGravity=0.125;
+	explosiongenerator=custom:BIGGAUSS_Expl;
+
+	[DAMAGE]
+		{
+		default=275;
+		ships=400;
+		subs=0;
+		Light=400;
+        BugLight=400;
+		Medium=400;
+        BugMedium=400;
+		Heavy=400;
+		BugHeavy=400;
+		hovertank=400;
+		}
+	}
+
+[ARM_KATRINAFLAK]
+	{
+	ID=42;
+	name=Rapid Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+
+	range=1650;//1450
+	reloadtime=0.25;
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=102;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+    accuracy=1600;//2200
+	sprayangle=1600;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLWHITEBURST_Expl;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=130;//130
+		Air=130;
+		FlyingFortress=13;//25
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}
+
+[ARM_SHIP_PDLASER]
+	{
+	ID=80;
+	name=Light Laser;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=430;//300//512
+	reloadtime=.7;
+	weaponvelocity=600;//900//1750
+	duration=.15;// NEW 9-12-05//.05
+	energypershot=10;
+	areaofeffect=8;
+	soundtrigger=1;
+
+	soundstart=lasrfir3;
+	soundhit=lasrhit2;
+
+	firestarter=50;
+	beamweapon=1;
+	tolerance=500;
+
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+	explosiongenerator=custom:FLASH2red;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=70;
+		hovertank=70;
+		Light=84;
+        BugLight=84;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=40;
+		subs=0;
+		}
+	}
+
+[CORE_RAPIDSHIPSAM]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+
+	model=missile;
+	
+	heightMod=1.1;
+
+	range=900;//600
+	reloadtime=2.2;
+	flighttime=2.5;
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=450;//450
+	weaponacceleration=-5;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	burnblow=1;
+	tolerance=8000;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+	canAttackGround=0;
+
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=150;
+		Air=345;//240
+		Bladewing=345;
+		subs=0;
+		}
+	}
+
+[CORE_SHIPMGUN]
+	{
+	name=Machine Gun;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	rgbcolor=1 0.6 0;
+	rgbcolor2=1 1 1;
+	thickness=0.75;
+	intensity=0.8;
+
+	//targetMoverError=.04;
+	range=550;//500//580
+	reloadtime=.8;
+	weapontimer=1;
+	weaponvelocity=1000;//850//700
+	sprayangle=512;//32
+	areaofeffect=16;
+	edgeeffectiveness=1;
+	burst=8;
+	burstrate=.1;
+	soundstart=ratatat;
+	soundhit=softblat;
+	soundtrigger=1;
+	corethickness=0;
+
+	beamweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cylinderTargeting=0.2;
+	canAttackGround=0;
+
+	[DAMAGE]
+		{
+		default=4;
+		Air=20;
+		subs=0;
+		}
+	}
+
+[CORE_SUPERSHIPFLAK]
+	{
+	ID=42;
+	name=Super Ship Flak Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+	canAttackGround=0;
+
+	range=1250;//700
+	reloadtime=0.25;
+	weapontimer=1;
+	weaponvelocity=950;
+	areaofeffect=100;//90
+	edgeeffectiveness=0.90;
+	soundstart=canlite2;
+	soundhit=XPLOSML1;
+	//soundhit=flakhit;//flakhit
+
+	//minbarrelangle=-24;
+
+	accuracy=1650;//2200
+	sprayangle=1650;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:FLAK_SMALLBURST_Expl;
+
+	[DAMAGE]
+		{
+		default=125;
+		Air=125;
+		FlyingFortress=13;//25
+		ships=20;
+		subs=0;
+		Light=20;
+        BugLight=20;
+		Medium=20;
+        BugMedium=20;
+		Heavy=20;
+		BugHeavy=20;
+		hovertank=20;
+		firethrower=20;
+		}
+	}

@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	name=Eye;
+	unitname=pireye;
+	buildcostenergy=800;
+	buildcostmetal=30;
+	buildtime=1500;
+	category=NOWEAPON NOTAIR NOTSUB NOTSHIP;
+	description=Perimeter Camera;
+	footprintx=1;
+	footprintz=1;
+	maxdamage=250;
+	objectname=pireye;
+	side=PIR;
+	soundcategory=MINE;
+	tedclass=FORT;
+	brakerate=0;
+	acceleration=0;
+	maxvelocity=0;
+	maxslope=24;
+	turnrate=0;
+	yardmap=o;
+	Builder=0;
+	workertime=0;
+	energymake=0;
+	energystorage=0;
+	energyuse=3;
+	metalstorage=0;
+	onoffable=0;
+	idletime=1800;
+	idleautoheal=5;
+	activatewhenbuilt=1;
+	sightdistance=560;
+	stealth=0;
+	init_cloaked=1;
+	cloakcost=10;
+	mincloakdistance=0;
+	smoothanim=1;
+	buildpic=pireye.pcx;
+	icontype=scout;
+	bmcode=0;
+	noautofire=0;
+	buildangle=8192;
+	seismicsignature=0;
+	levelground=0;
+	maxwaterdepth=0;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=16 5 16;
+}

@@ -1,0 +1,62 @@
+[UNITINFO]
+	{
+	UnitName=CORUWASP;
+	Version=1;
+	Side=CORE;
+	Objectname=CORUWASP;
+	Designation=HK-47;
+	Name=Underwater Seaplane Support Station;
+	Description=Refuels Seaplanes;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=2540;//3540
+	BuildCostMetal=294;//230
+	MaxDamage=680;
+	MaxSlope=24;
+	EnergyUse=0;
+	BUILDPIC=coruwasp.bmp;
+	BuildTime=3294;//6587
+	WorkerTime=196;//200
+	RepairSpeed=800;
+	MinWaterDepth=30;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=350;//300
+	RadarDistance=0;
+	stealth=1;
+	SoundCategory=AIRPLANT;
+	EnergyStorage=10;
+	MetalStorage=0;
+	ExplodeAs=HUGE_UNITEX;
+	SelfDestructAs=MEDIUM_BUILDING;
+	Category=NOTAIR NOTSUB ;
+	TEDClass=SPECIAL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=yyyy yyyy yyyy yyyy;
+	Corpse=coruwasp_dead;
+	Builddistance=6;
+	EnergyMake=4;
+	buildangle=1024;
+	ActivateWhenBuilt=1;
+	onoffable=1;
+	sortbias=0;
+	IsAirBase=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	Mass=30000;
+	idletime=2200;
+	idleautoheal=2;
+	iconType=landpad;
+	
+	collisionVolumeType=box;
+	collisionVolumeScales=60 45 60;
+	//collisionVolumeOffsets=0 -25 0;
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

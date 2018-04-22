@@ -1,0 +1,167 @@
+[ASTEROID]
+	{
+	ID=120;
+	name=Bug Asteroid;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model = greyrock2.s3o;
+
+	range=32000;
+	reloadtime=5.0;
+	weapontimer=10;
+	weaponvelocity=2000;
+	startvelocity=2000;
+	weaponacceleration=120;
+	areaofeffect=450;
+	metalpershot=0;
+	wobble=0;
+
+	//soundstart=rocklit1;
+	soundhit=xplonuk4;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=ASTEROIDTRAIL_Expl;
+
+	[DAMAGE]
+		{
+		default=10000;
+		roost=10;
+		}
+	}
+
+[SPAWNER_ASTEROID]
+	{
+	ID=120;
+	name=Bug Asteroid;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model = greyrock2.s3o;
+
+	range=32000;
+	reloadtime=5.0;
+	weapontimer=10;
+	weaponvelocity=2000;
+	startvelocity=2000;
+	weaponacceleration=120;
+	areaofeffect=450;
+	metalpershot=0;
+	wobble=0;
+
+	//soundstart=rocklit1;
+	soundhit=xplonuk4;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=ASTEROIDTRAIL_Expl;
+	//explosiongenerator=custom:ASTEROIDIMPACT_Expl;
+
+	[DAMAGE]
+		{
+		default=10000;
+		}
+	}
+
+[SPAWNER_KDART]
+	{
+	name=Heavy Rocket;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=corvrocket;
+
+	range=32000;
+	reloadtime=28;
+	burst = 12;
+	burstrate = .15;
+	sprayangle=1024;
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=1300;
+	startvelocity=800;
+	weaponacceleration=210;
+	areaofeffect=64;//96
+	//edgeeffectiveness=.9;
+	metalpershot=0;
+	accuracy=0;
+
+	//soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	ProximityPriority=-0.5;
+	cegTag=KDARTTRAIL_Expl;
+
+	[DAMAGE]
+		{
+		default=1950;
+		}
+	}
+
+[SPAWNER_MINIASTEROID]
+	{
+	name=Mini Asteroid;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=SGreyRock1.s3o;
+
+	range=32000;
+	reloadtime=28;
+	sprayangle=1024;
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=2000;
+	startvelocity=2000;
+	weaponacceleration=210;
+	areaofeffect=120;//96
+	//edgeeffectiveness=.9;
+	metalpershot=0;
+	accuracy=0;
+
+	//soundstart=Rockhvy1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	//tracks=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	ProximityPriority=-0.5;
+	cegTag=MINIASTEROIDTRAIL_Expl;
+
+	[DAMAGE]
+		{
+		default=1550;
+		}
+	}

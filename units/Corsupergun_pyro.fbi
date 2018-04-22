@@ -1,0 +1,61 @@
+[UNITINFO]
+	{
+	UnitName=CORSUPERGUN_PYRO;
+	Version=1;
+	Side=CORE;
+	Objectname=CORSUPERGUN_PYRO;
+	Designation=COR-LRPDS;
+	buildpic=corsupergun_pyro.pcx;
+	Name=Pinocchio;
+	Description=Pyro Delivery System;
+	FootprintX=8;
+	FootprintZ=8;
+	MaxDamage=6300;//2650//5250
+	BuildCostEnergy=1624286;//2024286
+	BuildCostMetal=90428;//130428
+	MaxWaterDepth=0;
+	MaxSlope=16;
+	EnergyUse=0;
+	BuildTime=1668022;
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	//NoAutoFire=1;
+	SightDistance=375;
+	RadarDistance=0;
+	SoundCategory=COR_INT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=ATOMIC_NUKE;
+	SelfDestructAs=ATOMIC_NUKE;
+	Category=NOTSHIP NOTAIR NOTSUB ;
+	TEDClass=FORT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo;
+	Corpse=CorSupergun_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	canstop=1;
+	ShootMe=1;
+	EnergyMake=0;
+	DefaultMissionType=GUARD_NOMOVE;
+	buildangle=4096;
+	Weapon1=COR_SUPERGUN_PYRO;
+	wpri_badTargetCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	canattack=1;
+	HighTrajectory=1;
+	canguard=1;
+	idletime=2200;
+	idleautoheal=2;
+	iconType=bigstar;
+
+	// resistant to weapons from above
+	flankingBonusMode=3;
+	flankingBonusDir= 0 1 0 ;
+	flankingBonusMax=1.2;	
+	flankingBonusMin=.6;
+
+	}

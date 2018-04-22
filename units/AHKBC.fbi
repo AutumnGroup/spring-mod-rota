@@ -1,0 +1,45 @@
+[UNITINFO]
+	{
+	UnitName=AHKBC;
+	Version=1.1;
+	Side=Arm;
+	Objectname=AHKBC;
+	Designation=AHKBC;
+	Name=Adv Kbot Center;
+	Description=Builds Adv Kbots;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=1100;
+	BuildCostMetal=550;
+	MaxDamage=1120;
+	MaxWaterDepth=0;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=6400;
+	WorkerTime=200;
+	BMcode=0;
+	Builder=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=220;
+	RadarDistance=0;
+	SoundCategory=Arm_HOVER_PLANT;
+	EnergyStorage=100;
+	MetalStorage=100;
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=PLANT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=occo occo occo occo;
+	Corpse=AHKBC_dead;
+	UnitNumber=20;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	}

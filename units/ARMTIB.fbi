@@ -1,0 +1,99 @@
+[UNITINFO]
+	{
+	UnitName=ARMTIB;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMTIB;
+	Designation=SBD1-FGV;
+	Name=Tiburon;
+	Description=Attack Submarine;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=3087;//4410
+	BuildCostMetal=935;//1335
+	MaxDamage=910;//700//600
+	EnergyUse=3;
+	BuildTime=10542;//15060
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=490;
+	stealth=1;
+	SoundCategory=ARM_SUB;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=SUB_UNITEX;
+	SelfDestructAs=SUB_UNITEX;
+	Category=UNDERWATER NOTAIR SUB;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	///Copyright CREATION MATRIX units 2004
+	Corpse=armtib_dead;
+	GermanName=U-Boot;
+	GermanDescription=U-Boot;
+	UnitNumber=1277;
+	FrenchName=Requin;
+	Frenchdescription=Sous-marin chasseur;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Tiburon;
+	SpanishDescription=Submarino de Caza;
+	ItalianName=;
+	ItalianDescription=Sottomarino di caccia;
+	canguard=1;
+	MaxVelocity=2;//2.3//1.43//1.90//1.84//1.90
+	BrakeRate=0.03;//.006
+	Acceleration=0.028;//.018
+	TurnRate=425;//256
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=3;
+	DefaultMissionType=Standby;
+	maneuverleashlength=600;
+	MovementClass=BOATD3;
+	MinWaterDepth=35;
+	SonarDistance=800;
+	canattack=1;
+	Waterline=30;
+	Upright=1;
+	downloadable=1;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=NOTSHIP;
+	ActivateWhenBuilt=1;
+	Weapon1=ARM_TORPEDO;
+	Weapon2=ARM_GUIDEDTORPEDO;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=120;
+	WeaponMainDir2=0 0 1;
+	MaxAngleDif2=120;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=2.3;
+
+	OnlyTargetCategory1=NOTSUB;
+	OnlyTargetCategory2=SUB;
+	idletime=2200;
+	idleautoheal=1;
+	iconType=sub;
+	SeismicDistance=1600;
+	SeismicSignature=2;//0
+	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=35 10 110;
+	collisionVolumeType = box;
+	collisionVolumeScales =30 70 110;
+	collisionVolumeOffsets = 0 -25 0;
+	
+	[customParams] 
+	{
+		fireproof=1;
+	}
+	}

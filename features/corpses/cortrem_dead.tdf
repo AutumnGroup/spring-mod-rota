@@ -1,0 +1,38 @@
+[TREM_DEAD]
+{
+	world=All Worlds;
+	description=Tremor Wreckage;
+	category=corpses;
+	object=TREM_DEAD;
+	featuredead=TREM_HEAP;
+	footprintx=2;
+	footprintz=2;
+	height=8;
+	blocking=1;
+	hitdensity=100;
+	metal=800;
+	energy=0;
+	damage=927;
+	reclaimable=1;
+	featurereclamate=SMUDGE01;
+	seqnamereclamate=TREE1RECLAMATE;
+}
+
+[TREM_HEAP]
+{
+	world=All Worlds;
+	description=Tremor Heap;
+	category=heaps;
+	object=2X2B;
+	footprintx=2;
+	footprintz=2;
+	height=2;
+	blocking=0;
+	hitdensity=100;
+	metal=450;
+	damage=914;
+	reclaimable=1;
+	featurereclamate=SMUDGE01;
+	seqnamereclamate=TREE1RECLAMATE;
+	energy=0;
+}

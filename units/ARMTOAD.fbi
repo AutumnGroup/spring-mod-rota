@@ -1,0 +1,129 @@
+[UNITINFO]
+	{
+	UnitName=ARMTOAD;
+	Version=3.1;
+	Side=ARM;
+	Objectname=Armtoad;
+	Designation=AFD-J9;
+	Name=ToadFoot;
+	Description=Fighter-Bomber;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=9523;//7160//5400//5940//7020
+	BuildCostMetal=368;//350//260//286//343
+	MaxDamage=383;//500//450
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=0.7;
+	BuildTime=22052;//19176//9400//18800
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=850;//800
+	RadarDistance=0;
+	SoundCategory=ARM_GNDVTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_AIRUNITEX;
+	SelfDestructAs=BIG_AIRUNIT;
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	UnitNumber=181;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=10;//15,10
+	BrakeRate=6.12;
+	Acceleration=6;//4
+	TurnRate=1000;
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=440;//220;
+	BankScale=1;
+	EnergyMake=0.7;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=320;
+	Weapon1=ARF_ROCKET;
+	Weapon2=ARF_ROCKET;
+	Weapon3=TOAD_MGUN;
+	Weapon4=TOAD_MISSILE;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	OnlyTargetCategory3=VTOL;
+	OnlyTargetCategory4=VTOL; //?
+	//wpri_badTargetCategory=NOTAIR;
+	//BadTargetCategory=VTOL;
+	canattack=1;
+	MoveRate1=8;
+
+	// aircraft controls
+	//maxPitch=.8;
+	myGravity=.6;
+	turnRadius=780;//800
+	CanLoopbackAttack=1;
+	//maxAileron=.01;//.015//.01
+	//maxElevator=.008;//.008
+	maxRudder=.005;//.004
+
+	//CanDropFlare=1;
+	//FlareReload=1.5;
+	//FlareEfficiency=0.3;
+	//FlareDelay=0.15;
+	//FlareDropVector=0 -.4 -1.3;
+	//FlareSalvoSize=1;
+	//FlareSalvoDelay=.1;
+	//FlareTime=1;
+	// fuel
+	maxfuel=300;
+	RefuelTime=15;//5
+	WeaponFuelUsage1=35;//20//35
+	WeaponFuelUsage2=35;
+	WeaponFuelUsage4=15;
+	iconType=airfighterbomber;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	MinAirBasePower=200;
+	
+	//collide=0;
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=13 13 35;
+	collisionVolumeType=box;
+	collisionVolumeScales=25 10 35;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:machinegun_muzzle1;
+		explosiongenerator1=custom:rocketsmoke;
+		}
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=300;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=300;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=20;
+		unit_to_team_transfer_rate_custom_resource1=20;
+	}
+	}

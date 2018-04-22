@@ -1,0 +1,130 @@
+[UNITINFO]
+	{
+	UnitName=CORVAMP;
+	Version=1;
+	Side=CORE;
+	Objectname=CORVAMP;
+	Designation=AFD-J9;
+	Name=Vamp;
+	Description=Stealth Fighter;
+	
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=8716;//6573//8545
+	BuildCostMetal=283;//205//267//277
+	MaxDamage=330;//440;//490//340
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=5;
+	BuildTime=17948;//15924//20701//21115
+	
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	SightDistance=500;//900
+	RadarDistance=0;
+	SoundCategory=CORE_FIGVTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_AIRUNITEX;
+	SelfDestructAs=BIG_AIRUNIT;
+	Category=VTOL NOTSHIP NOTSUB LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	GermanName=Vamp;
+	GermanDescription=Stealth-Jäger;
+	UnitNumber=148;
+	FrenchName=Vampire;
+	Frenchdescription=Chasseur furtif;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Vamp;
+	SpanishDescription=Caza antirradar;
+	ItalianName=Vamp;
+	ItalianDescription=Caccia Stealth;
+	canguard=1;
+	MaxVelocity=14;//17
+	BrakeRate=7;
+	Acceleration=0.85;//.55
+	TurnRate=920;//820
+	frontToSpeed=.04;//.1 //fudge factor for lining up speed and front of plane 
+	speedToFront=.028;//.07//fudge factor for lining up speed and front of plane 
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=520;//250
+	BankScale=1;
+	EnergyMake=5;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	canattack=1;
+	Weapon1=CORVTOL_ADVMISSILE;
+	//wpri_badTargetCategory=NOTAIR;
+	BadTargetCategory=NOTAIR;
+	Weapon2=CORVTOL_ADVMISSILE2;
+	//wsec_badTargetCategory=NOTAIR;
+	NoChaseCategory=NOTAIR;
+	OnlyTargetCategory1=VTOL;
+	OnlyTargetCategory2=VTOL;
+	MoveRate1=8;
+	Stealth=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	
+	CanDropFlare=1;
+	FlareSalvoSize=1;
+	FlareReload=.1;
+	FlareEfficiency=0.7;
+	FlareDelay=0.1;
+	FlareDropVector=0 0 -1;
+	
+	idletime=2200;
+	idleautoheal=1;
+	CanLoopbackAttack=1;
+	myGravity=.6;
+	
+	SeismicSignature=0;
+	CloakCost=28;//7
+	mincloakdistance=300;
+	initCloaked=0;
+	
+	//Fuel
+	maxfuel=260;
+	RefuelTime=15;//5
+	WeaponFuelUsage1=8;
+	WeaponFuelUsage2=8;
+	iconType=air;
+	MinAirBasePower=199;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=15 10 25;
+	collisionVolumeType=box;
+	collisionVolumeScales=20 10 25;
+	
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=260;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=260;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=17;
+		unit_to_team_transfer_rate_custom_resource1=17;
+	}
+	}

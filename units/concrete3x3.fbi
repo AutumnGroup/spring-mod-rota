@@ -1,0 +1,62 @@
+[unitinfo]
+{
+	unitname=concrete3x3;
+	objectname=nothing.3do;
+	BuildPic=concrete.png;
+	yardmap=yyyyyyyyy;
+
+	name=Concrete 3x3;
+	description=An empty lot;
+	maxdamage=1200;
+	autoheal=1200;
+	buildcostmetal=30;
+	buildcostenergy=10;
+	buildtime=3000;
+
+	//    Buildings
+	footprintx=3;
+	footprintz=3;
+	CollisionVolumeType=Box; // ('T' is one of "XYZ")
+	CollisionVolumeScales=8 8 8;
+	CollisionVolumeOffsets=0 256 0;
+	
+	useBuildingGroundDecal=1;
+	BuildingGroundDecalType=concrete.tif;
+	BuildingGroundDecalSizeX=3;
+	BuildingGroundDecalSizeY=3;
+	BuildingGroundDecalDecaySpeed=0.9;
+
+	hidedamage=1;
+	//isfeature=1;
+	//shownanoframe=1;
+	smoothanim=0;
+
+	maxslope=80;
+	sightdistance=0;
+	Corpse=road_dead;
+
+	//    Misc
+	Reclaimable=0;
+	Capturable=0;
+	CanAttack=0;
+	ExplodeAs=NOWEAPON;
+	SelfDestructAs=NOWEAPON;
+	SelfDestructCountdown=1;
+	Upright=1;
+	Levelground=0;
+/////////////////////////////////////////////SPECIAL STUFF FOR GAIA
+	iconType=noicon;
+	stealth=1;
+	gaia=1;
+	neutral=1;
+
+	[customParams] 
+	{
+		gaia=1;
+		draw_in_los=0;
+		never_draw=0;
+		draw_always=1;
+		draw_always_selectable=0;
+		road=1;//SPECIAL FOR ROADS, MAKES THEM NOT BLOCK
+	}
+}

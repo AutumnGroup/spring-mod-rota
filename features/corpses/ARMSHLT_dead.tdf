@@ -1,0 +1,37 @@
+[ARMSHLT_DEAD]
+{
+	world=All Worlds;
+	description=Wreckage;
+	category=corpses;
+	object=ARMSHLT_DEAD;
+	featuredead=ARMSHLT_HEAP;
+	footprintx=9;
+	footprintz=9;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=607;
+	damage=1240;
+	reclaimable=1;
+	featurereclamate=SMUDGE01;
+	seqnamereclamate=TREE1RECLAMATE;
+	energy=0;
+}
+
+[ARMSHLT_HEAP]{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=7X7B;
+	footprintx=9;
+	footprintz=9;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=300;
+	damage=1220;
+	reclaimable=1;
+	featurereclamate=SMUDGE01;
+	seqnamereclamate=TREE1RECLAMATE;
+	energy=0;
+}

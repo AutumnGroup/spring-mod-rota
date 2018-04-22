@@ -1,0 +1,17 @@
+[CorGala_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=core_corpses;
+	object=CorGala_dead;
+	footprintx=2;
+	footprintz=2;
+	height=25;
+	blocking=1;
+	hitdensity=175;
+	metal=1390;
+	damage=1221;
+	reclaimable=1;
+	featurereclamate=smudge01;
+      }
+

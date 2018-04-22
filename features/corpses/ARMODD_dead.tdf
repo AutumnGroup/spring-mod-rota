@@ -1,0 +1,37 @@
+[ARMODD_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armodd_dead;
+	featuredead=armodd_heap;
+	footprintx=3;
+	footprintz=3;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=1353;
+	damage=1984;
+	reclaimable=1;
+	featurereclamate=smudge04;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ARMODD_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3b;
+	footprintx=3;
+	footprintz=3;
+	height=1;
+	blocking=0;
+	hitdensity=100;
+	metal=594;
+	damage=1410;
+	reclaimable=1;
+
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

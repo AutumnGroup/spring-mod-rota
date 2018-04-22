@@ -1,0 +1,75 @@
+[UNITINFO]
+	{
+	UnitName=CORAWAC;
+	Version=1.2;
+	Side=CORE;
+	Objectname=CORAWAC;
+	Designation=AB-HAB;
+	Name=Vulture;
+	Description=Radar Plane;
+	FootprintX=3;
+	FootprintZ=3;
+	BuildCostEnergy=16140;//15824
+	BuildCostMetal=514;//504
+	MaxDamage=665;
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=20;
+	BuildTime=14549;//14264
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	activateWhenBuilt=1;
+	SightDistance=1312;//350
+	RadarDistance=5000;//1590
+	SoundCategory=CORE_VTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=HUGE_UNITEX_AIR;
+	SelfDestructAs=HUGE_UNIT_AIR;
+	Category=VTOL NOWEAPON NOTSUB NOTSHIP;
+	TEDClass=VTOL;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=5;//9.3
+	BrakeRate=3;
+	Acceleration=0.08;
+	TurnRate=600;
+	SteeringMode=1;
+	ShootMe=1;
+	Canfly=1;
+	cruisealt=510;
+	Scale=1;
+	BankScale=1;
+	EnergyMake=3;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=1280;
+	downloadable=1;
+	NoChaseCategory=UNDERWATER;
+	wsec_badTargetCategory=NOTAIR;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=1;
+	iconType=radar;
+	MinAirBasePower=200;
+	onoffable=1;
+	// FLIGHT CODE
+	turnRadius=1200;
+	maxRudder=.006;//.01
+	maxBank=.3;
+	maxPitch=.2;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=30 20 30;
+	collisionVolumeType=box;
+	collisionVolumeScales=30 15 30;
+	
+	}

@@ -1,0 +1,62 @@
+[ARMWOLF_GUN]
+	{
+	ID=31; // Original ID was 117 - Edited on 30/07/01 15:35:51 using TA Conflict Crusher - http://www.r1ch.net/tacc/
+	name=Wolf Canon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	//minbarrelangle=-15;
+
+	range=900;
+	reloadtime=8;
+	weaponvelocity=500;
+	areaofeffect=75;
+	soundstart=CANZIP2;
+	soundhit=XPLOSML1;
+
+	tolerance=500;
+	//startsmoke=1;
+
+	[DAMAGE]
+		{
+		default=400;
+		subs=0;
+		}
+	}
+
+[ARMWOLF_MISSILE]
+	{
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=700;
+	reloadtime=4.5;
+	weapontimer=5;
+	weaponvelocity=540;
+	startvelocity=450;
+	weaponacceleration=-10;
+	turnrate=14000;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	[DAMAGE]
+		{
+		default=84;//40//62
+		Air=120;
+		subs=0;
+		}
+	}

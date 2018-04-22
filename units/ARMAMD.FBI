@@ -1,0 +1,65 @@
+[UNITINFO]
+	{
+	UnitName=ARMAMD;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMAMD;
+	Designation=ARM-AMD1;
+	Name=Protector;
+	Description=Anti Missile Defense System;
+	FootprintX=3;//8
+	FootprintZ=3;
+	BuildCostEnergy=40000;
+	BuildCostMetal=1437;
+	MaxDamage=1480;
+	MaxWaterDepth=0;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=35678;//95678
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=1;
+	SightDistance=255;
+	RadarDistance=0;
+	SoundCategory=ARM_AMD;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=ATOMIC_BLASTSML;
+	SelfDestructAs=CRAWL_BLASTSML;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=FORT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=ooooooooo;
+	Corpse=armamd_dead;
+	GermanName=Protector;
+	GermanDescription=Atomare Raketenabwehr;
+	UnitNumber=6;
+	FrenchName=Protector;
+	Frenchdescription=Missile nucléaire de défense;
+	firestandorders=1;
+	StandingFireOrder=2;
+	SpanishName=Protector;
+	SpanishDescription=Sistema de Defensa Antimisiles;
+	ItalianName=Protector;
+	ItalianDescription=Sistema di difesa anti-missili;
+	ShootMe=1;
+	buildangle=4096;
+	Weapon1=AMD_ROCKET;
+	//Weapon2=SHIELD2;
+	wpri_badTargetCategory=NOTAIR;
+	BadTargetCategory=NOTAIR;
+	DamageModifier=0.125;//0.5
+	//antiweapons=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	iconType=antinuke;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=45 65 45;
+	
+	}

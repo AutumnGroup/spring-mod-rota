@@ -1,0 +1,51 @@
+[REP_DRONE_LASER]
+	//derived from ARM_FAVLASER
+	{
+	name="repelent";
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+
+	range=306;
+	reloadtime=.2;
+	weaponvelocity=600;//400
+	areaofeffect=8;
+	
+	//burst=6;
+	burstrate=.2;
+	duration=.06;
+	soundtrigger=1;
+
+	soundstart=lasrfir1;
+	soundhit=lasrhit2;
+
+	firestarter=50;
+	beamweapon=1;
+	rgbcolor=1 0.059 0;
+	rgbcolor2=1 1 1;
+
+	firestarter=90;
+	beamweapon=1;
+	//beamlaser=1;
+	thickness=1.00;
+	corethickness=0.25;
+	laserflaresize=25;
+	//targetMoveError=0.2;
+	//beamtime=0.12;
+	explosiongenerator=custom:FLASH1red;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+   	AvoidFeature=1;
+
+	[DAMAGE]
+		{
+		default=10;
+		Light=10;
+        BugLight=10;
+		Medium=6;
+        BugMedium=6;
+		Heavy=3;//10
+		BugHeavy=3;
+		subs=0;
+		}
+	}

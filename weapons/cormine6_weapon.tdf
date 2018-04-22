@@ -1,0 +1,36 @@
+[cormine6]
+	{
+	ID=74;
+	name=Nuclear Mine;
+	rendertype=4;
+	ballistic=1;
+	
+
+	range=700;//480
+	reloadtime=3.6;
+	weaponvelocity=400;
+	areaofeffect=750;
+	soundstart=largegun;
+	//soundhit=bignuke;
+	soundhit=xplonuk3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	edgeeffectiveness=0.15;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	//explosiongenerator=custom:MINI_NUCLEAR_Expl;
+	explosiongenerator=custom:ARGHNUKE_FX;
+
+	[DAMAGE]
+		{
+		default=8000;
+		//ARMCOM=2900;
+		//CORCOM=2900;
+		}
+	}

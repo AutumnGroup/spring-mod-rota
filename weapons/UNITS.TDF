@@ -1,0 +1,1276 @@
+/* Units.tdf -- Units exploding as weapons */
+
+/* Allowed IDs = 200-224 */
+
+[SMALL_BUILDING]
+	{
+	ID=200;
+	name=Small building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=205;
+	soundstart=largegun;
+	soundhit=xplosml3;
+	explosiongenerator=custom:SMALL_UNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=900;
+		}
+	}
+
+[MEDIUM_BUILDING]
+	{
+	ID=201;
+	name=Medium building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=325;
+	soundstart=largegun;
+	soundhit=xplomed1;
+	explosiongenerator=custom:BIG_UNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=1400;
+		}
+	}
+
+[LARGE_BUILDING]
+	{
+	ID=202;
+	name=Large building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=400;
+	soundstart=largegun;
+	soundhit=xplolrg4;
+	explosiongenerator=custom:FACTORY_Expl;
+
+	[DAMAGE]
+		{
+		default=1800;
+		}
+	}
+
+[ESTOR_BUILDING]
+	{
+	ID=203;
+	name=Small building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=420;
+	soundstart=largegun;
+	soundhit=xplonuk1;
+	explosiongenerator=custom:ATOMIC_BLASTSML;
+
+	[DAMAGE]
+		{
+		default=1900;
+		}
+	}
+
+[METALMKR_BUILDING]
+	{
+	ID=202;
+	name=MMAKR building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=150;
+	reloadtime=3.6;
+	weaponvelocity=100;
+	areaofeffect=180;
+	soundstart=largegun;
+	soundhit=xplomed5;//xplolrg4
+	explosiongenerator=custom:HUGE_UNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=900;
+		}
+	}
+
+[MOHOMMKR_BUILDING]
+	{
+	ID=202;
+	name=Large building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=340;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=340;
+	soundstart=largegun;
+	soundhit=impact;//xplonuk1
+	explosiongenerator=custom:MEDDUST_Expl;
+
+	[DAMAGE]
+		{
+		default=3000;
+		}
+	}
+
+[MINIBANG_UNIT]
+	{
+	name=Mini Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=200;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=24;
+	soundstart=largegun;
+	soundhit=xplomed2;
+	craterMult=0;
+	craterBoost=0;
+	explosiongenerator=custom:MINIBANG_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	
+	[DAMAGE]
+		{
+		default=30;
+		}
+	}
+
+[MINISUIC_UNIT]
+	{
+	name=Mini Kbot Suicide;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=200;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=64;
+	soundstart=largegun;
+	soundhit=xplomed2;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:MINISUIC_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	[DAMAGE]
+		{
+		default=220;
+		}
+	}
+
+[SMALL_UNIT]
+	{
+	ID=204;
+	name=Small tank;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=75;
+	soundstart=largegun;
+	soundhit=xplomed2;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:SMALL_SUICIDE_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	[DAMAGE]
+		{
+		default=200;
+		}
+	}
+
+
+[MEDIUM_UNIT]
+	{
+	ID=110;
+	name=Medium Unit;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=95;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:MED_SUICIDE_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	[DAMAGE]
+		{
+		default=250;
+		}
+	}
+
+
+
+[BIG_UNIT]
+	{
+	ID=205;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+
+	explosiongenerator=custom:BIG_SUICIDE_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	[DAMAGE]
+		{
+		default=350;
+		}
+	}
+
+
+
+
+[SMALL_BUILDINGEX]
+	{
+	ID=206;
+	name=Small building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=70;
+	areaofeffect=205;
+	soundstart=largegun;
+	soundhit=xplosml3;
+
+	//shakeduration=0;
+	explosiongenerator=custom:SMALL_SUICIDE_Expl;
+	[DAMAGE]
+		{
+		default=40;
+		}
+	}
+
+[MEDIUM_BUILDINGEX]
+	{
+	ID=207;
+	name=Medium building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=105;
+	soundstart=largegun;
+	soundhit=xplomed1;
+	explosiongenerator=custom:MED_SUICIDE_Expl;
+	[DAMAGE]
+		{
+		default=100;
+		}
+	}
+
+[LARGE_BUILDINGEX]
+	{
+	ID=208;
+	name=Large building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=120;
+	soundstart=largegun;
+	soundhit=xplolrg4;
+
+	explosiongenerator=custom:FACTORY_Expl;
+
+	[DAMAGE]
+		{
+		default=300;
+		}
+	}
+
+[ESTOR_BUILDINGEX]
+	{
+	ID=209;
+	name=Small building;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=150;
+	soundstart=largegun;
+	soundhit=xplonuk1;
+	explosiongenerator=custom:ESTORBUILDING_Expl;
+
+	[DAMAGE]
+		{
+		default=900;
+		}
+	}
+
+
+
+[SMALL_UNITEX]
+	{
+	ID=210;
+	name=Small tank;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=30;
+	soundstart=largegun;
+	soundhit=xplomed2;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:SMALL_UNIT_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+	[DAMAGE]
+		{
+		default=30;
+		}
+	}
+
+[BIG_UNITEX]
+	{
+	ID=211;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:BIG_UNIT_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+
+	[DAMAGE]
+		{
+		default=50;
+		}
+	}
+
+[HUGE_UNITEX]
+	{
+	ID=211;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=550;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	explosiongenerator=custom:HUGE_UNIT_Expl;
+	//explosiongenerator=custom:OTA_PLAS;
+
+	[DAMAGE]
+		{
+		default=700;
+		Medium=200;
+        BugMedium=200;
+		Heavy=200;
+		BugHeavy=200;
+		}
+	}
+
+[HUGE_UNITEX_AIR]
+	{
+	ID=211;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=550;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	explosiongenerator=custom:HUGE_AIRUNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=700;
+		Air=0;
+		}
+	}
+
+[HUGE_UNIT_AIR]
+	{
+	ID=211;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=550;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	explosiongenerator=custom:HUGE_AIRCRASH_Expl;
+
+	[DAMAGE]
+		{
+		default=700;
+		Air=0;
+		}
+	}
+
+
+[CORPYRO_BLAST]
+	{
+	ID=212;
+	name=Pyro Blast;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=128;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:PYRO_UNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=50;
+		firethrower=5;
+		}
+	}
+
+[COMMANDER_BLAST]
+	{
+	ID=213;
+	name=Atomic Blast Weapon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=380;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	soundstart=largegun;
+	soundhit=xplonuk4;
+
+	//explosiongaf=commboom;
+	//explosionart=commboom;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplashlg;
+
+	//shakemagnitude=32;
+	//shakeduration=2;
+
+	areaofeffect=650;
+	edgeeffectiveness=0.75;
+	explosiongenerator=custom:ARGHNUKE_FX_LOW;
+	[DAMAGE]
+		{
+		default=9999;
+		}
+	}
+
+[COMMANDER_BLAST2]
+	{
+	ID=213;
+	name=Atomic Blast Weapon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=380;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	soundstart=largegun;
+	soundhit=xplonuk4;
+
+	//explosiongaf=commboom;
+	//explosionart=commboom;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplashlg;
+
+	//shakemagnitude=32;
+	//shakeduration=2;
+
+	areaofeffect=1000;
+	edgeeffectiveness=0.75;
+	explosiongenerator=custom:OFFSETLONDON;
+	[DAMAGE]
+		{
+		default=19998;//9999
+		}
+	}
+
+
+[CRAWL_BLAST]
+	{
+	ID=214;//NOT REAL CRAWLING BOMB!!
+	name=Crawling Bomb;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=380;//480
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=556;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+	//explosiongenerator=custom:CRAWL_SUICIDE_Expl;
+	explosiongenerator=custom:BIGFIREBALL;
+
+	[DAMAGE]
+		{
+		default=2500;
+		base=1000;
+		}
+	}
+
+[CRAWL_BLASTSML]
+	{
+	ID=215;//NOT REAL CRAWLING BOMB!!
+	name=Wimpy Crawling Bomb;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=340;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=275;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+	explosiongenerator=custom:MEDDUST_Expl;
+	//explosiongenerator=custom:ATOMIC_BLASTSML_Expl; // CRAWL_UNIT_Expl
+
+	[DAMAGE]
+		{
+		default=1200;
+		base=500;
+		}
+	}
+
+[CORPYRO_SUICIDE]
+	{
+	name=Pyro suicide;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=190;
+	soundstart=largegun;
+	soundhit=xplomed1;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:PYRO_SUICIDE_Expl;
+
+	[DAMAGE]
+		{
+		default=650;
+		medium=500;
+		heavy=300;
+		firethrower=20;
+		}
+	}
+
+[BASE_GO_BOOM]
+	{
+	ID=213;
+	name=KaBoom;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=380;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	soundstart=largegun;
+	soundhit=xplonuk4;
+
+	areaofeffect=1500;
+	edgeeffectiveness=0.75;
+	//explosiongenerator=custom:BIG_NUCLEAR_Expl;
+	explosiongenerator=custom:OFFSETLONDON;
+	[DAMAGE]
+		{
+		default=9999;
+		}
+	}
+
+[GUNSHIP_DEATH]
+	{
+	ID=205;
+	name=Gunship;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=360;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	explosiongenerator=custom:BIG_SUICIDE_Expl;
+	impulsefactor=.4;
+	[DAMAGE]
+		{
+		default=50;
+		}
+	}
+
+[ATOMIC_NUKE]
+	{
+	name=Nuclear type Explosion; // full nuke stats, small fx
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=ballmiss;
+
+	range=64000;
+	reloadtime=240;
+	weapontimer=13;
+	flighttime=10;
+	weaponvelocity=400;
+	startvelocity=0;
+	weaponacceleration=400;
+	areaofeffect=950;
+
+	//noautorange=1;
+	flighttime=400;
+
+	energypershot=230000;
+	metalpershot=2000;
+
+	stockpile=1;
+	targetable=1;
+	commandfire=1;
+	//cruise=1;
+	
+	Trajectoryheight=1.5;//1.5
+	turnrate=1000;
+
+	soundstart=misicbm1;
+	soundhit=xplomed4;
+
+	firestarter=10;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	//startsmoke=1;
+	//guidance=1;
+	explosiongenerator=custom:ARGHNUKE_FX;
+	interceptedbyshieldtype=16;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=10000;
+		}
+	}
+
+[ATOMIC_BLAST]
+	{
+	ID=27;
+	name=Atomic Blast Weapon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=516;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:BIGDUST_Expl;
+
+	[DAMAGE]
+		{
+		default=2000;
+		}
+	}
+
+[ATOMIC_BLASTSML]
+	{
+	ID=28;
+	name=Atomic Blast Weapon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:MEDDUST_Expl;
+
+	[DAMAGE]
+		{
+		default=1000;
+		}
+	}
+
+[ATOMIC_BLAST2]
+	{
+	ID=27;
+	name=Atomic Blast Weapon; // FIERY VERSION
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=516;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:BIGFIREBALL;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+
+	[DAMAGE]
+		{
+		default=2000;
+		}
+	}
+
+[ATOMIC_BLASTSML2]
+	{
+	ID=28;
+	name=Atomic Blast Weapon;  // FIERY VERSION
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:ATOMIC_BLASTSML;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+
+	[DAMAGE]
+		{
+		default=1000;
+		}
+	}
+
+[ATOMIC_BLAST3]
+	{
+	ID=27;
+	name=Atomic Blast Weapon Water;  // FIRE ON WATER FOR SHIPS
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=516;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:BIGFIREBALL_W;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+
+	[DAMAGE]
+		{
+		default=2000;
+		}
+	}
+
+[PODDIE]
+	{
+	ID=28;
+	name=Atomic Blast Weapon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:PODDIE_Expl;
+
+	[DAMAGE]
+		{
+		default=1000;
+		}
+	}
+
+[SUB_UNITEX]
+	{
+	ID=211;
+	name=Big Kbot;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=550;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	explosiongenerator=custom:KERSPLUNK;
+
+	[DAMAGE]
+		{
+		default=700;
+		}
+	}
+
+[SMALL_AIRUNITEX]
+	{
+	ID=210;
+	name=Small plane;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=30;
+	soundstart=largegun;
+	soundhit=xplomed2;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:SMALL_AIRUNIT_Expl;
+	[DAMAGE]
+		{
+		default=30;
+		}
+	}
+
+[SMALL_AIRUNIT]
+	{
+	ID=210;
+	name=Small plane;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=30;
+	soundstart=largegun;
+	soundhit=xplomed2;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:SMALL_AIRCRASH_Expl;
+	[DAMAGE]
+		{
+		default=200;
+		}
+	}
+
+[BIG_AIRUNITEX]
+	{
+	ID=211;
+	name=Big Plane;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+	craterMult=0;
+	craterBoost=0;
+
+	explosiongenerator=custom:BIG_AIRUNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=50;
+		}
+	}
+
+[BIG_AIRUNIT]
+	{
+	ID=205;
+	name=Big Plane;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=110;
+	soundstart=largegun;
+	soundhit=xplolrg3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=8;
+	//shakeduration=.3;
+
+	explosiongenerator=custom:BIG_AIRCRASH_Expl;
+	[DAMAGE]
+		{
+		default=350;
+		}
+	}
+
+[SMALL_SHIP]
+	{
+	ID=202;
+	name=Destoryers Explosion;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=400;
+	soundstart=largegun;
+	soundhit=xplolrg4;
+	explosiongenerator=custom:SMALLSHIP_Expl;
+
+	[DAMAGE]
+		{
+		default=1000;//1800
+		}
+	}
+
+[REALCRAWL_BLAST]
+	{
+	ID=214;
+	name=Crawling Bomb;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=280;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=250;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	//explosiongaf=fx;
+	//explosionart=explode2;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2oboom2;
+
+	//shakemagnitude=24;
+	//shakeduration=1.5;
+	impulsefactor=.5;
+	//explosiongenerator=custom:MEDDUST_Expl;
+
+	[DAMAGE]
+		{
+		default=1250;//2500
+		base=600;
+		crawlingbomb=100;
+		}
+	}
+
+[REALCRAWL_BLASTSML]
+	{
+	ID=215;
+	name=Wimpy Crawling Bomb;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=280;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=120;
+	//explosiongaf=fx;
+	//explosionart=explode2;
+	impulsefactor=.5;
+	//explosiongenerator=custom:CRAWL_UNIT_Expl;
+
+	[DAMAGE]
+		{
+		default=600;//1200
+		base=250;
+		crawlingbomb=50;
+		}
+	}
+
+[FLEA_POP]
+	{
+	name=Flea gets popped;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=200;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=24;
+	soundstart=largegun;
+	soundhit=xplomed2;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+	impulseboost=0;
+	explosiongenerator=custom:MINIBANG_Expl;
+	
+	[DAMAGE]
+		{
+		default=1;
+		}
+	}

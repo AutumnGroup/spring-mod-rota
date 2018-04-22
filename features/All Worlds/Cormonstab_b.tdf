@@ -1,0 +1,20 @@
+[Cormonstab_b]
+	{
+	world=allworld;
+	description=Montros Hatchling;
+	category=dragonteeth;
+	object=cormonstab;
+	footprintx=1;
+	footprintz=1;
+	height=55;
+	blocking=1;
+	hitdensity=95;
+	metal=1;
+	energy=1;
+	damage=5000;
+	reclaimable=0;
+	autoreclaimable=0;
+	featurereclamate=smudge01;
+	featuredead=RockTeeth;
+	seqnamereclamate=tree1reclamate;
+	}

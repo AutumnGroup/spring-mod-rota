@@ -1,0 +1,1438 @@
+/* Weapons.tdf -- Miscellaneous weapon types */
+
+/* Allowed IDs = 0-39 */
+
+
+
+
+// Weapon type data
+
+	/* A weapon must fit into one of these basic categories */
+
+// 1) ballistic = Weapon is fired according to a ballistic path using gravity
+// 2) lineofsight = Weapon is fired in a straight line, gravity does not effect path
+// 3) dropped = Weapon is dropped in order to use it, typically a bomb but could be a chemical
+
+// ID is a unique value in the range 0-255 which identifies the weapon
+// range is in pixels
+// coverage is what the protection umbrella is for weapons that shoot other weapons
+// noexplode = No explosion when weapon impacts target
+// reloadtime = Seconds between shots (floating point allowed)
+// energypershot = Energy consumed per shot, most use none
+// weapontimer = How long weapon is active in seconds (floating point allowed), trajectory weapons use 0 so it is calculated
+// noautorange = When set the weapon will not detonate at range automatically, used mostly for heavy rockets
+// weaponvelocity = Maximum attainable weapon veolocity in pixels/second
+// weaponacceleration = Expressed in pixels/second/second
+// turnrate = Used for guided weapons, is in angular units (0-64k)/second
+// areaofeffect = The total area that receives that damage, one impact per unit in the area
+// edgeeffectiveness = The percentage (1.0 = 100%) of the damage that is inflicted at the edge of the area of effect.  Used for drop-off
+// turret = Weapon must be deployed from a turret with a 360 deg rotation and pitch
+// firestarter = Weapon will cause fires, expressed as a %, where 100% guarantees a fire
+// unitsonly = Weapon will only detonate on enemy units as opposed to obstructing terrain
+// burst = How many repeat times a weapon fires in one burst, ie. Flamethrower
+// burstrate = The time delay when in burst mode between events
+// sprayangle = Maximum deviation from the straight line to the target the weapon strays, used for burst weapons
+// randomdecay = Maximum time delta that burst weapon will randomly decay at end of path
+// groundbounce = Weapon will not detonate with the ground but instead bounce
+// flighttime = The time the unit will fly for after it enters the second phase of operation, used for starburst missiles
+// selfprop = Weapon is self propelled with a burn time described by flighttime
+// twophase = Indicates weapon operates in two phases
+// weapontype2 = Describes another weapon that the weapon turns into in the second phase
+// guidance = Indicates that weapon is guided and uses the turn rate above to track enemy unit
+// tracks = When set the weapon will track a moving target after a weapon conversion
+// waterweapon = Weapon is meant to travel through water
+// burnblow = Weapon will detonate when it comes to the end of its range
+// accuracy = Amount of accuracy in 64K deg that weapon is good for, 0=100%
+// tolerance = Amount of accuracy weapon will use when aiming, most are default 0
+// aimrate = How fast (on average) the weapon aims, in 64K deg / sec.  Used by UnitView.
+// startvelocity = Weapon will start at this velocity instead of 0
+// minbarrelangle = The minimum angle (in degrees) the barrels can point, used in ballistic calculations
+
+// Special weapon stuff
+// paralyzer = Weapon will stun the enemy for a length of time described in the damage field, time=ticks.
+
+// This stuff affects only the visuals of the weapon
+
+// model = 3D model to use as this weapon
+// color = Color of beam weapon from the game palette
+// color2 = Color to use on the beam weapon to make better and cooler, CGT
+// smoketrail = Indicates whether or not a weapon will emit a smoke trail
+// smokedelay = Smoke dispersal interval expressed in seconds
+// startsmoke = Draw a puff of smoke when the weapon fires
+// endsmoke = Draw a puff of smoke when weapon terminates
+// rendertype = Type of rendering system to use, 3D model, bitmap, etc.
+// beamweapon = Weapon is a straight beam weapon like a laser
+// explosiongaf = .GAF file that the explosion art is in
+// explosionart = name of animation sequence for explosion
+// waterexplosiongaf = .GAF file that the water explosion art is in
+// waterexplosionart = name of animation sequence for water explosion
+// propeller = if the model has a propeller that spins
+
+// This stuff affects the sounds the weapons make
+
+// soundstart = Sound to make when the weapon fires
+// soundhit = Sound to make when the weapon detonates (if the weapon detonates)
+// soundwater = Sound to make when the weapon hits the water
+// soundtrigger = Make the weapon sound when the weapon fires in burst mode
+
+
+// This stuff affects controlling the weapon
+
+// commandfire = This weapon will need to be expressly fired by the user each and every time it is used
+
+
+// This stuff describes the amount of metal and energy it takes to fire the weapon if applicable
+
+// energy = Amount of energy needed
+// metal = Amount of metal needed
+
+[FIRESPIT]
+	{
+	ID=1;
+	name=Flame Thrower;
+	rendertype=5;
+	//ballistic=1;
+	turret=1;
+	lineofsight=1;//needed i think
+
+	range=230;//260
+	reloadtime=.9;//1.2//.68
+	weapontimer=1;
+	weaponvelocity=130;//188//110//130
+	areaofeffect=42;//32
+	burst=4;//17
+	burstrate=.04;//.4
+	sprayangle=1024;//1024
+	//randomdecay==0;//.3
+	soundstart=gaflamme;
+	soundhit=burn02;
+	soundtrigger=1;
+	firestarter=100;
+	groundbounce=1;
+	//smokedelay=1;
+	//startsmoke==0;
+	//endsmoke==1;
+	tolerance=200;
+	//guidance=1;//dunno why it's needed
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=27;
+		Light=27;
+        BugLight=27;
+		hovertank=27;
+		Medium=18;
+        BugMedium=18;
+		Heavy=6;
+		BugHeavy=6;
+		firethrower=6;
+		subs=0;
+		}
+	}
+
+[BLUEFLAME]
+	{
+	ID=1;
+	name=Flame Thrower;
+	rendertype=5;
+	//ballistic=1;
+	turret=1;
+	lineofsight=1;//needed i think
+
+	range=300;//260
+	reloadtime=.13;//1.2//.68
+	weapontimer=1;
+	weaponvelocity=75;//188//110//130
+	areaofeffect=64;//32
+	sprayangle=1024;//1024
+	//randomdecay==0;//.3
+	soundstart=gaflamme;
+	soundhit=burn02;
+	soundtrigger=1;
+	firestarter=100;
+	groundbounce=1;
+
+	ColorMap=0.0 0.7 1.0 0.01   1.0 1.0 0.3 0.01	 1.0 0.5 0.15 0.01   1.0 1.0 1.0 0.1  0.1 0.04 0.04 0.3  0.025 0.01 0.01  0 0 0 0.01;
+	//texture1=blueflame;
+	FlameGfxTime=1.15;
+
+	//smokedelay=1;
+	//startsmoke==0;
+	//endsmoke==1;
+	tolerance=200;
+	//guidance=1;//dunno why it's needed
+	CollideFriendly=0;
+	AvoidFriendly=0;
+
+	[DAMAGE]
+		{
+		default=30;
+		Light=30;
+        BugLight=30;
+		hovertank=30;
+		Medium=24;
+        BugMedium=24;
+		Heavy=16;
+		BugHeavy=16;
+		firethrower=16;
+		subs=0;
+		}
+	}
+
+[SLOW_BUGPLASMA]
+	{
+	ID=171;
+	name=Tanker Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=1350;//255
+	reloadtime=6.5;//10
+	weapontimer=1;
+	weaponvelocity=250;//300
+	sprayangle=512;//1024
+	areaofeffect=120;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	myGravity=0.04;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=BUG_BLUEBOMBAIR;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=1400;
+		subs=0;
+		}
+	}
+
+[FAST_BUGPLASMAQ]
+	{
+	ID=171;
+	name=Queen Plasma;  // now fast plasma!
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=800;//255//1500
+	reloadtime=1;//1.5
+	weapontimer=1;
+	weaponvelocity=800;//300
+	sprayangle=512;//1024
+	areaofeffect=120;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	myGravity=0.04;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=DGUN_SHOT;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=600;//1400
+		Medium=450;
+        BugMedium=450;
+		Heavy=360;
+		BugHeavy=360;
+		subs=0;
+		}
+	}
+
+[HIGH_BUGPLASMAQ]
+	{
+	ID=171;
+	name=High Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=1000;
+	reloadtime=1.5;
+	weapontimer=1;
+	weaponvelocity=360;//250
+	sprayangle=128;
+	areaofeffect=120;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+	HeightBoostFactor=0;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	//myGravity=0.04;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=BUG_BLUEBOMBAIR;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=1400;
+		subs=0;
+		}
+	}
+
+[HIGH_BUG_BOMBARD_PLASMA]
+	{
+	ID=171;
+	name=High Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=5600;
+	reloadtime=12;//8
+	weapontimer=1;
+	weaponvelocity=400;//250
+	sprayangle=256;
+	areaofeffect=120;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+	HeightBoostFactor=0;
+	HighTrajectory=1;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	myGravity=0.03;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=wormfireball;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=1400;
+		subs=0;
+		}
+	}
+
+[BUG_FLAK_PLASMA]
+	{
+	ID=171;
+	name=Flak Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=2200;
+	reloadtime=6;
+	weapontimer=1;
+	weaponvelocity=450;//400
+	sprayangle=0;
+	areaofeffect=400;//250
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+	HeightBoostFactor=0;
+	burnblow=1;
+	ballistic=1;
+	//toairweapon=1;
+	//predicutBoost=1;
+	targetMoveError=0;
+	canAttackGround=0;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	myGravity=0.03;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=wormfireball;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=1000;
+		Air=2000;
+		subs=0;
+		}
+	}
+
+
+
+[HIGH_BUGASTEROIDBEACON]
+	{
+	ID=171;
+	name=High Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=1550;
+	reloadtime=1.5;
+	weapontimer=1;
+	weaponvelocity=425;//175
+	sprayangle=128;
+	areaofeffect=20;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+	HeightBoostFactor=0;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	//myGravity=0.04;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=BUG_FLYINGBEACON;
+	explosiongenerator=custom:BUG_BEACONHIT;
+	bouncerebound=0.2;
+	bounceslip=0.2;
+	numbounce=2;
+	groundbounce=1;
+	commandfire=1;
+
+	[DAMAGE]
+		{
+		default=20;
+		subs=0;
+		}
+	}
+
+[MONSTA_MISSILE]
+	{
+	ID=106;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	burnblow=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=1000;//700//780
+	reloadtime=1.6;//5//5.3//4.9
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=142;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	edgeeffectiveness=1;
+	tolerance=3000;//10000
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	// used to be 165 for default
+	[DAMAGE]
+		{
+		default=165;
+		Air=425;//275//396
+		subs=0;
+		}
+	}
+
+[MONSTA_MISSILEQ]
+	{
+	ID=106;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	burnblow=1;
+	//toairweapon=1;
+	canAttackGround=0;
+
+	model=missile;
+
+	range=650;//700//780
+	reloadtime=3;//5//5.3//4.9
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=142;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	edgeeffectiveness=1;
+	tolerance=3000;//10000
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	// used to be 165 for default
+	[DAMAGE]
+		{
+		default=165;
+		Air=600;//275//396
+		subs=0;
+		}
+	}
+
+[BUG_MELEE]
+	{
+	name                  = Claws;
+        areaOfEffect            = 8;
+        craterBoost             = 1;
+        craterMult              = 1;
+	avoidFriendly=0;
+	collideFriendly=0;
+
+        //endsmoke                = 0;
+        explosionGenerator      = custom:NONE;
+        impulseBoost            = 0;
+        impulseFactor           = 0.4;
+        interceptedByShieldType = 0;
+        lineOfSight             = 1;
+        noSelfDamage            = 1;
+        range                   = 130;//100
+        reloadtime              = 1.5;
+        size                    = 0;
+        //startsmoke              = 0;
+        targetborder            = 1;
+        tolerance               = 12000;
+        turret                  = 1;
+        waterWeapon             = 1;
+        weaponType              = Melee;
+        weaponVelocity          = 500;
+	soundhit=punch1;
+	[DAMAGE]
+		{
+		// 50 % increase
+		default=50;//25
+		Light=60;
+        BugLight=60;//24
+		Medium=45;
+        BugMedium=45;//12
+		Heavy=27;//9//15
+		BugHeavy=27;
+		Hovertank=50;
+		subs=0;
+		}
+	}
+
+[FLYINGBUG_MELEE]
+	{
+	name                  = Claws;
+        areaOfEffect            = 8;
+        craterBoost             = 1;
+        craterMult              = 1;
+	avoidFriendly=0;
+	collideFriendly=0;
+
+        //endsmoke                = 0;
+        explosionGenerator      = custom:NONE;
+        impulseBoost            = 0;
+        impulseFactor           = 0.4;
+        interceptedByShieldType = 0;
+        lineOfSight             = 1;
+        noSelfDamage            = 1;
+        range                   = 130;//100;
+        reloadtime              = 1.5;
+        size                    = 0;
+        //startsmoke              = 0;
+        targetborder            = 1;
+        tolerance               = 5000;
+        turret                  = 1;
+        waterWeapon             = 1;
+        weaponType              = Cannon;
+        weaponVelocity          = 500;
+	    cylinderTargeting       = 0.5;
+	[DAMAGE]
+		{
+		// 50 % increase
+		default=50;//25
+		Light=60;
+        BugLight=60;//24
+		Medium=40;
+        BugMedium=40;//12
+		Heavy=25;//9//15
+		BugHeavy=25;
+		Air=500;
+		Hovertank=50;
+		subs=0;
+		}
+	}
+
+[ULTRA_MELEE]
+	{
+	name                  = Jaws;
+        areaOfEffect            = 8;
+        craterBoost             = 1;
+        craterMult              = 1;
+	avoidFriendly=0;
+	collideFriendly=0;
+
+        //endsmoke                = 0;
+        explosionGenerator      = custom:NONE;
+        impulseBoost            = 0;
+        impulseFactor           = 0.4;
+        interceptedByShieldType = 0;
+        lineOfSight             = 1;
+        noSelfDamage            = 1;
+        range                   = 140;
+        reloadtime              = 1.5;
+        size                    = 0;
+        //startsmoke              = 0;
+        targetborder            = 1;
+        tolerance               = 5000;
+        turret                  = 1;
+        waterWeapon             = 1;
+        weaponType              = Cannon;
+        weaponVelocity          = 500;
+	soundhit=punch1;
+	[DAMAGE]
+		{
+		// 50 % increase
+		default=500;//25
+		Light=500;
+        BugLight=500;//24
+		Medium=450;
+        BugMedium=450;//12
+		Heavy=400;//9//15
+		BugHeavy=400;
+		Hovertank=500;
+		subs=0;
+		}
+	}
+
+[MONSTER_MELEE]
+	{
+	name                  = Jaws;
+        areaOfEffect            = 24;
+        craterBoost             = 1;
+        craterMult              = 1;
+	avoidFriendly=0;
+	collideFriendly=0;
+
+        //endsmoke                = 0;
+        explosionGenerator      = custom:NONE;
+        impulseBoost            = 0;
+        impulseFactor           = 0.4;
+        interceptedByShieldType = 0;
+        lineOfSight             = 1;
+        noSelfDamage            = 1;
+        range                   = 130;//110;
+        reloadtime              = 2.1;
+        size                    = 0;
+        //startsmoke              = 0;
+        targetborder            = 1;
+        tolerance               = 5000;
+        turret                  = 1;
+        waterWeapon             = 1;
+        weaponType              = Cannon;
+        weaponVelocity          = 500;
+	soundhit=punch1;
+	[DAMAGE]
+		{
+		// 50 % increase
+		default=700;//25
+		Light=700;
+        BugLight=700;//24
+		Medium=450;
+        BugMedium=450;//12
+		Heavy=400;//9//15
+		BugHeavy=400;
+		Hovertank=700;
+		subs=0;
+		}
+	}
+
+[BUG_DIE]
+	{
+	ID=212;
+	name=SPLAT;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=128;
+	soundstart=aud_chomp;
+	soundhit=aud_chomp;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:BUGDIE_Expl;
+
+	[DAMAGE]
+		{
+		default=1;
+		subs=0;
+		}
+	}
+
+[BUG_DIE2]
+	{
+	ID=212;
+	name=SPLAT;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=128;
+	soundstart=hawkcry;
+	soundhit=hawkcry;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:BUGDIE_Expl;
+
+	[DAMAGE]
+		{
+		default=1;
+		subs=0;
+		}
+	}
+
+[ULTRABUG_DIE]
+	{
+	ID=212;
+	name=SPLAT;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=180;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=128;
+	soundstart=elephant;
+	soundhit=elephant;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:blood_explode_SML;
+
+	[DAMAGE]
+		{
+		default=1;
+		subs=0;
+		}
+	}
+
+[KAMIKAZE_DIE]
+	{
+	ID=212;
+	name=BOOMSPLAT;
+	rendertype=4;
+	//ballistic=1;
+	turret=1;
+
+	range=1;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=310;//256
+	//edgeeffect=1;
+	soundstart=largegun;
+	//soundhit=largegun;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	explosiongenerator=custom:blood_explode_SML;
+
+	[DAMAGE]
+		{
+		default=650;
+		bladewing=5;
+		Air=1100;
+		FlyingFortress=1350;
+		subs=0;
+		}
+	}
+
+[KAMIKAZE_DIE_KILLMYSELFPLX]
+	{
+	ID=212;
+	name=BOOMSPLAT;
+	rendertype=4;
+	//ballistic=1;
+	turret=1;
+
+	range=1;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=8;
+	//soundstart=largegun;
+	//soundhit=largegun;
+
+
+	//shakemagnitude=0;
+	//shakeduration=0;
+	craterMult=0;
+	craterBoost=0;
+	impulsefactor=0;
+
+	//explosiongenerator=custom:blood_explode_SML;
+
+	[DAMAGE]
+		{
+		default=450;
+		subs=0;
+		}
+	}
+
+[BUGVISION]
+	{
+	name=Bug Vision;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	beamlaser=1;
+	beamtime=.35;
+	//toairweapon=1;
+
+	range=250;//1200
+	reloadtime=1;//2
+	weaponvelocity=1000;
+	areaofeffect=32;
+	//targetMoveError=0.5;
+
+	soundstart=lancebeam;
+
+	firestarter=90;
+	beamweapon=1;
+	rgbcolor=0.7649 0 1;
+	rgbcolor2=1 1 1;
+	tolerance=500;
+	impulsefactor=2;
+	NoSelfDamage=1;
+
+	[DAMAGE]
+		{
+		default=1;//200
+		subs=0;
+		}
+	}
+
+
+[SPIKE]
+      {
+      name=Spike;
+      areaofeffect=60;//90
+      avoidFriendly=0;
+      burnblow=1;
+      collideFriendly=0;
+      craterBoost=0;
+      craterMult=0;
+
+      explosionGenerator=custom:BUGDIE_Expl;
+      impulseBoost=0;
+      impulseFactor=0.4;
+      lineOfSight=1;
+      //model=spike.3do;
+      noSelfDamage=true;
+      //propeller=1;
+      range=560;//700//1250
+      reloadtime=1.5; //pepe, i dont know why there was ==1.5
+      renderType=1;
+      //selfprop=true;
+      startVelocity=700;
+      subMissile=1;
+      turret=1;
+      waterWeapon=1;
+      weaponAcceleration=100;
+      weaponTimer=1;
+      weaponType=Cannon;
+      weaponVelocity=700;
+      cegTag=BUGSPIT_AIR;
+      soundstart=snakespit;
+      soundhit=splat;
+
+      [DAMAGE]
+		{
+		default=50;//120//78
+		Medium=34;
+        BugMedium=34;
+		Heavy=20;//60
+		BugHeavy=20;
+		Air=140;
+		subs=0;
+		}
+}
+
+[SPIKE_AA]
+	{
+	ID=42;
+	name=SPOREFLAK;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	heightMod=1.1;
+
+	range=560;//700//1250
+	reloadtime=1.5;//.6//1.2
+	weapontimer=1;
+	weaponvelocity=700;
+	areaofeffect=60;//90
+	edgeeffectiveness=0.90;
+     	soundstart=snakespit;
+        soundhit=splat;
+
+	//minbarrelangle=-24;
+
+	//accuracy=1700;//2200
+	sprayangle=100;
+	tolerance=767;	
+	burnblow=1;
+	//toairweapon=1;
+	//TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	myGravity=0.08;
+	cegTag=BUGSPIT_AIR;
+	explosionGenerator=custom:BUGDIE_Expl;
+
+      [DAMAGE]
+		{
+		default=50;//120//78
+		Medium=34;
+        BugMedium=34;
+		Heavy=20;//60
+		BugHeavy=20;
+		Air=140;
+		subs=0;
+		}
+}
+
+[BUGGAMMASPIT]
+      {
+      name=Spit;
+      areaOfEffect=16;
+      avoidFriendly=0;
+      burnblow=1;
+      collideFriendly=0;
+      craterBoost=0;
+      craterMult=0;
+
+      explosionGenerator=custom:BUGSPIT_AIR;
+      impulseBoost=0;
+      impulseFactor=0.4;
+      lineOfSight=1;
+      //model=spike.3do;
+      noSelfDamage=true;
+      //propeller=1;
+      range=220;
+      reloadtime=1.5;
+      renderType=1;
+      //selfprop=true;
+      startVelocity=300;
+      subMissile=1;
+      turret=1;
+      waterWeapon=1;
+      weaponAcceleration=100;
+      weaponTimer=1;
+      weaponType=Cannon;
+      weaponVelocity=300;
+      cegTag=BUGSPIT_AIR;
+      rgbcolor=0.1 .6 0.1;
+      Stages=3;
+      SizeDecay=-.1;
+      AlphaDecay=.5;
+
+      [DAMAGE]
+		{
+		default=70;
+		Medium=60;
+        BugMedium=60;
+		Heavy=35;
+		BugHeavy=35;
+		subs=0;
+		}
+}
+
+
+
+[DEFENSE_SPORE]
+	{
+	ID=42;
+	name=SPOREFLAK;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	//toairweapon=1;
+	
+	heightMod=1.1;
+
+	range=1150;//700//1250
+	reloadtime=2;//.6//1.2
+	weapontimer=1;
+	weaponvelocity=500;
+	areaofeffect=102;//90
+	edgeeffectiveness=0.90;
+	soundstart=splat;
+        soundhit=splat;
+
+	//minbarrelangle=-24;
+
+	accuracy=250;//2200
+	sprayangle=25;
+	tolerance=767;	
+	burnblow=1;
+	TargetMoveError=.03;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	myGravity=0.08;
+	cegTag=BUGSPIT_AIR;
+	explosionGenerator=custom:BUGDIE_Expl;
+	[DAMAGE]
+		{
+		default=40;//140
+		Air=115;//200
+		Medium=20;
+        BugMedium=20;
+		Heavy=10;
+		BugHeavy=10;
+		subs=0;
+		}
+	}
+
+[DEFENSE_SPIKE]
+      {
+      name=Spit;
+      areaOfEffect=16;
+      avoidFriendly=0;
+      burnblow=1;
+      collideFriendly=0;
+      craterBoost=0;
+      craterMult=0;
+
+      explosionGenerator=custom:BUGSPIT_AIR;
+      impulseBoost=0;
+      impulseFactor=0.4;
+      lineOfSight=1;
+      //model=spike.3do;
+      noSelfDamage=true;
+      //propeller=1;
+      range=480;
+      reloadtime=1.5;
+      renderType=1;
+      //selfprop=true;
+      startVelocity=400;
+      subMissile=1;
+      turret=1;
+      waterWeapon=1;
+      weaponAcceleration=100;
+      weaponTimer=1;
+      weaponType=Cannon;
+      weaponVelocity=400;
+      cegTag=BUGSPIT_AIR;
+      rgbcolor=0.1 .6 0.1;
+      Stages=3;
+      SizeDecay=-.1;
+      AlphaDecay=.5;
+
+      [DAMAGE]
+		{
+		default=79;//110//88
+		Light=94;
+        BugLight=94;//130//104
+		Medium=41;
+        BugMedium=41;//70//46
+		Heavy=15;//35//17
+		BugHeavy=15;
+		subs=0;
+		}
+}
+
+[MONSTADIE]
+	{
+	ID=28;
+	name=OH THE HORROR;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:blood_explode;
+
+	[DAMAGE]
+		{
+		default=1000;
+		subs=0;
+		}
+	}
+
+[WORMDIE]
+	{
+	ID=28;
+	name=OH THE HORROR;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:worm_blood_explode;
+
+	[DAMAGE]
+		{
+		default=1000;
+		subs=0;
+		}
+	}
+
+[BUG5DIE]
+	{
+	ID=28;
+	name=OH THE HORROR;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=260;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:BUG5DIE_Expl;
+
+	[DAMAGE]
+		{
+		default=400;
+		subs=0;
+		}
+	}
+
+[DRAGONBUGDIE]
+	{
+	ID=28;
+	name=Raining Blood;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=100;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+
+	explosiongenerator=custom:blood_explode;
+
+	[DAMAGE]
+		{
+		default=500;
+		subs=0;
+		}
+	}
+
+[BUGBOMB]
+	{
+	ID=171;
+	name=Tanker Plasma;
+	rendertype=4;
+	color=1;
+	lineofsight=1;
+	turret=1;
+	range=1350;//255
+	reloadtime=6.5;//10
+	weapontimer=1;
+	weaponvelocity=250;//300
+	sprayangle=512;//1024
+	areaofeffect=120;
+	soundstart=bigion1;
+	soundhit=electronhit;
+	soundtrigger=1;
+	tolerance=15000;
+
+	rgbcolor=0.1 0.6 1;
+	Stages=10;
+	SizeDecay=-0.06;
+	AlphaDecay=0.9;
+	Separation=1;
+
+	myGravity=0.04;
+
+	//startsmoke=1;
+
+	
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	cegTag=BUG_BLUEBOMBAIR;
+	explosiongenerator=custom:BUG_GIANTBLUEBOMB;
+
+	[DAMAGE]
+		{
+		default=1400;
+		subs=0;
+		}
+	}
+
+[DARKSWARM]
+	{
+	ID=42;
+	name=Cloud Swarm;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=110;//560;//700//1250
+	reloadtime=30;//.6//1.2
+	weapontimer=4;
+	flighttime=1.2;
+	weaponvelocity=200;
+	areaofeffect=60;//90
+	edgeeffectiveness=0.90;
+     	soundstart=snakespit;
+	soundhit=burn02;
+
+	//minbarrelangle=-24;
+
+	//accuracy=1700;//2200
+	sprayangle=100;
+	tolerance=767;	
+	burnblow=1;
+	//TargetMoveError=.4;
+
+	color=1;
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+	myGravity=0.01;
+	cegTag=DARKSWARM_Expl;
+	explosiongenerator=custom:dirt;
+
+	commandfire=1;
+
+      [DAMAGE]
+		{
+		default=50;//120//78
+		Medium=34;
+        BugMedium=34;
+		Heavy=20;//60
+		BugHeavy=20;
+		Air=140;
+		subs=0;
+		}
+	}
+[QUEENCRUSH]
+	{
+	name=QueenCrush;
+	rendertype=4;
+	lineofsight=0;
+	turret=1;
+	range=125;
+	reloadtime=0.1;
+	weapontimer=0.1;
+	weaponvelocity=650;
+	areaofeffect=150;//200;
+	edgeeffectiveness=1;
+	metalpershot=0;
+	tolerance=100;
+	collidefriendly=0;
+	noselfdamage=1;
+	rgbcolor=0 0 0;
+	explosiongenerator=custom:queendirt;
+	intensity=0;
+	thickness=0;
+	impulsefactor=2;
+	impulseboost=2;
+	cratermult=0;
+	craterboost=0;
+	[DAMAGE]
+		{
+		default=30;//30;
+		Light=300;
+        BugLight=300;
+		Medium=150;
+        BugMedium=20;
+		Heavy=150;
+		BugHeavy=10;
+		Air=100;
+		hovertank=100;
+		roost=-1;
+		base=-1;
+		subs=0;
+		}
+	}
+
+[BUG_FLAMETHROWER]
+	{
+	ID=1;
+	name=Flame Thrower;
+	rendertype=5;
+	//ballistic=1;
+	turret=1;
+	lineofsight=1;//needed i think
+
+	range=480;//260
+	reloadtime=.9;//1.2//.68
+	weapontimer=1.8;
+	weaponvelocity=180;//188//110//130
+	ColorMap=0.0 0.7 1.0 0.01   1.0 1.0 0.3 0.01	 1.0 0.5 0.15 0.01   1.0 1.0 1.0 0.1  0.1 0.04 0.04 0.3  0.025 0.01 0.01  0 0 0 0.01;
+	areaofeffect=64;//32
+	burst=17;//17
+	burstrate=.04;//.4
+	sprayangle=1024;//1024
+	//randomdecay==0;//.3
+	soundstart=Flamhvy1;
+	soundhit=burn02;
+	soundtrigger=1;
+	firestarter=100;
+	groundbounce=1;
+	//smokedelay=1;
+	//startsmoke==0;
+	//endsmoke==1;
+	tolerance=1400;
+	//guidance=1;//dunno why it's needed
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+
+	[DAMAGE]
+		{
+		default=9;
+		Light=9;
+        BugLight=9;
+		hovertank=9;
+		Medium=6;
+        BugMedium=6;
+		Heavy=2;
+		BugHeavy=2;
+		firethrower=2;
+		subs=0;
+		}
+	[customParams]
+		{
+		setunitsonfire=1;
+		burnchance=1;
+		//burntime=5;
+		}
+	}

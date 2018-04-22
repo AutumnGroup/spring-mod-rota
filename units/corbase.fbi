@@ -1,0 +1,108 @@
+[UNITINFO]
+{
+	Name=Core Central Consciousness;
+	UnitName=CORBASE;
+	//BUILDPIC=ARMNANOTC.DDS;
+	
+	//    Required Tags
+	BuildCostEnergy=22021;
+	BuildCostMetal=4100;
+	BuildTime=200312;
+	Category=NOTAIR NOTSUB NOTSHIP COMMANDER;
+	Description=Command Center;
+	FootprintX=8;
+	FootprintZ=8;
+	MaxDamage=17150;//10150
+	ObjectName=CORBASE;
+	Side=CORE;
+	SoundCategory=CORE_COM;
+	TEDClass=CNSTR;
+	Commander=1;
+	ShowPlayerName=1;
+	//YardMap=OOOOOOOO OOOOOOOO OOOOOOOO OOOOOOOO OOOOOOOO OOOOOOOO OOOOOOOO OOOOOOOO;
+	
+	//    Movement
+	//BrakeRate=1.5;
+	//MovementClass=TINY;
+	//Acceleration=0;
+	CanMove=0;
+	//MaxVelocity=0;
+	MaxSlope=10;
+	//TurnRate=1;
+	
+	
+	//    Construction
+	BuildDistance=1500;//2600
+	Builder=1;
+	WorkerTime=300;//200
+	ReclaimSpeed=100;
+	levelGround=false;
+	
+	//    Resources
+	EnergyMake=50;
+	EnergyStorage=1000;
+	EnergyUse=0;
+	MetalMake=4;//4
+	MetalStorage=1000;
+	
+	//    Abilities
+	CanStop=1;
+	canreclamate=1;
+	CantBeTransported=1;
+	//candgun=1;
+	ActivateWhenBuilt=1;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=1500;
+	
+	//    Weapons
+	ExplodeAs=BASE_GO_BOOM;
+	SelfDestructAs=BASE_GO_BOOM;
+	SelfDestructCountdown=5;
+	Weapon1=CORE_BASE_ZAPPO;
+	Weapon2=CORE_BASE_BEAM;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=LOWVTOL;
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	//Upright=1;
+	Corpse=cordev1_dead;
+	HideDamage=1;
+	CollisionSphereScale=.9;
+	
+	//    Not Used By TASpring
+	noautofire=0;
+	unitnumber=9904;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=Standby;
+	maneuverleashlength=0;
+
+	// more misc
+	Mass=10000;
+	pushResistant=1;
+	iconType=corbase;
+	// resistant to weapons from above
+	flankingBonusMode=3;
+	flankingBonusDir= 0 1 0 ;
+	flankingBonusMax=1.2;	
+	flankingBonusMin=.6;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=140 320 140;
+	collisionVolumeOffsets=0 -20 0;
+	collisionVolumeTest=0;
+	[customParams] 
+	{
+		fireproof=1;
+	}
+
+}

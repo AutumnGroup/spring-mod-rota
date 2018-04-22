@@ -1,0 +1,77 @@
+[UNITINFO]
+	{
+	UnitName=ARMHMCRUS;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMHMCRUS;
+	Designation=ASD-SM99;
+	Name=Rogue II;
+	Description=Heavy Missile Cruiser;
+	FootprintX=6;
+	FootprintZ=6;
+	BuildCostEnergy=7804;
+	BuildCostMetal=2348;
+	MaxDamage=3200;
+	EnergyUse=0.8;
+	BuildTime=22317;
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=700;
+	RadarDistance=3000;
+	SoundCategory=ARM_SHIP;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	onoffable=1;
+	Category=SHIP NOTAIR NOTSUB ;
+	TEDClass=SHIP;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armmship_dead;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	MaxVelocity=1;
+	BrakeRate=0.032;//.022
+	Acceleration=0.02;//.01
+	TurnRate=268;//134
+	SteeringMode=1;
+	ShootMe=1;
+	EnergyMake=0.8;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BOATD6;
+	MinWaterDepth=12;
+	canattack=1;
+	
+	// WEAPONS
+	Weapon1=ARMHMSHIP_ROCKET;
+	Weapon2=ARMHMSHIP_ROCKET;
+	Weapon3=ARMHMSHIP_ROCKET;
+	Weapon4=ARM_SHIPFLAK;
+	Weapon5=ARM_SHIPFLAK;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	OnlyTargetCategory3=NOTAIR;
+	OnlyTargetCategory4=VTOL;
+	OnlyTargetCategory5=VTOL;
+	WeaponMainDir4=0 1 0;
+	MaxAngleDif4=160;
+	WeaponMainDir5=0 1 0;
+	MaxAngleDif5=160;
+
+	Floater=1;
+	Ovradjust=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=.5;
+	}

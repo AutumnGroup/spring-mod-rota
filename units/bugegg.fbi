@@ -1,0 +1,56 @@
+[UNITINFO]
+	{
+	UnitName=bugegg;
+	Version=1;
+	Side=CORE;
+	Objectname=bugegg.s3o;
+	Designation=BE;
+	Name=Bug egg;
+	Description=Inteligent bug spawn;
+	FootprintX=3;
+	FootprintZ=3;
+        BuildCostEnergy=3400;
+        BuildCostMetal=500;
+	MaxDamage=600;
+	MaxWaterDepth=0;
+	MaxSlope=20;
+	MaxVelocity=0.001;
+	EnergyUse=0;
+        BuildTime=3400;
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=420;
+	RadarDistance=0;
+	SoundCategory=ARM_KBOT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=MEDIUM_BUILDINGEX;
+	SelfDestructAs=MEDIUM_BUILDING;
+        Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=TANK;
+	MovementClass=TANKSH2;
+
+	Corpse=armdrone_dead;
+	canstop=1;
+	canmove=1;
+	ShootMe=1;
+	DefaultMissionType=GUARD_NOMOVE;
+	canattack=1;
+	Weapon1=BOXTURRET_ROCKET;
+	OnlyTargetCategory1=NOTAIR;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	EnergyMake=0;
+	DamageModifier=0.6;
+	idletime=2200;
+	Upright=1;
+	idletime=2200;
+	idleautoheal=2;
+	SeismicSignature=0;
+	iconType=tower;
+	}
+

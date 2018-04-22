@@ -1,0 +1,33 @@
+[armraz_dead]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armraz_dead;
+	featuredead=armraz_heap;
+	footprintx=2;
+	footprintz=2;
+	height=10;
+	blocking=1;
+	hitdensity=100;
+	metal=210;
+	energy=0;
+	damage=982;
+	reclaimable=1;
+	}
+[armraz_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3f;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=97;
+	energy=0;
+	damage=542;
+	reclaimable=1;
+	}

@@ -1,0 +1,67 @@
+[UNITINFO]
+	{
+	UnitName=ARMEMP;
+	Version=1.2;
+	Side=ARM;
+	Objectname=ARMEMP;
+	Designation=ARM-MIDS;
+	Name=Stunner;
+	Description=EMP Missile Launcher;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=52134;//52134
+	BuildCostMetal=1802;//1802
+	MaxDamage=2300;
+	MaxWaterDepth=0;
+	MaxSlope=12;
+	EnergyUse=0;
+	BuildTime=111453;
+	WorkerTime=0;
+	BMcode=0;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	//NoAutoFire=1;
+	SightDistance=600;//350
+	RadarDistance=0;
+	SoundCategory=NUC;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=ATOMIC_BLASTSML2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	Category=NOTAIR NOTSUB NOTSHIP;
+	TEDClass=SPECIAL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	YardMap=oooo oooo oooo oooo;
+	Corpse=armemp_dead;
+	GermanName=Stunner;
+	GermanDescription=EMP Raketenwerfer;
+	UnitNumber=322;
+	FrenchName=Aveugleur;
+	Frenchdescription=Lance-Missiles électromagnétiques;
+	firestandorders=1;
+	StandingFireOrder=2;
+	canstop=1;
+	SpanishName=Stunner;
+	SpanishDescription=Lanzador de Misiles EMP;
+	ItalianName=Storditore;
+	ItalianDescription=Lanciamissili EMP;
+	ShootMe=1;
+	EnergyMake=0;
+	buildangle=8192;
+	canattack=1;
+	Weapon1=ARMEMP_WEAPON;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	Ovradjust=1;
+	downloadable=1;
+	SmoothAnim=1;
+	idletime=2200;
+	idleautoheal=2;
+	canguard=1;
+	iconType=empbuild;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=50 45 50;
+	
+	}

@@ -1,0 +1,194 @@
+[CORBUZZ_AK]
+	{
+	ID=84;
+	name=Rapid Fire AK Launcher;
+	model=unitpod_projectile.3do;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=5120;
+	reloadtime=0.5;
+	weaponvelocity=900;
+	energypershot=496;
+	metalpershot=33;
+	areaofeffect=28;
+
+	soundstart=xplonuk4;
+	soundhit=xplomed2;
+
+	firestarter=50;
+	accuracy=800;
+	tolerance=1000;
+
+	//startsmoke=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	explosiongenerator=custom:TESS;
+
+	[DAMAGE]
+		{
+		default=900;
+		subs=0;
+		}
+	}
+
+[ARMVULC_PW]
+	{
+	ID=2;
+	name=Rapid Fire Peewee Launcher;
+	model=unitpod_projectile.3do;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+
+	range=4096;
+	reloadtime=0.25;
+	weaponvelocity=800;
+	energypershot=497;
+	metalpershot=29;
+	areaofeffect=28;
+
+	soundstart=xplonuk4;
+	soundhit=xplomed2;
+
+	accuracy=800;
+	tolerance=5000;
+
+	//startsmoke=1;
+	AvoidFriendly=0;
+	CollideFriendly=0;
+	explosiongenerator=custom:TESS;
+
+	[DAMAGE]
+		{
+		default=900;
+		subs=0;
+		}
+	}
+
+[ARM_BERTHACANNON_DGUN]
+	{
+	ID=22;
+	name=Disintegrator;
+	rendertype=3;
+	lineofsight=1;
+	turret=1;
+
+	energypershot=60000;
+
+	stockpile=1;
+	stockpileTime=60;
+	commandfire=1;
+	
+
+	rgbcolor=0.1 0.6 1;
+
+	range=4096;
+	reloadtime=10;
+	weapontimer=4000;
+	weaponvelocity=14;
+	areaofeffect=31;
+	soundtrigger=1;
+	soundstart=disigun1;
+	//soundhit=xplomas2;
+	firestarter=70;
+	beamweapon=1;
+	noexplode=1;
+	commandfire=1;
+	craterMult=0;
+	craterBoost=0;
+
+	//startsmoke=1;
+	explosiongenerator=custom:DGUNTRACE;
+	cegTag=DGUN_SHOT;
+
+	[DAMAGE]
+		{
+		default=30000;
+		subs=0;
+		}
+	}
+
+[CORE_INTIMIDATOR_DGUN]
+	{
+	ID=22;
+	name=Disintegrator;
+	rendertype=3;
+	lineofsight=1;
+	turret=1;
+	energypershot=60000;
+
+	stockpile=1;
+	stockpileTime=60;
+	commandfire=1;
+
+	rgbcolor=0.1 0.6 1;
+
+	range=5120;
+	reloadtime=10;
+	weapontimer=4000;
+	weaponvelocity=10;
+	areaofeffect=31;
+	soundtrigger=1;
+	soundstart=disigun1;
+	//soundhit=xplomas2;
+	firestarter=70;
+	beamweapon=1;
+	noexplode=1;
+	commandfire=1;
+	craterMult=0;
+	craterBoost=0;
+
+	//startsmoke=1;
+	explosiongenerator=custom:DGUNTRACE;
+	cegTag=DGUN_SHOT;
+
+	[DAMAGE]
+		{
+		default=30000;
+		subs=0;
+		}
+	}
+
+[COR_SUPERGUN_PYRO]
+	{
+	ID=140;
+	name=Pyro Delivery;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	Stages=0;
+	model=unitpod_projectile.3do;
+
+	soundtrigger=1;
+	burst=30;
+	burstrate=0;
+	sprayangle=100;
+	range=64000;
+	weaponvelocity=2540;
+	areaofeffect=28;
+	reloadtime=55;
+	energypershot=10000;
+	metalpershot=2000;
+
+	soundstart=xplonuk3;
+	soundhit=xplomed2;
+
+	firestarter=75;
+	accuracy=10;
+	//aimrate==2500;
+	tolerance=300;
+	//holdtime==10;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	explosiongenerator=custom:TESS;
+	[DAMAGE]
+		{
+		default=900;
+		subs=0;
+		}
+	}

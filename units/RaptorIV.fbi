@@ -1,0 +1,87 @@
+[UNITINFO]
+	{
+	UnitName=RaptorIV;
+	Version=3.0;
+	Side=CORE;
+	Objectname=RaptorIV;
+	Designation=CORE-RaptorIV;
+	Name=RaptorIV;
+	Description=Advanced Multi-Cannon Assault Mech;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=8150;//6100
+	BuildCostMetal=546;//520
+	MaxDamage=2400;
+	EnergyUse=10;
+	BuildTime=15784;//11856
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=450;
+	SoundCategory=HLT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNITEX;
+	Category=NOTSHIP NOTAIR NOTSUB;
+	TEDClass=KBOT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=RaptorIV_DEAD;
+	UnitNumber=4101875;
+	FireStandOrders=1;
+	StandingFireOrder=2;
+	MobileStandOrders=1;
+	StandingMoveOrder=1;
+	CanMove=1;
+	CanPatrol=1;
+	CanStop=1;
+	CanGuard=1;
+	MaxVelocity=2.30;
+	BrakeRate=0.15;
+	Acceleration=0.75;
+	TurnRate=700;//450
+	SteeringMode=2;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	ManeuverLeashLength=650;
+	MovementClass=KBOTBAD;
+	Upright=1;
+	CanAttack=1;
+	NoChaseCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	//OnlyTargetCategory2=NOTAIR;
+	//OnlyTargetCategory3=NOTAIR;
+	Weapon1=RAPTOR_ROCKET;
+	Weapon2=RAPTOR_MCANNON;
+	Weapon3=RAPTOR_MAINGUN;
+	WeaponSlaveTo2=1;
+	WeaponSlaveTo3=1;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=200;
+	WeaponMainDir2=0 0 1;
+	MaxAngleDif2=200;
+	WeaponMainDir3=0 0 1;
+	MaxAngleDif3=200;
+	Ovradjust=1;
+	HealTime=80;
+	Downloadable=1;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	turnInPlace=0;
+	turnInPlaceSpeedLimit=1.84;
+	iconType=mech;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=38 48 38;
+
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:flashmuzzle0;
+		explosiongenerator1=custom:emg_shells;
+		}
+	}

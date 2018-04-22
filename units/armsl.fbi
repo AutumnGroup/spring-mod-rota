@@ -1,0 +1,98 @@
+[UNITINFO]
+{
+	Name=Seahook;
+	UnitName=ARMSL;
+	BUILDPIC=ARMSL.DDS;
+	
+	//    Required Tags
+	BuildCostEnergy=8253;//8091
+	BuildCostMetal=455;//544
+	BuildTime=18655;//18289
+	Category=VTOL NOTSUB NOTSHIP LOWVTOL NOTAIR;
+	Description=Fast Transport;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=950;
+	ObjectName=ARMSL;
+	Side=CORE;
+	SoundCategory=CORE_VTOL;
+	TEDClass=VTOL;
+	
+	//    Movement
+	BrakeRate=5;
+	Acceleration=0.15;
+	CanMove=1;
+	MaxVelocity=7;
+	MaxSlope=10;
+	TurnRate=380;
+	
+	//    Airplane Moventment
+	Cruisealt=150;
+	
+	//    Buildings
+	
+	//    Construction
+	Builder=0;
+	WorkerTime=0;
+	
+	//    Resources
+	EnergyMake=3;
+	EnergyStorage=0;
+	EnergyUse=16;
+	MetalStorage=0;
+	
+	//    Abilities
+	CanFly=1;
+	CanStop=1;
+	TransportCapacity=1;
+	TransportSize=3;
+	transportmaxunits=1;
+	transmaxunits=1;
+	TransportMass=3902;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=260;
+	
+	//    Weapons
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+	
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	SmoothAnim=1;
+	Upright=1;
+	
+	//    Not Used By TASpring
+	bmcode=1;
+	noautofire=0;
+	unitnumber=1985;
+	firestandorders=0;
+	mobilestandorders=0;
+	standingmoveorder=1;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=VTOL_standby;
+	maneuverleashlength=1280;
+	bankscale=1;
+	canload=1;
+	moverate1=1;
+	PitchScale=1;
+	MoveRate2=2;
+	iconType=airnofightbig;
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	HoldSteady=1;
+	MinAirBasePower=100000;
+	[customParams] 
+	{
+		fireproof=1;
+	}
+}

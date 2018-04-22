@@ -1,0 +1,113 @@
+[UNITINFO]
+	{
+	UnitName=BLADE;
+	Version=3.1;
+	Side=ARM;
+	Objectname=BLADE;
+	Designation=AX3-A-VTOL-S;
+	Name=Blade;
+	Description=Interceptor;
+	FootprintX=2;
+	FootprintZ=2;
+	BuildCostEnergy=6060;//7870//6452//8388//7716
+	BuildCostMetal=378;//344//290//377//367//337
+	BuildTime=10129;//16882//22451
+    	MaxDamage=510;//320
+	MaxWaterDepth=0;
+	MaxSlope=10;
+	EnergyUse=0.9;
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=500;//1000
+	RadarDistance=0;
+	SoundCategory=ARM_FIGVTOL;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BIG_AIRUNITEX;
+	SelfDestructAs=BIG_AIRUNIT;
+    	Category=VTOL NOTSUB NOTSHIP LOWVTOL;
+	TEDClass=VTOL;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	//Copyright 1999 by Guillem F. aka Silencer & Kellan from TA-Power
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	Canfly=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	canattack=1;
+	MaxVelocity=12.078;//14.078
+	BrakeRate=4.22;
+	Acceleration=3.1976;
+	TurnRate=1000;
+	SteeringMode=1;
+	ShootMe=1;
+	cruisealt=500;//250
+	Scale=1;
+	BankScale=1;
+	EnergyMake=0.8;
+	DefaultMissionType=VTOL_standby;
+	maneuverleashlength=2350;
+	Weapon1=VTOL_MCANNON;
+	OnlyTargetCategory1=VTOL;
+	//Weapon2=BLADE_MISSILE;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=20;
+	//Weapon1=VTOL_MGUN_ARM;
+	//Weapon2=VTOL_MGUN_ARM;
+    	//wpri_badTargetCategory=CTRL_V;
+    	//BadTargetCategory=FIGHTER;
+    	//noChaseCategory=CTRL_V;
+	NoChaseCategory=NOTAIR;
+	CanLoopbackAttack=1;
+	maxAileron=.016;//.015
+	maxElevator=.015;//.01
+	maxRudder=.005;//.004
+	idletime=2200;
+	idleautoheal=1;
+	SeismicSignature=0;
+	//Fuel
+	maxfuel=240;
+	RefuelTime=15;//5
+	WeaponFuelUsage1=4;
+	iconType=air;
+	MinAirBasePower=199;
+	
+	collide=0;	
+	//collisionVolumeType=cylZ;
+	//collisionVolumeScales=15 10 20;
+	collisionVolumeType=box;
+	collisionVolumeScales=15 10 25;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:machinegun_muzzle0;
+		}
+	[customParams] 
+	{
+		fireproof=1;
+		
+		// fuel
+		name_custom_resource1=hydrocarbons;
+		price_custom_resource1=0;
+		income_unit_custom_resource1=0;
+		income_team_custom_resource1=0;
+		resource_added_unit_custom_resource1=240;
+		resource_added_team_custom_resource1=0;
+		resource_lost_unit_custom_resource1=0;
+		resource_lost_team_custom_resource1=0;
+		consumption_unit_custom_resource1=1;
+		consumption_team_custom_resource1=0;
+		storage_unit_custom_resource1=240;
+		storage_team_custom_resource1=0;
+		team_to_unit_transfer_rate_custom_resource1=16;
+		unit_to_team_transfer_rate_custom_resource1=16;
+	}
+	}

@@ -1,0 +1,62 @@
+[unitinfo]
+{
+	unitname=Road_halfcurve;
+	objectname=nothing.3do;
+	BuildPic=Road_halfcurve.png;
+	yardmap=yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy yyyyyy;
+
+	name=Roadway;
+	description=Road, halfturn.;
+	maxdamage=1200;
+	autoheal=1200;
+	buildcostmetal=30;
+	buildcostenergy=10;
+	buildtime=2000;
+
+	//    Buildings
+	footprintx=6;
+	footprintz=12;
+	CollisionVolumeType=Box; // ('T' is one of "XYZ")
+	CollisionVolumeScales=8 8 8;
+	CollisionVolumeOffsets=0 -256 0;
+	
+	useBuildingGroundDecal=1;
+	BuildingGroundDecalType=road_halfcurve.tif;
+	BuildingGroundDecalSizeX=6;
+	BuildingGroundDecalSizeY=12;
+	BuildingGroundDecalDecaySpeed=0.9;
+
+	hidedamage=1;
+	//isfeature=1;
+	//shownanoframe=1;
+	smoothanim=0;
+
+	maxslope=80;
+	sightdistance=0;
+	Corpse=road_dead;
+
+	//    Misc
+	Reclaimable=0;
+	Capturable=0;
+	CanAttack=0;
+	ExplodeAs=NOWEAPON;
+	SelfDestructAs=NOWEAPON;
+	SelfDestructCountdown=1;
+	Upright=1;
+	Levelground=0;
+/////////////////////////////////////////////SPECIAL STUFF FOR GAIA
+	iconType=noicon;
+	stealth=1;
+	gaia=1;
+	neutral=1;
+
+	[customParams] 
+	{
+		gaia=1;
+		draw_in_los=0;
+		never_draw=0;
+		draw_always=1;
+		draw_always_selectable=0;
+		road=1;//SPECIAL FOR ROADS, MAKES THEM NOT BLOCK
+	}
+}

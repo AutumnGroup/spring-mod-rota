@@ -1,0 +1,81 @@
+[UNITINFO]
+{
+	Name=Level 2 Constructor (Aircraft);
+	UnitName=COR2AIR;
+	
+	//    Required Tags
+	BuildCostEnergy=25000;
+	BuildCostMetal=825;//1650
+	BuildTime=116322;//38774
+	Category=NOTAIR NOTSUB NOTSHIP;
+	Description=Builds Advanced Structures;
+	FootprintX=4;
+	FootprintZ=4;
+	MaxDamage=4030;
+	ObjectName=COR2AIR;
+	Side=CORE;
+	SoundCategory=COR_COM;
+	TEDClass=CNSTR;
+	Commander=0;
+	
+	//    Movement
+	BrakeRate=1.5;
+	MovementClass=TINY;
+	Acceleration=0;
+	CanMove=0;
+	MaxVelocity=0;
+	MaxSlope=12;
+	TurnRate=1;
+	
+	//    Construction
+	BuildDistance=950;
+	Builder=1;
+	WorkerTime=150;
+	ReclaimSpeed=50;
+	
+	//    Resources
+	EnergyMake=20;
+	EnergyStorage=300;
+	EnergyUse=0;
+	MetalMake=1;
+	MetalStorage=300;
+	
+	//    Abilities
+	CanStop=1;
+	
+	//    Sight/Radar
+	RadarDistance=0;
+	SightDistance=950;
+	
+	//    Weapons
+	ExplodeAs=ATOMIC_BLAST2;
+	SelfDestructAs=ATOMIC_BLAST2;
+	SelfDestructCountdown=5;
+	
+	//    Tracks/Flares
+	
+	//    Watersettings
+	MaxWaterDepth=0;
+	
+	//    Misc
+	Mass=10000;
+	pushResistant=1;
+	SmoothAnim=1;
+	Upright=1;
+	
+	//    Not Used By TASpring
+	noautofire=0;
+	unitnumber=9904;
+	canpatrol=1;
+	canguard=1;
+	steeringmode=1;
+	shootme=1;
+	defaultmissiontype=Standby;
+	maneuverleashlength=0;
+	canreclamate=1;
+	CantBeTransported=1;
+	iconType=nano2small;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=80 85 80;
+}

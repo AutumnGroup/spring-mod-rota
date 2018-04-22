@@ -1,0 +1,94 @@
+[UNITINFO]
+	{
+	UnitName=ARMROCK;
+	Version=1;
+	Side=ARM;
+	Objectname=ARMROCK;
+	Designation=ARM-KRL;
+	Name=Rocko;
+	Description=Anti-Armor Rocket Kbot;
+	FootprintX=1.5;
+	FootprintZ=1.5;
+	BuildCostEnergy=688;//964//570
+	BuildCostMetal=78;//117//68
+	MaxDamage=550;//610//910
+	MaxWaterDepth=12;
+	MaxSlope=14;
+	EnergyUse=0.6;
+	BuildTime=1746;
+	WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	SightDistance=455;//260
+	RadarDistance=0;
+	SoundCategory=ARM_KBOT;
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=MINIBANG_UNIT;
+	SelfDestructAs=MINISUIC_UNIT;
+	Category=NOTAIR NOTSUB NOTSHIP ;
+	TEDClass=KBOT;
+	Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	Corpse=armrock_dead;
+	GermanName=Rocko;
+	GermanDescription=Raketen-Kbot;
+	UnitNumber=58;
+	FrenchName=Rockett;
+	Frenchdescription=Kbot lance-roquettes;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	SpanishName=Rocko;
+	SpanishDescription=Kbot Lanzacohetes;
+	ItalianName=Rocko;
+	ItalianDescription=Kbot lanciarazzi;
+	canguard=1;
+	MaxVelocity=1.06;//1.2
+	BrakeRate=0.15;
+	Acceleration=0.1;
+	TurnRate=1005;
+	SteeringMode=2;
+	ShootMe=1;
+	EnergyMake=0.6;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=KBOT_MINI;
+	Upright=1;
+	canattack=1;
+	Weapon1=KBOT_ROCKET;
+	wpri_badTargetCategory=VTOL;
+	BadTargetCategory=VTOL;
+	NoChaseCategory=VTOL;
+	OnlyTargetCategory1=NOTAIR;
+	Ovradjust=1;
+	//for Spring:
+	SmoothAnim=1;
+	leaveTracks=1;
+	trackWidth=15;
+	trackOffset=0;
+	trackStrength=5;
+	trackStretch=1;
+	trackType=KbotTrack;
+	idletime=650;
+	idleautoheal=15;
+	SeismicSignature=0;
+	TransportByEnemy=0;
+	Mass=300;
+	iconType=kbotmed;
+	
+	collisionVolumeType=cylY;
+	collisionVolumeScales=21 20 21;
+	
+	[SFXTypes]
+		{
+		explosiongenerator0=custom:smallrocketsmoke1;
+		explosiongenerator1=custom:smallrocketsmoke2;
+		}
+	}

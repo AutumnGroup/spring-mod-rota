@@ -1,0 +1,751 @@
+/* Missiles.tdf -- Missile weapons */
+
+/* Allowed IDs = 100-119 */
+
+
+[ARMKBOT_MISSILE]
+	{
+	ID=100;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=654;
+	reloadtime=3.08;//5.4//4.4
+	weapontimer=5;
+	flighttime=1.7;//2.5
+	weaponvelocity=650;
+	startvelocity=450;
+	weaponacceleration=-10;
+	turnrate=13000;//33000
+	areaofeffect=48;
+	metalpershot=0;
+
+	//heightMod=1.1;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+	burnblow=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	craterMult=0;
+	craterBoost=0;
+	//startsmoke=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	canAttackGround=0;
+	explosiongenerator=custom:MINIMISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=25;//30//33
+		Air=76;//88//97
+		Bladewing=76;
+		FlyingFortress=76;
+		subs=0;
+		}
+	}
+
+
+
+[CORKBOT_MISSILE]
+	{
+	ID=101;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=680;//590//690
+	reloadtime=3.01;//5.3//4.3
+	weapontimer=5;
+	flighttime=1.6;//2.5
+	weaponvelocity=650;
+	startvelocity=450;
+	weaponacceleration=-10;
+	turnrate=13500;//33000
+	areaofeffect=48;
+	metalpershot=0;
+
+	//heightMod=1.1;
+
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+
+	craterMult=0;
+	craterBoost=0;
+	//startsmoke=1;
+	burnblow=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	canAttackGround=0;
+	explosiongenerator=custom:MINIMISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=25;//32//35
+		Air=76;//98//108
+		Bladewing=76;
+		FlyingFortress=76;
+		subs=0;
+		}
+	}
+
+[ARMTRUCK_MISSILE]
+	{
+	ID=104;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=700;//700
+	reloadtime=4.5;
+	flighttime=1.6;//3
+	weapontimer=5;
+	weaponvelocity=540;//540
+	startvelocity=550;//450
+	weaponacceleration=-10;
+	turnrate=14000;//30000,15000
+	areaofeffect=48;
+	metalpershot=0;
+
+	//heightMod=1.1;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+	craterMult=.1;
+	craterBoost=.1;
+	//startsmoke=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	canAttackGround=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+	
+	burst=3;
+	burstrate=0.3;
+
+	[DAMAGE]
+		{
+		default=44;//40
+		Air=66;//145//120//132
+		Bladewing=66;//145
+		FlyingFortress=66;//145
+		subs=0;
+		}
+	}
+
+
+[CORTRUCK_MISSILE]
+	{
+	ID=105;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+
+	model=missile;
+
+	range=680;//680
+	reloadtime=4.5;
+	weapontimer=5;
+	weaponvelocity=545;
+	flighttime=1.6;//3
+	startvelocity=550;
+	weaponacceleration=-10;
+	turnrate=14000;//30000
+	areaofeffect=48;
+	metalpershot=0;
+
+	//heightMod=1.1;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+	craterMult=.1;
+	craterBoost=.1;
+	//startsmoke=1;
+	//toairweapon=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+  	AvoidFeature=0;
+	canAttackGround=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+	
+	burst=2;
+	burstrate=0.5;
+
+	[DAMAGE]
+		{
+		default=45;//41
+		Air=88;//147//122//134
+		Bladewing=88;//147
+		FlyingFortress=88;//147
+		subs=0;
+		}
+	}
+
+
+
+[ARMRL_MISSILE]
+	{
+	ID=106;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	burnblow=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=1000;//700//780
+	flighttime=3.3;
+	reloadtime=4.655;//5//5.3//4.9
+	weapontimer=5;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=142;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+
+	//heightMod=1.3;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	edgeeffectiveness=1;
+	tolerance=3000;//10000
+	burnblow=1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+  	AvoidFeature=0;
+	canAttackGround=0;
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+
+	//startsmoke=1;
+
+	// used to be 165 for default
+	[DAMAGE]
+		{
+		default=165;
+		Air=425;//275//396
+		subs=0;
+		}
+	}
+
+
+
+
+[CORRRL_MISSILE]
+	{
+	ID=107;
+	name=Missiles;
+	rendertype=1;
+	lineofsight=1;
+	turret=1;
+	//toairweapon=1;
+	burnblow=1;
+
+	model=missile;
+
+	range=1060;//700//780
+	reloadtime=4.693;//5.0//5.35//4.94
+	weapontimer=5;
+	flighttime=3.3;
+	weaponvelocity=650;
+	startvelocity=460;
+	weaponacceleration=152;
+	turnrate=18000;//50000
+	areaofeffect=100;
+	metalpershot=0;
+	edgeeffectiveness=1;
+
+	//heightMod=1.3;
+
+	soundstart=rockhvy2;
+	soundhit=xplomed2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=3000;
+	burnblow=1;
+
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=0;
+  	AvoidFeature=0;
+	
+	canAttackGround=0;
+	
+	explosiongenerator=custom:BIGMISSILE_SPLASH;
+
+	//startsmoke=1;
+	[DAMAGE]
+		{
+		default=161;
+		Air=425;//391
+		subs=0;
+		}
+	}
+
+
+
+[ARMVTOL_MISSILE]
+	{
+	ID=108;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=630;//510
+	reloadtime=5;//3
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=480;
+	startvelocity=250;//420//100
+	weaponacceleration=1500;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//44
+		Air=130;
+		Bladewing=130;
+		FlyingFortress=130;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;	
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+
+
+[CORVTOL_MISSILE]
+	{
+	ID=109;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=620;//502
+	reloadtime=5;//3
+	weapontimer=5;
+	flighttime=2.5;
+	weaponvelocity=470;
+	startvelocity=250;//425//100
+	weaponacceleration=1500;
+	turnrate=16384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//46
+		Air=136;
+		Bladewing=136;
+		FlyingFortress=136;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=10;
+		}
+	}
+
+
+
+[ARMVTOL_ADVMISSILE]
+	{
+	ID=112;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=659;
+	reloadtime=3;
+	weapontimer=7;
+	flighttime=2.5;
+	weaponvelocity=559;
+	startvelocity=390;//450//200
+	weaponacceleration=1600;
+	turnrate=24384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=133;//55
+		Air=150;
+		Bladewing=150;
+		FlyingFortress=150;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+	}
+
+[CORVTOL_ADVMISSILE]
+	{
+	ID=113;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=650;
+	reloadtime=3;
+	weapontimer=7;
+	flighttime=2.5;
+	weaponvelocity=550;
+	startvelocity=390;//450//200
+	weaponacceleration=1600;
+	turnrate=24384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=133;//53
+		Air=155;
+		Bladewing=155;
+		FlyingFortress=155;
+		Light=130;
+        BugLight=130;
+		Medium=42;
+        BugMedium=42;
+		Heavy=15;
+		BugHeavy=15;
+		ships=41;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+	}
+
+[CORVTOL_ADVMISSILE2]
+	{
+	ID=114;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=650;
+	flighttime=2.5;
+	reloadtime=3;
+	weapontimer=7;
+	weaponvelocity=550;
+	startvelocity=200;
+	weaponacceleration=1600;
+	turnrate=24384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=133;//53
+		Air=155;
+		Bladewing=155;
+		FlyingFortress=155;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+	}
+
+[ARMVTOL_ADVMISSILE2]
+	{
+	ID=115;
+	name=Guided Missiles;
+	rendertype=1;
+	lineofsight=1;
+	//toairweapon=1;
+
+	model=missile;
+
+	range=659;
+	flighttime=2.5;
+	reloadtime=3;
+	weapontimer=7;
+	weaponvelocity=554;
+	startvelocity=200;
+	weaponacceleration=1600;
+	turnrate=24384;
+	areaofeffect=48;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+	burnblow=1;
+
+	canAttackGround=0;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	explosiongenerator=custom:MISSILE_SPLASH;
+
+	[DAMAGE]
+		{
+		default=130;//55
+		Air=150;
+		Bladewing=150;
+		FlyingFortress=150;
+		subs=0;
+		}
+	[customParams] 
+		{
+		custom_resource_consumption_name1=hydrocarbons;
+		custom_resource_consumption_amount1=8;
+		}
+	}

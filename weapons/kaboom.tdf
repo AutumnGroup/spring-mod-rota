@@ -1,0 +1,282 @@
+[MISSILEBOMBER_ROCKET_BIG]
+	{
+	ID=109;
+	name=Harpoon;
+	rendertype=1;
+	lineofsight=1;
+
+	model=ballmiss;//toma2
+
+	//burst=3;
+	//burstrate=.3;
+	range=1000;//502
+	reloadtime=20;//3
+	weapontimer=5;
+	weaponvelocity=500;
+	startvelocity=0;
+	weaponacceleration=100;
+	turnrate=3000;
+	Wobble=5000;
+	areaofeffect=150;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	edgeeffectiveness = 1;
+
+	[DAMAGE]
+		{
+		default=4400;
+		subs=0;
+		}
+	}
+
+[MISSILEBOMBER_ROCKET]
+	{
+	ID=109;
+	name=Harpoon;
+	rendertype=1;
+	lineofsight=1;
+
+	model=toma2;
+
+	range=1000;//502
+	burst=4;
+	burstrate=.3;
+	reloadtime=20;//3
+	weapontimer=5;
+	weaponvelocity=500;
+	startvelocity=0;
+	weaponacceleration=350;
+	turnrate=6000;
+	Wobble=6000;
+	areaofeffect=40;
+	metalpershot=0;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//guidance=1;
+	tracks=1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	NoSelfDamage=1;
+  	AvoidFeature=0;
+	edgeeffectiveness = 1;
+
+	[DAMAGE]
+		{
+		default=1000;
+		subs=0;
+		}
+	}
+
+[VTOL_ROCKET3]
+	{
+	ID=135;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=450;//450
+	reloadtime=1;
+	weapontimer=5;
+	weaponvelocity=350;
+	startvelocity=100;
+	weaponacceleration=181;
+	metalpershot=0;
+
+	turnrate=5680;//7680
+	areaofeffect=48;
+
+	soundstart=rocklit3;
+	soundhit=explode;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+	[DAMAGE]
+		{
+		default=115;//145//125//105
+		subs=0;
+		}
+	}
+
+[VTOL_ROCKET4]
+	{
+	ID=136;
+	name=Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=450;//450
+	reloadtime=1;
+	weapontimer=5;
+	weaponvelocity=350;
+	startvelocity=50;//250
+	weaponacceleration=131;
+	metalpershot=0;
+
+	turnrate=4680;//7680
+	areaofeffect=48;
+
+	soundstart=rocklit3;
+	soundhit=explode;
+
+	firestarter=70;
+	//smokedelay=.1;
+	//selfprop=1;
+	smoketrail=1;
+	tolerance=8000;
+
+	//explosiongaf=fx;
+	//explosionart=explode3;
+
+	//waterexplosiongaf=fx;
+	//waterexplosionart=h2o;
+
+	//lavaexplosiongaf=fx;
+	//elavaexplosionart=lavasplash;
+
+	//startsmoke=1;
+	//guidance=1;
+	tracks=1;
+	craterMult=.1;
+	craterBoost=.1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	explosiongenerator=custom:LITTLEBANG_Expl;
+	[DAMAGE]
+		{
+		default=115;//145//125//105
+		subs=0;
+		}
+	}
+
+[RAPIER_FASTROCKET]
+	{
+	ID=131;
+	name=VTOL Rockets;
+	rendertype=1;
+	lineofsight=1;
+
+	model=missile;
+
+	range=390;
+	reloadtime=.35;
+	weaponvelocity=750;//480
+	startvelocity=660;//420
+	weaponacceleration=146;
+	tolerance=4500;//3000
+	areaofeffect=48;//100
+	metalpershot=0;
+
+	//guidance=1;
+	tracks=1;
+	turnrate=10000;
+	//wobble=8000;
+
+	soundstart=Rocklit3;
+	soundhit=xplosml2;
+
+	firestarter=70;
+	//smokedelay=.05;
+	//selfprop=1;
+	smoketrail=1;
+	
+	//startsmoke=1;
+	CollideFriendly=0;
+	AvoidFriendly=0;
+	impulsefactor=.2;
+	explosiongenerator=custom:SMALLFLASH_Expl;
+	
+	[DAMAGE]
+		{
+		default=55;
+		subs=0;
+		}
+}
+
+[GOL_CRUSH]
+	{
+	name                  = Crushinator;
+        areaOfEffect            = 8;
+        craterBoost             = 0;
+        craterMult              = 0;
+	avoidFriendly=0;
+	collideFriendly=0;
+
+        //endsmoke                = 0;
+        explosionGenerator      = custom:NONE;
+        impulseBoost            = 0;
+        impulseFactor           = 0;
+        interceptedByShieldType = 0;
+        lineOfSight             = 1;
+        noSelfDamage            = 1;
+        range                   = 60;
+        reloadtime              = .03;
+        size                    = 0;
+        //startsmoke              = 0;
+        targetborder            = 1;
+        tolerance               = 32000;
+        turret                  = 0;
+        waterWeapon             = 1;
+        weaponType              = Cannon;
+        weaponVelocity          = 1000;
+	[DAMAGE]
+		{
+		default=300;//25
+		heavy=0;
+		medium=0;
+		subs=0;
+		}
+	}
+
+[NOWEAPON]
+	{
+	}

@@ -1,0 +1,78 @@
+[UNITINFO]
+	{
+	UnitName=BUG5;
+	Version=3;
+	Side=CORE;
+	Objectname=BUG5;
+	Designation=ATAS;
+	Name=Crawler;
+	Description=Dust Bug;
+	FootprintX=4;
+	FootprintZ=4;
+	BuildCostEnergy=30000;
+	BuildCostMetal=3000;
+	MaxDamage=23400;//18000
+	MaxWaterDepth=0;//12
+	MaxSlope=24;
+	EnergyUse=0.7;
+	BuildTime=90000;
+	//WorkerTime=0;
+	BMcode=1;
+	Builder=0;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	Activatewhenbuilt=1;
+	SightDistance=700;
+	//RadarDistance=550;
+	SoundCategory=CORSCORP;	
+	EnergyStorage=0;
+	MetalStorage=0;
+	ExplodeAs=BUG5DIE;
+	SelfDestructAs=BUG5DIE;
+	Category=NOTAIR NOTSUB BUG ;
+	TEDClass=TANK;
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	canhover=1;
+	MaxVelocity=1.5;
+	BrakeRate=0.352587891;
+	Acceleration=0.652587891;
+	TurnRate=500;
+	SteeringMode=1;
+	Mass=8000;
+	ShootMe=1;
+	EnergyMake=0.7;
+	decloakonfire=0;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	MovementClass=BUGULTRAHOVER;
+	Weapon1=MONSTER_MELEE;
+	Weapon2=DARKSWARM;
+	//candgun=1;
+	WeaponMainDir1=0 0 1;
+	MaxAngleDif1=140;
+	WeaponMainDir2=0 0 1;
+	MaxAngleDif2=90;
+	OnlyTargetCategory1=NOTAIR;
+	OnlyTargetCategory2=NOTAIR;
+	canattack=1;
+	NoChaseCategory=VTOL;
+	//onoffable=1;
+	stealth=1;
+	icontype=star;
+	
+	collisionVolumeType=cylZ;
+	collisionVolumeScales=65 55 75;
+	
+	[customParams] 
+	{
+		gaia=1;
+	}
+	}

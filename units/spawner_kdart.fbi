@@ -1,0 +1,47 @@
+[unitinfo]
+{
+	unitname=spawner_kdart;
+	objectname=spawner_kdart.3do;
+	yardmap=y;
+
+	name=spawner_kdart;
+	description=bang bang bang;
+	maxdamage=1000;
+	autoheal=1000;
+	buildcostmetal=30;
+	buildcostenergy=10;
+	buildtime=3000;
+
+	//    Buildings
+	footprintx=1;
+	footprintz=1;
+	CollisionVolumeType=Box; // ('T' is one of "XYZ")
+	CollisionVolumeScales=2 2 2;
+	CollisionVolumeOffsets=0 64 0;
+
+	hidedamage=1;
+	Weapon1 = SPAWNER_KDART;
+	smoothanim=0;
+
+	maxslope=255;
+	sightdistance=0;
+
+	//    Misc
+	Reclaimable=0;
+	Capturable=0;
+	CanAttack=0;
+	ExplodeAs=NOWEAPON;
+	SelfDestructAs=NOWEAPON;
+	SelfDestructCountdown=1;
+	Upright=1;
+	Levelground=0;
+/////////////////////////////////////////////SPECIAL STUFF FOR GAIA
+	stealth=1;
+	iconType=noicon;
+	gaia=1;
+	neutral=1;
+	CloakCost=0;
+	init_cloaked=1;
+	mincloakdistance=0;
+	iconType=noicon;
+}
